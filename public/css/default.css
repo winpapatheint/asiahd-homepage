@@ -103,10 +103,10 @@ Design and Developed by: Codelayers
 
 
 body {
-	font: 14px 'Open Sans', sans-serif;
+	font: 15px 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 23px;
+	line-height: 25px;
 	color: #727272;
 }
 /* a link Styles
@@ -362,6 +362,10 @@ ul {
 	color: #c3a254;
 }
 /*=============== Margins ============= */
+
+.margin-right {
+    text-align: right;
+}
  .bmargin {
 	margin-bottom: 0px;
 }
@@ -485,10 +489,11 @@ ul {
 }
 
 /*=============== Divider lines ============= */
- .divider-line {
+.divider-line {
 	float: left;
 	width: 100%;
 }
+
 .divider-line.dashed {
 	border-bottom: 1px dashed;
 }

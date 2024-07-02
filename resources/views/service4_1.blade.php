@@ -85,21 +85,43 @@
                 </div>
                 <!--end item-->
 
-                <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
-                    <h5 class="uppercase less-mar1">アジア食彩館ECモール</h5>
-                    <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
-                    <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a> </div>
+                <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
+                    <div class="col-md-6 bmargin"> <img src="http://placehold.it/400x250" alt=""
+                            class="img-responsive" /> <br /></div>
+                    <div class="col-md-6 bmargin">
+                        <h5 class="uppercase less-mar1 nopadding">Overview</h5>
+                        <div class="divider-line solid margin yellow"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
+                            commodo augue Aliquam ornare augue consectetuer </p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
+                            commodo augue Aliquam ornare augue consectetuer </p>
+                    </div>
                     <!--end item-->
 
-                    <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
-                    <h5 class="uppercase less-mar1">New Style Life（新生活）ECモール</h5>
-                    <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
-                    <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a> </div>
+                    <div class="clearfix"></div>
+                    <br />
+
+                    <div class="col-md-12 bmargin"> <img src="http://placehold.it/850x350" alt=""
+                            class="img-responsive" /> <br />
+                        <h5 class="uppercase less-mar1">Building Plan</h5>
+                        <div class="divider-line solid margin yellow"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
+                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
+                            Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis
+                            in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a,
+                            laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis</p>
+                        <br />
+
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
+                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
+                            Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis
+                            in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a,
+                            laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis</p>
+
+                    </div>
                     <!--end item-->
+                </div>
             </div>
         </div>
     </section>

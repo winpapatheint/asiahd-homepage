@@ -24,14 +24,7 @@
                                 <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                                 <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
                                 <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="{{ url('/service4') }}" class="dropdown-toggle"
-                                        data-toggle="dropdown">ECモール運営</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="{{ url('/service4_1') }}">アジア食彩館ECモール</a></li>
-                                        <li><a href="{{ url('/service4_2') }}">New Style Life（新生活）ECモール</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="{{ url('/service4') }}">ECモール運営</a></li>
                             </ul>
                         </li>
                         <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>

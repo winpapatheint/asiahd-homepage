@@ -20,13 +20,7 @@
                             <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                             <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
                             <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="{{ url('/service4') }}" class="dropdown-toggle" data-toggle="dropdown">ECモール運営</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="{{ url('/service4_1') }}">アジア食彩館ECモール</a></li>
-                                    <li><a href="{{ url('/service4_2') }}">New Style Life（新生活）ECモール</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="{{ url('/service4') }}">ECモール運営</a></li>
                         </ul>
                     </li>
                     <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
@@ -94,7 +88,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent
                             mattis commodo augue Aliquam ornare augue. </p>
                         <br />
-                        <a class="btn lesspadd btn-yellow less-round" href="construction.html">Read more</a>
+                        <a class="btn lesspadd btn-yellow less-round" href="{{ url('/service1') }}">Read more</a>
                     </div>
                     <!--end item-->
 
@@ -105,7 +99,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent
                             mattis commodo augue Aliquam ornare augue. </p>
                         <br />
-                        <a class="btn lesspadd btn-yellow less-round" href="building.html">Read more</a>
+                        <a class="btn lesspadd btn-yellow less-round" href="{{ url('/service2') }}">Read more</a>
                     </div>
                     <!--end item-->
 
@@ -119,7 +113,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent
                             mattis commodo augue Aliquam ornare augue. </p>
                         <br />
-                        <a class="btn lesspadd btn-yellow less-round" href="painting.html">Read more</a>
+                        <a class="btn lesspadd btn-yellow less-round" href="{{ url('/service3') }}">Read more</a>
                     </div>
                     <!--end item-->
 
@@ -130,7 +124,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent
                             mattis commodo augue Aliquam ornare augue. </p>
                         <br />
-                        <a class="btn lesspadd btn-yellow less-round" href="isolation.html">Read more</a>
+                        <a class="btn lesspadd btn-yellow less-round" href="{{ url('/service4') }}">Read more</a>
                     </div>
                     <!--end item-->
                 </div>
