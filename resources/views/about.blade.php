@@ -68,37 +68,6 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <section class="sec-tpadding-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 bmargin"> <img src="http://placehold.it/600x400" alt=""
-                        class="img-responsive" /> <br />
-                    <h5 class="uppercase less-mar1">joint ventures</h5>
-                    <div class="divider-line solid margin yellow"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                        commodo augue Aliquam ornare augue. </p>
-                    <br />
-                    <a class="btn btn-yellow btn-round">Read more</a>
-                </div>
-                <!--end item-->
-
-                <div class="col-md-6 bmargin"> <img src="http://placehold.it/600x400" alt=""
-                        class="img-responsive" /> <br />
-                    <h5 class="uppercase less-mar1">Consluting</h5>
-                    <div class="divider-line solid margin yellow"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                        commodo augue Aliquam ornare augue. </p>
-                    <br />
-                    <a class="btn btn-yellow btn-round">Read more</a>
-                </div>
-                <!--end item-->
-
-            </div>
-        </div>
-    </section>
-    <!--end section-->
-    <div class="clearfix"></div>
-
     <section class="sec-padding">
         <div class="container">
             <div class="row">
@@ -117,7 +86,59 @@
                 <p class="margin-right">代表取締役社長　趙松天</p><br>
             </div>
         </div>
+    </section>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-left nopadding">
+                <div class="title_r">会社概要</div>
+                <table class="job-listing">
+                    <tr>
+                        <th>商号</th>
+                        <td>アジア人材開発株式会社
+                            Asia Human Development, Inc.</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>2019年3月</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>代表取締役　趙松天</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒171-0014<br/>
+                            東京都豊島区池袋4-27-5 和田ビル502号<br/>
+                            TEL： 03-3981-5090 （代表）<br/>
+                            FAX： 03-3981-5092</td>
+                    </tr>
+                    <tr>
+                        <th>最寄駅</th>
+                        <td>JR 池袋駅 西口から徒歩10分</td>
+                    </tr>
+                    <tr>
+                        <th>取引銀行</th>
+                        <td>みずほ銀行　中野北口支店</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec-padding">
+        <div class="container">
+            <div class="row">
+                <div id="map" class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.2611280535918!2d139.7094805379498!3d35.73796627717492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601892a013f7dbb3%3A0x951f540f2d58a6ad!2z44CSMTcxLTAwMTQgVG9reW8sIFRvc2hpbWEgQ2l0eSwgSWtlYnVrdXJvLCA0LWNoxY1tZeKIkjI34oiSNSDlkoznlLDjg5Pjg6sgNTAy!5e0!3m2!1sen!2sjp!4v1719909993290!5m2!1sen!2sjp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="sec-padding">
         {{-- <div class="container">
             <div class="row">
                 <h5 class="uppercase less-mar1">組織体制</h5>
