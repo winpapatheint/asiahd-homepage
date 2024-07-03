@@ -38,14 +38,24 @@ class UserController extends Controller
         return view('project4');
     }
 
-    public function project4_1()
+    public function project5()
     {
-        return view('project4_1');
+        return view('project5');
     }
 
-    public function project4_2()
+    public function project6()
     {
-        return view('project4_2');
+        return view('project6');
+    }
+
+    public function project7()
+    {
+        return view('project7');
+    }
+
+    public function project8()
+    {
+        return view('project8');
     }
 
     public function service()

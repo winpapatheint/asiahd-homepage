@@ -137,7 +137,7 @@
 }
 .cbp-caption, .cbp-caption-defaultWrap, .cbp-caption-activeWrap {
 	display: block;
-	background-color: #282727
+	background-color: #ffc000
 }
 .cbp-caption-active .cbp-caption, .cbp-caption-active .cbp-caption-defaultWrap, .cbp-caption-active .cbp-caption-activeWrap {
 	width: 100%;

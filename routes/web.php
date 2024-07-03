@@ -14,7 +14,8 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/login', [AdminController::class,'login']);
+Route::get('/check', [AdminController::class,'check']);
 Route::get('/', [AdminController::class,'welcome']);
 Route::get('/about', [UserController::class,'about']);
 Route::get('/project', [UserController::class,'project']);

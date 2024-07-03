@@ -14,7 +14,7 @@
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
                         <li class="dropdown"> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a>
                             <ul class="dropdown-menu five" role="menu">
-                                <li> <a href="construction.html">代表者挨拶</a></li>
+                                <li> <a href="{{ url('/about') }}">代表者挨拶</a></li>
                             </ul>
                         </li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>

@@ -14,7 +14,7 @@
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
                         <li class="dropdown"> <a href="{{ url('/about') }}" class="dropdown-toggle active">会社概要</a>
                             <ul class="dropdown-menu five" role="menu">
-                                <li> <a href="construction.html">代表者挨拶</a></li>
+                                <li> <a href="{{ url('/about') }}">代表者挨拶</a></li>
                             </ul>
                         </li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
@@ -149,6 +149,10 @@
 
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 text-left nopadding">
+                    <h4 class="section-title uppercase">グループ会社</h4>
+                    <div class="title-line-8 yellow left"></div>
+                </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
