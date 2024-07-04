@@ -62,7 +62,7 @@
         <!-- slide 2 -->
         <div class="ms-slide slide-2" data-delay="9">
             <div class="slide-pattern"></div>
-            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="http://placehold.it/1920x665"
+            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="images/topsl02.jpg"
                 alt="" />
 
             <h3 class="ms-layer text15" style="top: 220px; right:230px;" data-type="text" data-delay="500"
@@ -80,6 +80,50 @@
                 data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
         </div>
         <!-- end slide 2 -->
+
+        <!-- slide 3 -->
+        <div class="ms-slide slide-1" data-delay="9">
+            <div class="slide-pattern"></div>
+            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="{{ asset('images/topsl03.jpg') }}"
+                alt="" />
+
+            <h3 class="ms-layer text15" style="top: 220px; left:230px;" data-type="text" data-delay="500"
+                data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> Building</h3>
+
+            <h3 class="ms-layer text16" style="top: 280px; left:230px;" data-type="text" data-delay="1000"
+                data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
+
+            <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
+                data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet consectetuer
+                adipiscing elit Suspendisse et justo <br />
+                Praesent mattis commodo augue Aliquam ornare. </h3>
+
+            <a class="ms-layer sbut6 yellow" style="left: 230px; top: 400px;" data-type="text" data-delay="2000"
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+        </div>
+        <!-- end slide 3 -->
+
+        <!-- slide 4 -->
+        <div class="ms-slide slide-2" data-delay="9">
+            <div class="slide-pattern"></div>
+            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="images/topsl04.jpg"
+                alt="" />
+
+            <h3 class="ms-layer text15" style="top: 220px; right:230px;" data-type="text" data-delay="500"
+                data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> Building</h3>
+
+            <h3 class="ms-layer text16" style="top: 280px; right:230px;" data-type="text" data-delay="1000"
+                data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
+
+            <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
+                data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
+                consectetuer adipiscing elit Suspendisse et justo <br />
+                Praesent mattis commodo augue Aliquam ornare. </h3>
+
+            <a class="ms-layer sbut6 yellow" style="right: 230px; top: 400px;" data-type="text" data-delay="2000"
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+        </div>
+        <!-- end slide 4 -->
     </div>
     <!-- end of masterslider -->
     <div class="clearfix"></div>

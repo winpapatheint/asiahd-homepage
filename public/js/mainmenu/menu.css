@@ -267,7 +267,7 @@ ul.nav.red-2>li>a:hover.active {
 
 ul.nav.yellow>li>a.active {
 	color: #71ac34;
-	border-bottom: 2px solid #71ac34;
+	border-bottom: 4px solid #71ac34;
 }
 ul.nav.yellow>li>a:hover.active {
 	color: #71ac34;
