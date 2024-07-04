@@ -51,7 +51,7 @@
                         <h3>お問合せ</h3>
                     </div>
                     <div class="col-md-6 text-right">
-                        <div class="pagenation_links"><a href="index.html">Home</a> <i>/</i> お問合せ</div>
+                        <div class="pagenation_links"><a href="index.html">Home</a> <i>/</i> Contact</div>
                     </div>
                 </div>
             </div>
