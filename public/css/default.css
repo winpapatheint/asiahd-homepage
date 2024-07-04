@@ -381,7 +381,7 @@ ul {
     text-align: right;
 }
 .bmargin {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 .tmargin {
     margin-top: 0px;
@@ -1636,9 +1636,9 @@ a.read-more.cyan:hover {
     border-color: #fff;
 }
 .btn.btn-border:hover.white {
-    color: #242424;
-    background-color: #fff;
-    border-color: #fff;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
 }
 /* button border white
  ------------------------------ */

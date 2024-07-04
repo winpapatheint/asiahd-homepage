@@ -8,11 +8,7 @@
                 <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                 <ul class="nav yellow navbar-nav">
                     <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
-                    <li class="dropdown"> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a>
-                        <ul class="dropdown-menu five" role="menu">
-                            <li> <a href="{{ url('/about') }}">代表者挨拶</a></li>
-                        </ul>
-                    </li>
+                    <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                     <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                     <li class="dropdown">
                         <a href="{{ url('/service') }}" class="dropdown-toggle active">サービス案内</a>
@@ -20,7 +16,7 @@
                             <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                             <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
                             <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
-                            <li><a href="{{ url('/service4') }}">ECモール運営</a></li>
+                            <li><a href="{{ url('/service4') }}">EC事業</a></li>
                         </ul>
                     </li>
                     <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
@@ -119,7 +115,7 @@
 
                     <div class="col-md-6 bmargin"> <img src="http://placehold.it/400x250" alt=""
                             class="img-responsive" /> <br />
-                        <h5 class="uppercase less-mar1">ECモール運営</h5>
+                        <h5 class="uppercase less-mar1">EC事業</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent
                             mattis commodo augue Aliquam ornare augue. </p>

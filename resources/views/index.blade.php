@@ -12,11 +12,7 @@
                 <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                     <ul class="nav yellow navbar-nav">
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle active">Home</a></li>
-                        <li class="dropdown"> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a>
-                            <ul class="dropdown-menu five" role="menu">
-                                <li> <a href="{{ url('/about') }}">代表者挨拶</a></li>
-                            </ul>
-                        </li>
+                        <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                         <li class="dropdown">
                             <a href="{{ url('/service') }}">サービス案内</a>
@@ -24,7 +20,7 @@
                                 <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                                 <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
                                 <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
-                                <li><a href="{{ url('/service4') }}">ECモール運営</a></li>
+                                <li><a href="{{ url('/service4') }}">EC事業</a></li>
                             </ul>
                         </li>
                         <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
@@ -44,7 +40,7 @@
         <!-- slide 1 -->
         <div class="ms-slide slide-1" data-delay="9">
             <div class="slide-pattern"></div>
-            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="http://placehold.it/1920x665"
+            <img src="{{ asset('js/masterslider/blank.gif') }}" data-src="{{ asset('images/topsl01.jpg') }}"
                 alt="" />
 
             <h3 class="ms-layer text15" style="top: 220px; left:230px;" data-type="text" data-delay="500"
@@ -375,7 +371,7 @@
                 <div class="row">
                     <div class="col-sm-12 text-left nopadding">
                         <h4 class="section-title uppercase text-white">What People Says</h4>
-                        <div class="title-line-8 white left"></div>
+                        <div class="title-line-8 yellow left"></div>
                         <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
                             justo. Praesent mattis commodo augue.<br />
                             Aliquam ornare hendrerit augue.</p>
