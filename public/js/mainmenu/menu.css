@@ -266,14 +266,14 @@ ul.nav.red-2>li>a:hover.active {
  ------------------------------ */
 
 ul.nav.yellow>li>a.active {
-	color: #ffc000;
-	border-bottom: 2px solid #ffc000;
+	color: #71ac34;
+	border-bottom: 2px solid #71ac34;
 }
 ul.nav.yellow>li>a:hover.active {
-	color: #ffc000;
+	color: #71ac34;
 }
 .navbar-default.yellow .navbar-nav > li > a:focus, .navbar-default.yellow .navbar-nav > li > a:hover {
-	color: #ffc000;
+	color: #71ac34;
 }
 
 /* red 2
