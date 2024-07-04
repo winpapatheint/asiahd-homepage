@@ -1313,7 +1313,7 @@ a.read-more.dark2:hover {
     color: #727272;
 }
 a.read-more.yellow {
-    color: #ffc000;
+    color: #71ac34;
 }
 a.read-more.yellow:hover {
     color: #242424;
@@ -1493,7 +1493,7 @@ a.read-more.cyan:hover {
  ------------------------------ */
 .btn.btn-yellow {
     color: #fff;
-    background-color: #ffc000;
+    background-color: #71ac34;
 }
 .btn.btn-yellow:hover {
     color: #fff;
@@ -2648,7 +2648,7 @@ a.read-more.cyan:hover {
 }
 .toplist li {
     float: left;
-    color: #8d8c8c;
+    color: #fff;
     text-align: right;
     font-size: 14px;
     margin: 0px;
@@ -2658,7 +2658,7 @@ a.read-more.cyan:hover {
     border-right: 1px solid #e4e4e4;
 }
 .toplist li a {
-    color: #8d8c8c;
+    color: #fff;
 }
 .toplist li a:hover {
     color: #272727;
@@ -3217,7 +3217,7 @@ a.topbar-btn.active {
 /* section background yellow
  ------------------------------ */
 .section-yellow {
-    background-color: #ffc000;
+    background-color: #71ac34;
 }
 .section-yellow-2 {
     background-color: #fcc813;
@@ -3948,7 +3948,7 @@ a.topbar-btn.active {
 /* Overlay Background yellow
  ------------------------------ */
 .section-overlay.yellow {
-    background-color: rgba(255, 192, 0, 0.9);
+    background-color: #71ac34;
 }
 .section-overlay.yellow-2 {
     background-color: rgba(246, 202, 0, 0.6);

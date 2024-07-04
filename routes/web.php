@@ -20,7 +20,7 @@ Route::get('/', [AdminController::class,'welcome']);
 Route::get('/about', [UserController::class,'about']);
 Route::get('/project', [UserController::class,'project']);
 Route::get('/project1', [UserController::class,'project1']);
-Route::get('/project2', [UserController::class,'project3']);
+Route::get('/project2', [UserController::class,'project2']);
 Route::get('/project3', [UserController::class,'project3']);
 Route::get('/project4', [UserController::class,'project4']);
 Route::get('/project5', [UserController::class,'project5']);

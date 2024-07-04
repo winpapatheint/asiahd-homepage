@@ -73,7 +73,8 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-                <div class="title_r">オンライン教室システム</div><br>
+                <h4 class="section-title uppercase">IBT試験システム</h4>
+                <div class="title-line-8 yellow left"></div>
                 <div class="col-md-12"> <img src="https://t4.ftcdn.net/jpg/02/55/17/43/360_F_255174366_ojDuATz84e5h7lIlxh2moUJa9Kpd5wKk.jpg" alt="" class="img-responsive" />
                     <br />
                     <h5 class="uppercase less-mar1">詳細</h5>

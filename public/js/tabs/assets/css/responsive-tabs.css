@@ -1248,8 +1248,8 @@ ul.tabs8 {
 }
 .tabs10 li.active a {
 	color: #fff;
-	border-right: 1px solid #ffc000;
-	background-color: #ffc000;
+	border-right: 1px solid #71ac34;
+	background-color: #71ac34;
 }
 .tabs-content10 {
 	float: left;
@@ -2092,7 +2092,7 @@ ul.tabs8 {
 }
 .smk_accordion .accordion_in.yellow.acc_active > .acc_head {
 	color: #fff;
-	background: #ffc000;
+	background: #71ac34;
 }
 .smk_accordion .accordion_in.st2.acc_active > .acc_head {
 	background: #fff;
