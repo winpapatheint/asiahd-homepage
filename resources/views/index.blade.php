@@ -55,7 +55,7 @@
                 Praesent mattis commodo augue Aliquam ornare. </h3>
 
             <a class="ms-layer sbut6 yellow" style="left: 230px; top: 400px;" data-type="text" data-delay="2000"
-                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> SES/請負開発 </a>
         </div>
         <!-- end slide 1 -->
 
@@ -77,7 +77,7 @@
                 Praesent mattis commodo augue Aliquam ornare. </h3>
 
             <a class="ms-layer sbut6 yellow" style="right: 230px; top: 400px;" data-type="text" data-delay="2000"
-                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> IT導入支援 </a>
         </div>
         <!-- end slide 2 -->
 
@@ -99,7 +99,7 @@
                 Praesent mattis commodo augue Aliquam ornare. </h3>
 
             <a class="ms-layer sbut6 yellow" style="left: 230px; top: 400px;" data-type="text" data-delay="2000"
-                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> 日本留学ナビ運営 </a>
         </div>
         <!-- end slide 3 -->
 
@@ -121,7 +121,7 @@
                 Praesent mattis commodo augue Aliquam ornare. </h3>
 
             <a class="ms-layer sbut6 yellow" style="right: 230px; top: 400px;" data-type="text" data-delay="2000"
-                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> Book now </a>
+                data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> EC事業 </a>
         </div>
         <!-- end slide 4 -->
     </div>
@@ -136,10 +136,10 @@
                     <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo
                         Praesent mattis commodo augue Aliquam ornare.</p>
                 </div>
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <div class="margin-top2"></div>
                     <a class="btn btn-border white btn-large pull-right" href="#">Read more</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -151,34 +151,34 @@
             <div class="row">
                 <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
                         class="img-responsive" /> <br />
-                    <h5 class="uppercase less-mar1">joint ventures</h5>
+                    <h5 class="uppercase less-mar1">SES/請負開発</h5>
                     <div class="divider-line solid yellow margin"></div>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
                         commodo augue Aliquam ornare augue. </p>
                     <br />
-                    <a class="btn btn-yellow btn-round">Read more</a>
+                    {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                 </div>
                 <!--end item-->
 
                 <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
                         class="img-responsive" /> <br />
-                    <h5 class="uppercase less-mar1">Consluting</h5>
+                    <h5 class="uppercase less-mar1">IT導入支援</h5>
                     <div class="divider-line solid yellow margin"></div>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
                         commodo augue Aliquam ornare augue. </p>
                     <br />
-                    <a class="btn btn-yellow btn-round">Read more</a>
+                    {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                 </div>
                 <!--end item-->
 
                 <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
                         class="img-responsive" /> <br />
-                    <h5 class="uppercase less-mar1">Painting</h5>
+                    <h5 class="uppercase less-mar1">EC事業</h5>
                     <div class="divider-line solid yellow margin"></div>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
                         commodo augue Aliquam ornare augue. </p>
                     <br />
-                    <a class="btn btn-yellow btn-round">Read more</a>
+                    {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                 </div>
                 <!--end item-->
 
@@ -193,11 +193,10 @@
             <div class="container sec-tpadding-2 sec-bpadding-2">
                 <div class="row">
                     <div class="col-sm-12 text-left nopadding">
-                        <h4 class="section-title uppercase text-white">Our Projects</h4>
+                        <h4 class="section-title uppercase text-white">開発実績</h4>
                         <div class="title-line-8 yellow left"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
-                            mattis commodo augue.<br />
-                            Aliquam ornare hendrerit augue.</p>
+                        <p>企業様向けにカスタマイズ可能な様々なソフトウェアシステムを用意しております。<br />
+                            システム導入については、気軽にお問い合わせください。</p>
                         <br />
                     </div>
                     <div class="clearfix"></div>
@@ -298,7 +297,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 align-left clearfix">
                     <div class="item-holder bmargin">
-                        <h4 class="uppercase">Why Choose</h4>
+                        <h4 class="uppercase">選ばれる理由</h4>
                         <div class="title-line-8 yellow left"></div>
                         <br />
                         <br />
@@ -346,7 +345,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 align-left clearfix">
                     <div class="item-holder bmargin">
-                        <h4 class="uppercase">Latest News</h4>
+                        <h4 class="uppercase">会社ビジョン</h4>
                         <div class="title-line-8 yellow left"></div>
                         <br />
                         <br />
@@ -366,7 +365,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 align-left last">
                     <div class="item-holder bmargin">
-                        <h4 class="uppercase">What We Offer</h4>
+                        <h4 class="uppercase">サービス内容</h4>
                         <div class="title-line-8 yellow left"></div>
                         <br />
                         <br />
@@ -414,7 +413,7 @@
             <div class="container sec-tpadding-2 sec-bpadding-2">
                 <div class="row">
                     <div class="col-sm-12 text-left nopadding">
-                        <h4 class="section-title uppercase text-white">What People Says</h4>
+                        <h4 class="section-title uppercase text-white">お客様の声</h4>
                         <div class="title-line-8 yellow left"></div>
                         <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
                             justo. Praesent mattis commodo augue.<br />
@@ -473,11 +472,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-left nopadding">
-                    <h4 class="section-title uppercase">From the blog</h4>
+                    <h4 class="section-title uppercase">新着情報</h4>
                     <div class="title-line-8 yellow left"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis
-                        commodo augue.<br />
-                        Aliquam ornare hendrerit augue.</p>
+                    <p>弊社のサービスや活動に関する各種ニュースを掲載させております。</p>
                     <br />
                 </div>
                 <div class="clearfix"></div>

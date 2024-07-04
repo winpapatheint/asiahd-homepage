@@ -37,7 +37,7 @@
 <link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs.css') }}">
 <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
-<link rel="stylesheet" type="text/css" href="js/smart-forms/smart-forms.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}">
 </head>
 
 <body>
