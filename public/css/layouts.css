@@ -877,7 +877,7 @@ Construction layout Styles
 	margin: 0px;
 	z-index: 2;
 	transition: all 0.3s ease-out 0s;
-	background-color: #ffc000;
+	background-color: #71ac34;
 }
 .team-holder5:hover .image-holder img {
 	top: -50px;

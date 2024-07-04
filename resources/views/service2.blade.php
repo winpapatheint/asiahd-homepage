@@ -76,7 +76,7 @@
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp;SES/請負開発 </a></li>
                         <li><a href="{{ url('/service2') }}" class="active"><i class="fa fa-angle-right"></i> &nbsp;IT導入支援 </a></li>
                         <li><a href="{{ url('/service3') }}"><i class="fa fa-angle-right"></i> &nbsp;日本留学ナビ運営 </a></li>
-                        <li><a href="{{ url('/service4') }}"><i class="fa fa-angle-right"></i> &nbsp;ECモール運営</a></li>
+                        <li><a href="{{ url('/service4') }}"><i class="fa fa-angle-right"></i> &nbsp;EC事業</a></li>
                     </ul>
                 </div>
                 <!--end item-->
