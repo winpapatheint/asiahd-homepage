@@ -103,6 +103,13 @@
                         <td>代表取締役　趙松天</td>
                     </tr>
                     <tr>
+                        <th>事業概要</th>
+                        <td>SES/請負開発<br/>
+                            IT導入支援<br/>
+                            日本留学ナビ運営<br/>
+                            EC事業</td>
+                    </tr>
+                    <tr>
                         <th>所在地</th>
                         <td>〒171-0014<br/>
                             東京都豊島区池袋4-27-5 和田ビル502号<br/>
@@ -115,7 +122,9 @@
                     </tr>
                     <tr>
                         <th>取引銀行</th>
-                        <td>みずほ銀行　中野北口支店</td>
+                        <td>みずほ銀行　中野北口支店<br>
+                            GMOあおぞらネット銀行
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -146,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-left nopadding">
-                    <h4 class="section-title uppercase">グループ会社</h4>
+                    <h4 class="section-title uppercase">運営サイト</h4>
                     <div class="title-line-8 yellow left"></div>
                 </div>
                 <div class="col-md-3 col-sm-6">

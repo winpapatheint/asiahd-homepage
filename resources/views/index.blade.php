@@ -351,7 +351,6 @@
                         <br />
                         <div class="feature-box29">
                             <div class="image-holder">
-                                <div class="post-date-box"> 25 <span>May, 2020</span> </div>
                                 <img src="http://placehold.it/400x200" alt="" class="img-responsive" />
                             </div>
                             <div class="clearfix"></div>
