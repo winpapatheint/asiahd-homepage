@@ -9,6 +9,9 @@
 <meta name="robots" content="" />
 <meta name="description" content="" />
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="{{ asset('images/asiahd_slogo.png') }}">
+
 <!-- this styles only adds some repairs on idevices  -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -157,18 +160,6 @@
 
     })(jQuery);
 </script>
-{{-- <script>
-    $('#basicuse').jflickrfeed({
-    limit: 6,
-    qstrings: {
-    id: '133294431@N08'
-    },
-    itemTemplate:
-    '<li>' +
-    // '<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
-    '</li>'
-    });
-</script> --}}
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

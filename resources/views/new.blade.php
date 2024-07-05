@@ -33,8 +33,8 @@
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
-                <h4 class="title text-white uppercase">News</h4>
-                <h5 class="text-white uppercase">Get many More News</h5>
+                <h4 class="title text-white uppercase">新着情報</h4>
+                <h5 class="text-white uppercase">News</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>
             <img src="http://placehold.it/1920x600" alt="" class="img-responsive" />

@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    {{-- <link rel="shortcut icon" href="images/favicon.ico"> --}}
+    <link rel="shortcut icon" href="{{ asset('images/asiahd_slogo.png') }}">
 
     <!-- Google fonts - witch you want to use - (rest you can just remove) -->
     <link
@@ -97,8 +97,8 @@
         <section>
             <div class="header-inner two">
                 <div class="inner text-center">
-                    <h4 class="title text-white uppercase">Projects</h4>
-                    <h5 class="text-white uppercase">Get many More Projects</h5>
+                    <h4 class="title text-white uppercase">開発実績</h4>
+                    <h5 class="text-white uppercase">Projects</h5>
                 </div>
                 <div class="overlay bg-opacity-5"></div>
                 <img src="http://placehold.it/1920x600" alt="" class="img-responsive" />

@@ -34,7 +34,7 @@
         <div class="header-inner two">
             <div class="inner text-center">
                 <h4 class="title text-white uppercase">お問合せ</h4>
-                <h5 class="text-white uppercase">Free freely contact us</h5>
+                <h5 class="text-white uppercase">Contact Us</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>
             <img src="http://placehold.it/1920x600" alt="" class="img-responsive" />
@@ -48,7 +48,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>お問合せ</h3>
+                        <h3>Contact</h3>
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="pagenation_links"><a href="index.html">Home</a> <i>/</i> Contact</div>

@@ -109,4 +109,9 @@ class UserController extends Controller
         return view('recruit');
     }
 
+    public function privacy()
+    {
+        return view('privacy');
+    }
+
 }
