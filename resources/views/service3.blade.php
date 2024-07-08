@@ -15,7 +15,7 @@
                         <li> <a href="{{ url('/about') }}" class="dropdown-toggle active">会社概要</a></li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                         <li class="dropdown">
-                            <a href="{{ url('/service') }}" class="dropdown-toggle">サービス案内</a>
+                            <a href="{{ url('/service1') }}" class="dropdown-toggle">サービス案内</a>
                             <ul class="dropdown-menu five" role="menu">
                                 <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                                 <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
@@ -71,8 +71,6 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 bmargin">
                     <ul class="side-nav-list">
-                        <li><a href="{{ url('/service') }}"><i class="fa fa-angle-right"></i> &nbsp; All
-                                Services</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp;SES/請負開発 </a></li>
                         <li><a href="{{ url('/service2') }}"><i class="fa fa-angle-right"></i> &nbsp;IT導入支援 </a></li>
                         <li><a href="{{ url('/service3') }}" class="active"><i class="fa fa-angle-right"></i> &nbsp;日本留学ナビ運営 </a></li>
@@ -82,39 +80,13 @@
                 <!--end item-->
 
                 <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
-                    <div class="col-md-6 bmargin"> <img src="http://placehold.it/400x250" alt=""
-                            class="img-responsive" /> <br /></div>
-                    <div class="col-md-6 bmargin">
-                        <h5 class="uppercase less-mar1 nopadding">Overview</h5>
-                        <div class="divider-line solid margin yellow"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                            commodo augue Aliquam ornare augue consectetuer </p>
-                        <br />
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                            commodo augue Aliquam ornare augue consectetuer </p>
-                    </div>
-                    <!--end item-->
-
-                    <div class="clearfix"></div>
-                    <br />
-
                     <div class="col-md-12 bmargin"> <img src="http://placehold.it/850x350" alt=""
                             class="img-responsive" /> <br />
-                        <h5 class="uppercase less-mar1">Building Plan</h5>
+                        <h5 class="uppercase less-mar1">日本留学ナビ運営</h5>
                         <div class="divider-line solid margin yellow"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
-                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
-                            Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis
-                            in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a,
-                            laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis</p>
-                        <br />
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
-                            mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est.
-                            Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis
-                            in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a,
-                            laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis</p>
-
+                        <p>日本No1の日本留学案内総合サイトです。
+                            78校以上の厳選された優良な日本語学校に留学できます。
+                            あなたの日本での成功をお手伝いします。</p>
                     </div>
                     <!--end item-->
                 </div>

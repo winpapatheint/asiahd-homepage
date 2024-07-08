@@ -90,7 +90,7 @@
                             <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                             <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                             <li class="dropdown">
-                                <a href="{{ url('/service') }}">サービス案内</a>
+                                <a href="{{ url('/service1') }}">サービス案内</a>
                                 <ul class="dropdown-menu five" role="menu">
                                     <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                                     <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
@@ -510,7 +510,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-md-6">
-                            <div class="feature-box30 active bmargin">
+                            <div class="feature-box30 bmargin">
                                 <div class="iconbox-large left">
                                     <div class="img-holder">
                                         <div class="img-inner overflow-hidden"> <img src="http://placehold.it/120x120"
@@ -567,6 +567,12 @@
                     <div class="col-md-6">
                         <div class="blog-holder6 bmargin">
                             <div class="col-md-6 col-sm-6 nopadding">
+                                <div class="image-holder">
+                                    <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                                    <img src="http://placehold.it/1000x1100" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 nopadding">
                                 <div class="text-box-inner">
                                     <h5 class="uppercase less-mar1"><a href="#">interior design</a></h5>
                                     <div class="divider-line solid margin yellow"></div>
@@ -576,12 +582,6 @@
                                     <a class="read-more yellow" href="#"><i
                                             class="fa fa-angle-double-right"></i>
                                         Read more</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 nopadding">
-                                <div class="image-holder">
-                                    <div class="post-date-box"> 25 <span>May, 2020</span> </div>
-                                    <img src="http://placehold.it/1000x1100" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
@@ -591,6 +591,12 @@
                     <div class="col-md-6">
                         <div class="blog-holder6 bmargin">
                             <div class="col-md-6 col-sm-6 nopadding">
+                                <div class="image-holder">
+                                    <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                                    <img src="http://placehold.it/1000x1100" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 nopadding">
                                 <div class="text-box-inner">
                                     <h5 class="uppercase less-mar1"><a href="#">interior design</a></h5>
                                     <div class="divider-line solid margin yellow"></div>
@@ -600,12 +606,6 @@
                                     <a class="read-more yellow" href="#"><i
                                             class="fa fa-angle-double-right"></i>
                                         Read more</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 nopadding">
-                                <div class="image-holder">
-                                    <div class="post-date-box"> 25 <span>May, 2020</span> </div>
-                                    <img src="http://placehold.it/1000x1100" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,7 @@
                         <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                         <li class="dropdown">
-                            <a href="{{ url('/service') }}" class="dropdown-toggle active">サービス案内</a>
+                            <a href="{{ url('/service1') }}" class="dropdown-toggle active">サービス案内</a>
                             <ul class="dropdown-menu five" role="menu">
                                 <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
                                 <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
@@ -71,8 +71,6 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 bmargin">
                     <ul class="side-nav-list">
-                        <li><a href="{{ url('/service') }}"><i class="fa fa-angle-right"></i> &nbsp; All
-                                Services</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp;SES/請負開発 </a></li>
                         <li><a href="{{ url('/service2') }}"><i class="fa fa-angle-right"></i> &nbsp;IT導入支援 </a></li>
                         <li><a href="{{ url('/service3') }}"><i class="fa fa-angle-right"></i> &nbsp;日本留学ナビ運営 </a></li>
@@ -84,17 +82,19 @@
                 <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
                     <h5 class="uppercase less-mar1">EC/ECモール開発</h5>
                     <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
+                    <p>業種別の各種ECサイトやECモールを構築しております。
+                        ECサイトやECモールの構築については、気軽にお問い合わせください。
+                        </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a> </div>
-                    <!--end item-->
+                </div>
 
-                    <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
+                <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
                     <h5 class="uppercase less-mar1">HP制作</h5>
                     <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
+                    <p>お客様の要望に応じて、各種ホームページを制作しております。
+                        ホームページの制作については、気軽にお問い合わせください。
+                    </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a>
                 </div>
 
                 <div class="col-md-3 col-sm-12 col-xs-12">
@@ -103,17 +103,21 @@
                 <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
                     <h5 class="uppercase less-mar1">アジア食彩館ECモール</h5>
                     <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
+                    <p>日本国内の340万外国人消費者に向けにアジア食品関連商品を販売するECモールです。
+                        販売者の出店は無料です。
+                    </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a> </div>
+                    <a class="btn btn-yellow btn-round">公式サイトはこちら</a> </div>
                     <!--end item-->
 
                     <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt="" class="img-responsive"/> <br/>
                     <h5 class="uppercase less-mar1">New Style Life（新生活）ECモール</h5>
                     <div class="divider-line solid yellow margin"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo augue Aliquam ornare augue. </p>
+                    <p>日本国内の消費者向けに食品以外の商品を販売するECモールです。
+                        販売者の出店は無料です。
+                    </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">Read more</a>
+                    <a class="btn btn-yellow btn-round">公式サイトはこちら</a>
                 </div>
             </div>
         </div>

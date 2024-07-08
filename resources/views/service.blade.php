@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 bmargin">
                     <ul class="side-nav-list">
-                        <li><a class="active" href="{{ url('/service') }}"><i class="fa fa-angle-right"></i> &nbsp; All
+                        <li><a class="active" href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp; All
                                 Services</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp;SES/請負開発 </a></li>
                         <li><a href="{{ url('/service2') }}"><i class="fa fa-angle-right"></i> &nbsp;IT導入支援 </a></li>

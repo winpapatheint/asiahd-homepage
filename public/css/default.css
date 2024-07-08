@@ -6066,3 +6066,30 @@ div.demo .title span {
     margin: 0;
     color: #333;
 }
+
+
+.skills {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 40px;
+    max-width: 600px;
+    line-height: 2;
+}
+.col-left {
+    font-weight: bold;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 30%;
+    max-width: 600px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    .service {
+        grid-template-columns: 1fr;
+        gap: 10px 0;
+    }
+}
