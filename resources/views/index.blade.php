@@ -225,7 +225,7 @@
         <section class="sec-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
+                    <div class="col-md-4 bmargin"> <img src="{{ asset('images/mb01.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">SES/請負開発</h5>
                         <div class="divider-line solid yellow margin"></div>
@@ -235,7 +235,7 @@
                     </div>
                     <!--end item-->
 
-                    <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
+                    <div class="col-md-4 bmargin"> <img src="{{ asset('images/mb02.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">IT導入支援</h5>
                         <div class="divider-line solid yellow margin"></div>
@@ -245,7 +245,7 @@
                     </div>
                     <!--end item-->
 
-                    <div class="col-md-4 bmargin"> <img src="http://placehold.it/400x250" alt=""
+                    <div class="col-md-4 bmargin"> <img src="{{ asset('images/mb03.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">EC事業</h5>
                         <div class="divider-line solid yellow margin"></div>
