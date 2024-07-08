@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,14 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/login', [AdminController::class,'login']);
-Route::get('/check', [AdminController::class,'check']);
+Route::get('login', [AuthController::class, 'showLoginForm']);
+Route::post('login', [AuthController::class, 'login']);
+Route::get('logout', [AuthController::class, 'logout']);
+Route::get('forgetpassword', [AuthController::class, 'showForgetPassword']);
+Route::post('password/reset', [AuthController::class, 'reset']);
+
+Route::get('dashboard', [AdminController::class,'dashboard']);
+
 Route::get('/', [AdminController::class,'welcome']);
 Route::get('/about', [UserController::class,'about']);
 Route::get('/project', [UserController::class,'project']);

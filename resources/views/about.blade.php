@@ -162,15 +162,16 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                                    mattis aliquet purus non elementum.</p>
+                                <p class="text-white"> 日本No1の日本留学案内総合サイトです。
+                                    78校以上の厳選された優良な日本語学校に留学できます。あなたの日本での成功をお手伝いします。
+                                </p>
                             </div>
-                            <img src="http://placehold.it/400x450" alt="" class="img-responsive" />
+                            <img src="{{ asset('images/navi.jpg') }}" alt="" class="img-responsive" />
                         </div>
                         <div class="clearfix"></div>
                         <br />
-                        <h5 class="less-mar1">Elizabeth</h5>
-                        <span class="text-yellow">Founder and CEO</span>
+                        <h5 class="less-mar1">日本留学ナビ</h5>
+                        {{-- <span class="text-yellow">Founder and CEO</span> --}}
                     </div>
                 </div>
                 <!--end item-->
@@ -179,15 +180,16 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Praesent mattis aliquet purus non elementum.</p>
+                                <p class="text-white"> 日本国内の340万人の外国人消費者にアジア食彩を販売する日本語と英語を併用するECモールです。
+                                    出店者は、日本国内に拠点をもつ事業主です。
+                                </p>
                             </div>
-                            <img src="http://placehold.it/400x450" alt="" class="img-responsive" />
+                            <img src="{{ asset('images/asfm.jpg') }}" alt="" class="img-responsive" />
                         </div>
                         <div class="clearfix"></div>
                         <br />
-                        <h5 class="less-mar1">Alexander</h5>
-                        <span class="text-yellow">Architect</span>
+                        <h5 class="less-mar1">アジア食彩館</h5>
+                        {{-- <span class="text-yellow">Architect</span> --}}
                     </div>
                 </div>
                 <!--end item-->
@@ -196,15 +198,16 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Praesent mattis aliquet purus non elementum.</p>
+                                <p class="text-white">日本国内の消費者向けに商品を販売する日本語と英語を併用するECモールです。
+                                    出店者は海外からも出店可能です。
+                                </p>
                             </div>
-                            <img src="http://placehold.it/400x450" alt="" class="img-responsive" />
+                            <img src="{{ asset('images/nsl.jpg') }}" alt="" class="img-responsive" />
                         </div>
                         <div class="clearfix"></div>
                         <br />
-                        <h5 class="less-mar1">Addison</h5>
-                        <span class="text-yellow">Project Menager</span>
+                        <h5 class="less-mar1">New Style Life（新生活）</h5>
+                        {{-- <span class="text-yellow">Project Menager</span> --}}
                     </div>
                 </div>
                 <!--end item-->
@@ -213,15 +216,16 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Praesent mattis aliquet purus non elementum.</p>
+                                <p class="text-white">New Style Life（新生活）ECモールと自動連係するECモールです。
+                                    New Style Lifeの出店者は、手間をかけずに本モールで、海外消費者向けに商品の販売ができます。
+                                </p>
                             </div>
-                            <img src="http://placehold.it/400x450" alt="" class="img-responsive" />
+                            <img src="{{ asset('images/mdin.jpg') }}" alt="" class="img-responsive" />
                         </div>
                         <div class="clearfix"></div>
                         <br />
-                        <h5 class="less-mar1">Benjamin</h5>
-                        <span class="text-yellow">Finance Manager</span>
+                        <h5 class="less-mar1">Made in Japan(日本製品）</h5>
+                        {{-- <span class="text-yellow">Finance Manager</span> --}}
                     </div>
                 </div>
                 <!--end item-->

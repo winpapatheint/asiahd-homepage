@@ -209,10 +209,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <h3 class="text-white less-mar3">Beautiful Masonry Portfolio Styles</h3>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et
-                            justo
-                            Praesent mattis commodo augue Aliquam ornare.</p>
+                        <h3 class="text-white less-mar3">情熱と技術が国境を越え、グローバル展開へ！</h3>
+                        <p class="text-white">様々な経験者・技術者が、国境を越え技術を集結し挑戦して参ります。</p>
                     </div>
                     {{-- <div class="col-md-3">
                 <div class="margin-top2"></div>
@@ -231,8 +229,7 @@
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">SES/請負開発</h5>
                         <div class="divider-line solid yellow margin"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                            commodo augue Aliquam ornare augue. </p>
+                        <p>ソフト開発において、顧客のニーズにマッチする実践力のあ るエンジニアをご提案します。</p>
                         <br />
                         {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
@@ -242,8 +239,7 @@
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">IT導入支援</h5>
                         <div class="divider-line solid yellow margin"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                            commodo augue Aliquam ornare augue. </p>
+                        <p>弊社保有のITパッケージを手ごろな価格で中小企業に提供し、 中小企業の売上向上に貢献します。</p>
                         <br />
                         {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
@@ -253,8 +249,7 @@
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">EC事業</h5>
                         <div class="divider-line solid yellow margin"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Suspendisse et justo Praesent mattis
-                            commodo augue Aliquam ornare augue. </p>
+                        <p>EC/ECモールの構築やECモールの運営で、人々に必要な商品を届けします。</p>
                         <br />
                         {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
@@ -443,9 +438,10 @@
                                 <div class="clearfix"></div>
                                 <br />
                                 <a href="#">
-                                    <h5>Rutrum adipiscing luctus</h5>
+                                    <h5>私たちのビジョン</h5>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                                <p>ソフトウェア開発を通して、中小企業のDX化推進支援と、人々の生活に必要な便利なツールをご提供します。
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -509,10 +505,7 @@
                         <div class="col-sm-12 text-left nopadding">
                             <h4 class="section-title uppercase text-white">お客様の声</h4>
                             <div class="title-line-8 yellow left"></div>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse
-                                et
-                                justo. Praesent mattis commodo augue.<br />
-                                Aliquam ornare hendrerit augue.</p>
+                            <p class="text-white">当社のサービスをご利用していただいた、お客様からの声を掲載していただきました。</p>
                             <br />
                         </div>
                         <div class="clearfix"></div>
@@ -526,11 +519,9 @@
                                 </div>
                                 <div class="text-box-right">
                                     <div class="text-box">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
-                                            justo.
-                                            Praesent.</p>
-                                        <h6 class="less-mar1">John Doe</h6>
-                                        <span class="text-yellow">Mediatricks - Support</span>
+                                        <p>顧客管理システムをご導入することで、社内業務が飛躍的に向上し、作業時間の節約につながりました。</p>
+                                        <h6 class="less-mar1">人材紹介A社</h6>
+                                        <span class="text-yellow">管理部</span>
                                     </div>
                                 </div>
                             </div>
@@ -547,11 +538,9 @@
                                 </div>
                                 <div class="text-box-right">
                                     <div class="text-box">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
-                                            justo.
-                                            Praesent.</p>
-                                        <h6 class="less-mar1">John Doe</h6>
-                                        <span class="text-yellow">Mediatricks - Support</span>
+                                        <p>オンライン教室システムをご導入することで、講師たちの授業のスケジュール管理など、スムーズにできるうようになりました。</p>
+                                        <h6 class="less-mar1">学習塾B教室</h6>
+                                        <span class="text-yellow">管理部</span>
                                     </div>
                                 </div>
                             </div>
@@ -636,11 +625,12 @@
                         <div class="footer-logo"><img src="{{ asset('images/asia-hd_logo.png') }}" alt="" />
                         </div>
                         <ul class="address-info">
-                            <li>Address: No.28 - 63739 street lorem ipsum City, Country</li>
-                            <li><i class="fa fa-home"></i> Phone: + 1 (234) 567 8901</li>
-                            <li><i class="fa fa-phone"></i> Phone: + 1 (234) 567 8901</li>
-                            <li><i class="fa fa-fax"></i> Fax: + 1 (234) 567 8901</li>
-                            <li class="last"><i class="fa fa-envelope"></i> Email: support@yoursite.com </li>
+                            <li>Address: 〒171-0014 <br>
+                                東京都豊島区池袋4-27-5 和田ビル502号
+                            </li>
+                            <li><i class="fa fa-phone"></i> Phone: 03-3981-5090 （代表）</li>
+                            <li><i class="fa fa-fax"></i> Fax: 03-3981-5092</li>
+                            <li class="last"><i class="fa fa-envelope"></i> Email: info@asia-hd.com</li>
                         </ul>
                     </div>
                     <!--end item-->
@@ -648,34 +638,31 @@
                     <div class="col-md-2 clearfix">
 
                     </div>
-                    <!--end item-->
 
                     <div class="col-md-4 clearfix">
-                        <h4 class="uppercase footer-title less-mar3">Top Services</h4>
+                        <h4 class="uppercase footer-title less-mar3">会社情報</h4>
                         <div class="clearfix"></div>
                         <div class="footer-title-bottomstrip"></div>
                         <ul class="usefull-links yellow">
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Placerat bibendum</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Ullamcorper odio nec turpis</a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Aliquam porttitor vestibulum
-                                    ipsum</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i> Lobortis enim nec nisi</a></li>
-                            <li class="last"><a href="#"><i class="fa fa-angle-right"></i> Placerat
-                                    bibendum</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>HOME</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>会社概要</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>開発実績</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>サービス案内</a></li>
                         </ul>
                     </div>
                     <!--end item-->
 
                     <div class="col-md-3 clearfix">
-                        <h4 class="uppercase footer-title less-mar3">Flickr Feed</h4>
+                        <h4 class="uppercase footer-title less-mar3">その他</h4>
                         <div class="clearfix"></div>
                         <div class="footer-title-bottomstrip"></div>
-                        <ul id="basicuse" class="thumbs">
+                        <ul class="usefull-links yellow">
+                            <li><a href="#"><i class="fa fa-angle-right"></i>新着情報</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>お問合せ</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>プライバシーポリシー</a></li>
                         </ul>
                     </div>
                     <!--end item-->
-
                 </div>
             </div>
         </section>
@@ -685,9 +672,8 @@
         <section class="section-copyrights sec-moreless-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"> <span>Copyright © 2020 <a
-                                href="https://1.envato.market/hasta-html-by-codelayers">hasta</a> By <a
-                                href="https://1.envato.market/codelayers">Codelayers</a> | All rights reserved.</span>
+                    <div class="col-md-12">
+                        <span>Copyright Asia Human Development, Inc. all rights reserved</span>
                     </div>
                 </div>
             </div>
@@ -702,11 +688,11 @@
 
 
     <!-- ============ JS FILES ============ -->
-    <script type="text/javascript" src="js/universal/jquery.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jFlickrFeed/jflickrfeed.min.js"></script>
-    <script src="js/masterslider/jquery.easing.min.js"></script>
-    <script src="js/masterslider/masterslider.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
+    <script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
     <script type="text/javascript">
         (function($) {
             "use strict";
@@ -729,19 +715,19 @@
 
         })(jQuery);
     </script>
-    <script src="js/mainmenu/customeUI.js"></script>
-    <script src="js/mainmenu/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
-    <script type="text/javascript" src="js/cubeportfolio/main.js"></script>
-    <script src="js/animations/js/appear.min.js" type="text/javascript"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
-    <script src="js/owl-carousel/custom.js"></script>
-    <script src="js/tabs/assets/js/responsive-tabs.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/tabs/smk-accordion.js"></script>
-    <script type="text/javascript" src="js/tabs/custom.js"></script>
-    <script src="js/scrolltotop/totop.js"></script>
+    <script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
+    <script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
+    <script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
+    <script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
+    <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
+    <script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
 
-    <script src="js/scripts/functions.js" type="text/javascript"></script>
+    <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
 </body>
 
 </html>

@@ -66,9 +66,7 @@
                 <div class="col-md-8">
                     <div class="smart-forms bmargin">
                         <h3 class="raleway">お問合せ</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
-                            mattis commodo augue. Aliquam ornare hendrerit consectetuer adipiscing elit. Suspendisse
-                            et justo. augue.</p>
+                        <p>内容によっては、お返事にお時間をいただく場合やお返事を差し上げられない場合がございます。あらかじめご了承ください。</p>
                         <br />
                         <br />
                         <form method="post" action="php/smartprocess.php" id="smart-form">
@@ -96,7 +94,7 @@
 
                                 <div class="section colm colm6">
                                     <label class="field prepend-icon">
-                                        <input type="tel" name="telephone" id="telephone" class="gui-input" placeholder="携帯電話">
+                                        <input type="tel" name="telephone" id="telephone" class="gui-input" placeholder="TEL">
                                         <span class="field-icon"><i class="fa fa-phone-square"></i></span>
                                     </label>
                                 </div>

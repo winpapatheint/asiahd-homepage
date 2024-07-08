@@ -21,18 +21,9 @@ class AdminController extends Controller
         return view('index');
     }
 
-    public function login()
+    public function dashboard()
     {
-        return view('auth.login');
-    }
-
-    public function check()
-    {
-        if (Auth::check() && Auth::user()->password) {
-            return redirect('/');
-        }
-
-        return redirect('/login')->withErrors('You must be logged in to access this page.');
+        return view('admin.dashboard');
     }
 
 }

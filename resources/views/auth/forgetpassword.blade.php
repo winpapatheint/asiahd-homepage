@@ -18,25 +18,21 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light">Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light">Password Recovery</h3></div>
                                     <div class="card-body">
-                                        <form method="POST" action="{{ url('login') }}">
-                                            @csrf
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" name="email" type="email" placeholder="name@example.com" />
-                                                <label>Email address</label>
-                                            </div>
+                                        <div class="small mb-3 text-muted">Enter new password.</div>
+                                        <form action="POST" action="{{ url('password/reset') }}">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="password" type="password" placeholder="Password" />
-                                                <label>Password</label>
+                                                <label>New Password</label>
                                             </div>
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" name="remember" type="checkbox"/>
-                                                <label>Remember Password</label>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" name="confirmed" type="password" placeholder="Password" />
+                                                <label>Confirm Password</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a href="{{ url('forgetpassword') }}">Forgot Password?</a>
-                                                <button type="submit" class="btn btn-primary">Login</button>
+                                                <a href="{{ url('login') }}">Return to login</a>
+                                                <button type="submit" class="btn btn-primary">Reset Password</button>
                                             </div>
                                         </form>
                                     </div>
