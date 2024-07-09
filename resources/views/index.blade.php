@@ -437,36 +437,20 @@
 
                                     <!-- Section 1 -->
                                     <div class="accordion_in two yellow acc_active">
-                                        <div class="acc_head">Creative Design</div>
-                                        <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit.
-                                            Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare
-                                            hendrerit
-                                            augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. </div>
+                                        <div class="acc_head">SES/請負開発</div>
+                                        <div class="acc_content"> ソフト開発において、顧客のニーズにマッチする実践力のあ るエンジニアをご提案します。</div>
                                     </div>
 
                                     <!-- Section 2 -->
                                     <div class="accordion_in two yellow">
-                                        <div class="acc_head">Graphic Design</div>
-                                        <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit.
-                                            Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare
-                                            hendrerit
-                                            augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. Cras
-                                            laoreet
-                                            ligula. Etiam sit amet dolor. </div>
+                                        <div class="acc_head">IT導入支援</div>
+                                        <div class="acc_content"> 弊社保有のシステムを手ごろな価格で中小企に提供し、中小企業の売上向上に貢献します。</div>
                                     </div>
 
                                     <!-- Section 3 -->
                                     <div class="accordion_in two yellow">
-                                        <div class="acc_head">Photography</div>
-                                        <div class="acc_content"> Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit.
-                                            Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare
-                                            hendrerit
-                                            augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. Cras
-                                            laoreet
-                                            ligula. Etiam sit amet dolor. </div>
+                                        <div class="acc_head">EC/ECモール構築</div>
+                                        <div class="acc_content"> EC/ECモールの構築やECモールの運営で、人々に必要な商品を届けるツールをご提供します。</div>
                                     </div>
                                 </div>
                             </div>

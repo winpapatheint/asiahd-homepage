@@ -63,14 +63,14 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-6 bmargin"> <img src="http://placehold.it/600x400" alt=""
-                        class="img-responsive" /> <br />
+                <div class="col-md-6">
+                    <div class="blog-holder6 bmargin">
+                        <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                        <img src="https://media.istockphoto.com/id/1411389613/photo/treelined-footpath-in-morning-fog-in-autumn-colored-forest.webp?b=1&s=170667a&w=0&k=20&c=SZhH4WCyCs24s1r00enpgmRGoP1zs-nx_p1Lakpv6-0=" alt="" class="img-responsive" />
+                    </div>
                 </div>
-                <!--end item-->
 
                 <div class="col-md-6 bmargin">
-
                     <h5 class="uppercase less-mar1 nopadding">Consluting</h5>
                     <div class="divider-line solid margin yellow"></div>
 
@@ -79,32 +79,27 @@
                         est. Curabitur eget orci.</p>
                     <br />
                     <ul class="iconlist yellow">
-                        <li><i class="fa fa-arrow-circle-right"></i> Nullam turpis Cras dapibus orci rutrum
-                        </li>
+                        <li><i class="fa fa-arrow-circle-right"></i> Nullam turpis Cras dapibus orci rutrum</li>
                         <li><i class="fa fa-arrow-circle-right"></i> Etiam enim Suspendisse imperdiet cursus
                             nisi Maecenas </li>
                         <li><i class="fa fa-arrow-circle-right"></i> Sed massa tellus aliquam rhoncus venenatis
                             quis. </li>
-                        <li><i class="fa fa-arrow-circle-right"></i> Praesent odio tellus posuere sed dictum
-                            sed fermentum. </li>
-                        <li><i class="fa fa-arrow-circle-right"></i> Etiam enim Suspendisse imperdiet cursus
-                            nisi </li>
                     </ul>
-
                 </div>
                 <!--end item-->
 
                 <div class="clearfix"></div>
                 <br /><br />
 
-                <div class="col-md-6 bmargin"> <img src="http://placehold.it/600x400" alt=""
-                        class="img-responsive" /> <br />
+                <div class="col-md-6">
+                    <div class="blog-holder6 bmargin">
+                        <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                        <img src="https://media.istockphoto.com/id/1411389613/photo/treelined-footpath-in-morning-fog-in-autumn-colored-forest.webp?b=1&s=170667a&w=0&k=20&c=SZhH4WCyCs24s1r00enpgmRGoP1zs-nx_p1Lakpv6-0=" alt="" class="img-responsive" />
+                    </div>
                 </div>
-                <!--end item-->
 
                 <div class="col-md-6 bmargin">
-
-                    <h5 class="uppercase less-mar1 nopadding">Architecture</h5>
+                    <h5 class="uppercase less-mar1 nopadding">Consluting</h5>
                     <div class="divider-line solid margin yellow"></div>
 
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent
@@ -112,18 +107,12 @@
                         est. Curabitur eget orci.</p>
                     <br />
                     <ul class="iconlist yellow">
-                        <li><i class="fa fa-arrow-circle-right"></i> Nullam turpis Cras dapibus orci rutrum
-                        </li>
+                        <li><i class="fa fa-arrow-circle-right"></i> Nullam turpis Cras dapibus orci rutrum</li>
                         <li><i class="fa fa-arrow-circle-right"></i> Etiam enim Suspendisse imperdiet cursus
                             nisi Maecenas </li>
                         <li><i class="fa fa-arrow-circle-right"></i> Sed massa tellus aliquam rhoncus venenatis
                             quis. </li>
-                        <li><i class="fa fa-arrow-circle-right"></i> Praesent odio tellus posuere sed dictum
-                            sed fermentum. </li>
-                        <li><i class="fa fa-arrow-circle-right"></i> Etiam enim Suspendisse imperdiet cursus
-                            nisi </li>
                     </ul>
-
                 </div>
                 <!--end item-->
             </div>
