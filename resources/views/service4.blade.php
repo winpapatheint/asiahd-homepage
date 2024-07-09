@@ -41,7 +41,7 @@
                 <h5 class="text-white uppercase">Services</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>
-            <img src="http://placehold.it/1920x600" alt="" class="img-responsive" />
+            <img src="{{ asset('images/service.jpg') }}" alt="" class="img-responsive" />
         </div>
     </section>
     <!-- end header inner -->
