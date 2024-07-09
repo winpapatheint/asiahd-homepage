@@ -124,13 +124,13 @@
                 <h3 class="ms-layer text16" style="top: 280px; left:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
+                {{-- <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
                     data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
                     consectetuer
                     adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3>
+                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
-                <a class="ms-layer sbut6 yellow" style="left: 230px; top: 400px;" data-type="text" data-delay="2000"
+                <a class="ms-layer sbut6 yellow" style="left: 230px; top: 350px;" data-type="text" data-delay="2000"
                     data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> SES/請負開発 </a>
             </div>
             <!-- end slide 1 -->
@@ -146,12 +146,12 @@
                 <h3 class="ms-layer text16" style="top: 280px; right:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
+                {{-- <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
                     data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
                     consectetuer adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3>
+                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
-                <a class="ms-layer sbut6 yellow" style="right: 230px; top: 400px;" data-type="text"
+                <a class="ms-layer sbut6 yellow" style="right: 230px; top: 350px;" data-type="text"
                     data-delay="2000" data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)">
                     IT導入支援 </a>
             </div>
@@ -169,13 +169,13 @@
                 <h3 class="ms-layer text16" style="top: 280px; left:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
+                {{-- <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
                     data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
                     consectetuer
                     adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3>
+                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
-                <a class="ms-layer sbut6 yellow" style="left: 230px; top: 400px;" data-type="text" data-delay="2000"
+                <a class="ms-layer sbut6 yellow" style="left: 230px; top: 350px;" data-type="text" data-delay="2000"
                     data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> 日本留学ナビ運営 </a>
             </div>
             <!-- end slide 3 -->
@@ -191,12 +191,12 @@
                 <h3 class="ms-layer text16" style="top: 280px; right:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
+                {{-- <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
                     data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
                     consectetuer adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3>
+                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
-                <a class="ms-layer sbut6 yellow" style="right: 230px; top: 400px;" data-type="text"
+                <a class="ms-layer sbut6 yellow" style="right: 230px; top: 350px;" data-type="text"
                     data-delay="2000" data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)">
                     EC事業 </a>
             </div>
