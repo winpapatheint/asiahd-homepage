@@ -80,7 +80,7 @@
                 <!--end item-->
 
                 <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
-                    <div class="col-md-12 bmargin"> <img src="http://placehold.it/850x350" alt=""
+                    <div class="col-md-12 bmargin"> <img src="{{ asset('images/ser04-2.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">Building Plan</h5>
                         <div class="divider-line solid margin yellow"></div>

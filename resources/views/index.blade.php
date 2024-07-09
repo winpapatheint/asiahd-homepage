@@ -386,8 +386,7 @@
                             </ul>
                             <div class="tabs-content10">
                                 <div id="example-10-tab-1" class="tabs-panel10">
-                                    <p><img src="http://placehold.it/80x80" alt=""
-                                            class="img-align-left" />Lorem
+                                    <p>Lorem
                                         ipsum dolor sit amet sit Praesent justo consectetuer adipiscing elit.
                                         Suspendisse et
                                         justo.</p>

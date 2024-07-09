@@ -66,7 +66,8 @@
                 <div class="col-md-8">
                     <div class="smart-forms bmargin">
                         <h3 class="raleway">お問合せ</h3>
-                        <p>内容によっては、お返事にお時間をいただく場合やお返事を差し上げられない場合がございます。あらかじめご了承ください。</p>
+                        <p>内容によっては、お返事にお時間をいただく場合やお返事を差し上げられない場合がございます。<br>
+                            あらかじめご了承ください。</p>
                         <br />
                         <br />
                         <form method="post" action="php/smartprocess.php" id="smart-form">
