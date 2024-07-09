@@ -107,7 +107,7 @@
                         販売者の出店は無料です。
                     </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">公式サイトはこちら</a> </div>
+                    <a class="btn btn-yellow btn-round" href="https://asian-food.site/">公式サイトはこちら</a> </div>
                     <!--end item-->
 
                     <div class="col-md-4 bmargin"> <img src="{{ asset('images/ser04-4.jpg') }}" alt="" class="img-responsive"/> <br/>
@@ -117,7 +117,7 @@
                         販売者の出店は無料です。
                     </p>
                     <br/>
-                    <a class="btn btn-yellow btn-round">公式サイトはこちらs</a>
+                    <a class="btn btn-yellow btn-round" href="https://new-style.life/">公式サイトはこちらs</a>
                 </div>
             </div>
         </div>

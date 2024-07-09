@@ -380,43 +380,29 @@
                             <br />
                             <div class="clearfix"></div>
                             <ul class="tabs10">
-                                <li><a href="#example-10-tab-1" target="_self">Design </a></li>
-                                <li><a href="#example-10-tab-2" target="_self">Develop</a></li>
-                                <li><a class="last" href="#example-10-tab-3" target="_self">Support</a></li>
+                                <li><a href="#example-10-tab-1" target="_self">デザイン </a></li>
+                                <li><a href="#example-10-tab-2" target="_self">開発</a></li>
+                                <li><a class="last" href="#example-10-tab-3" target="_self">サポート</a></li>
                             </ul>
                             <div class="tabs-content10">
                                 <div id="example-10-tab-1" class="tabs-panel10">
-                                    <p>Lorem
-                                        ipsum dolor sit amet sit Praesent justo consectetuer adipiscing elit.
-                                        Suspendisse et
-                                        justo.</p>
-                                    <br />
-                                    <p>Lorem ipsum dolor sit amet sit et justo consectetuer adipiscing elit. Suspendisse
-                                        et
-                                        amet justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras
-                                        tellus. In pulvinar</p>
+                                    <p>事業やサービスの成長を目的として、デスクリサーチを行い、勝ち筋を導きます。</p>
+                                    <br>
+                                    <p>何からすれば良いか分からない方でも、デザインチームがお客さまと伴走して事業・サービスの成長をご支援いたします。</p>
                                 </div>
                                 <!-- end tab 1 -->
 
                                 <div id="example-10-tab-2" class="tabs-panel10">
-                                    <p>Lorem ipsum dolor sit amet sit Praesent justo consectetuer adipiscing elit.
-                                        Suspendisse et justo.</p>
+                                    <p>サイトの設計・構築をはじめ、目的達成までの最適なWebディレクションを行います。</p>
                                     <br />
-                                    <p>Lorem ipsum dolor sit amet sit et justo consectetuer adipiscing elit. Suspendisse
-                                        et
-                                        amet justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras
-                                        tellus. In pulvinar lectus a est Curabitur Suspendisse et amet.</p>
+                                    <p>加えて、追加またはリニューアルをするページやコンテンツのデザイン、コーディング、継続的な更新、修正、改善など、さまざまなWeb制作業務にも対応します。</p>
                                 </div>
                                 <!-- end tab 2 -->
 
-                                <div id="example-10-tab-3" class="tabs-panel10"> <strong>Lorem ipsum dolor sit amet,
-                                        consectetuer adipiscing elit ?</strong><br />
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.
-                                        Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In
-                                        pulvinar lectus a est Curabitur.</p>
+                                <div id="example-10-tab-3" class="tabs-panel10">
+                                    <p>ホームページやシステムのメンテナンス作業業務、アクセス解析、サーバー管理などの運用保守サービスを行います。</p>
                                     <br />
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.
-                                    </p>
+                                    <p>ほかに、広報用のチラシの作成など業務にも対応します。</p>
                                 </div>
                                 <!-- end tab 3 -->
 
@@ -436,11 +422,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <br />
-                                <a href="#">
-                                    <h5>私たちのビジョン</h5>
-                                </a>
-                                <p>ソフトウェア開発を通して、中小企業のDX化推進支援と、人々の生活に必要な便利なツールをご提供します。
-                                </p>
+                                <p>ソフトウェア開発を通して、中小企業のDX化推進支援と、人々の生活に必要な便利なツールをご提供します。</p>
                             </div>
                         </div>
                     </div>
