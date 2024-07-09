@@ -290,7 +290,7 @@
                             <li><a href="{{ url('/') }}"><i class="fa fa-angle-right"></i>HOME</a></li>
                             <li><a href="{{ url('/about') }}"><i class="fa fa-angle-right"></i>会社概要</a></li>
                             <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>開発実績</a></li>
-                            <li><a href="{{ url('/service') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
+                            <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
                         </ul>
                     </div>
                     <!--end item-->

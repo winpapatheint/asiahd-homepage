@@ -181,9 +181,7 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white"> 日本国内の340万人の外国人消費者にアジア食彩を販売する日本語と英語を併用するECモールです。
-                                    出店者は、日本国内に拠点をもつ事業主です。
-                                </p>
+                                <p class="text-white"> 日本国内の340万人の外国人消費者にアジア食品を提供するECモールです。日本語と英語を併用して利用できます。</p>
                             </div>
                             <img src="{{ asset('images/asfm.jpg') }}" alt="" class="img-responsive" />
                         </div>
@@ -199,9 +197,7 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white">日本国内の消費者向けに商品を販売する日本語と英語を併用するECモールです。
-                                    出店者は海外からも出店可能です。
-                                </p>
+                                <p class="text-white">日本国内消費者向けに商品を販売するECモールです。日本語と英語を併用して利用可能です。</p>
                             </div>
                             <img src="{{ asset('images/nsl.jpg') }}" alt="" class="img-responsive" />
                         </div>
@@ -217,9 +213,7 @@
                     <div class="team-holder5 text-center bmargin">
                         <div class="image-holder">
                             <div class="hover-box">
-                                <p class="text-white">New Style Life（新生活）ECモールと自動連係するECモールです。
-                                    New Style Lifeの出店者は、手間をかけずに本モールで、海外消費者向けに商品の販売ができます。
-                                </p>
+                                <p class="text-white">New Style Life（新生活）から日本製品だけ自動同期されるECモールです。日本製品を海外向けに販売できます。</p>
                             </div>
                             <img src="{{ asset('images/mdin.jpg') }}" alt="" class="img-responsive" />
                         </div>

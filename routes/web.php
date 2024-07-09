@@ -41,8 +41,6 @@ Route::get('/service1', [UserController::class, 'service1']);
 Route::get('/service2', [UserController::class, 'service2']);
 Route::get('/service3', [UserController::class, 'service3']);
 Route::get('/service4', [UserController::class, 'service4']);
-Route::get('/service4_1', [UserController::class, 'service4_1']);
-Route::get('/service4_2', [UserController::class, 'service4_2']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::get('/privacy', [UserController::class,'privacy']);
 
