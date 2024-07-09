@@ -85,11 +85,12 @@
                         <h5 class="uppercase less-mar1">日本留学ナビ運営</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>日本No1の日本留学案内総合サイトです。
-                            78校以上の厳選された優良な日本語学校に留学できます。
-                            あなたの日本での成功をお手伝いします。</p>
+                            78校以上の厳選された優良な日本語学校に留学できます。<br>
+                            あなたの日本での成功をお手伝いします。</p><br>
+                        <a class="btn btn-yellow btn-round" href="http://www.studyjapan.info/" target="_blank">公式サイトはこちら</a>
+
                     </div>
-                    <!--end item-->
-                </div>
+                                    </div>
             </div>
         </div>
     </section>
