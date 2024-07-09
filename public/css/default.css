@@ -5943,10 +5943,13 @@ div.demo .title span {
     background: #1fbef0 url(../images/scroll-top-arrow.png) no-repeat 15px 16px;
 }
 
+.about {
+    width: 100;
+}
 
 .layout {
     width: 100%;
-    max-width: 800px;
+
     margin: 40px auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -6053,7 +6056,6 @@ div.demo .title span {
 .section-p {
     margin-top: 20px;
     padding: 10px;
-    border-left: 5px solid #71ac34;
     background-color: #f9faf2;
 }
 

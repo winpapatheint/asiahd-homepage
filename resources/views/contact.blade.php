@@ -145,7 +145,7 @@
                     <h6><strong>アジア人材開発株式会社</strong></h6>
                     〒171-0014 <br>
                     東京都豊島区池袋4-27-5 和田ビル502号 <br />
-                    Telephone: 03-3981-5090<br />
+                    TEL: 03-3981-5090<br />
                     FAX: 03-3981-5092<br />
                     <br />
                     E-mail: <a href="mailto:email@example.com">info@asia-hd.com</a><br />

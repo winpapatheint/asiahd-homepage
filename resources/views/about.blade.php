@@ -86,7 +86,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-left nopadding">
+            <div class="layout">
                 <div class="title_r">会社概要</div>
                 <table class="job-listing">
                     <tr>
@@ -130,6 +130,7 @@
             </div>
         </div>
     </div>
+
 
     <section class="sec-padding">
         <div class="container">

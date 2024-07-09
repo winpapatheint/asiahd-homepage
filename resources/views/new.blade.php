@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="blog-holder6 bmargin">
-                        <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                        <div class="post-date-box"> 25 <span>05, 2020</span> </div>
                         <img src="https://media.istockphoto.com/id/1411389613/photo/treelined-footpath-in-morning-fog-in-autumn-colored-forest.webp?b=1&s=170667a&w=0&k=20&c=SZhH4WCyCs24s1r00enpgmRGoP1zs-nx_p1Lakpv6-0=" alt="" class="img-responsive" />
                     </div>
                 </div>
@@ -93,7 +93,7 @@
 
                 <div class="col-md-6">
                     <div class="blog-holder6 bmargin">
-                        <div class="post-date-box"> 25 <span>May, 2020</span> </div>
+                        <div class="post-date-box"> 25 <span>05, 2020</span> </div>
                         <img src="https://media.istockphoto.com/id/1411389613/photo/treelined-footpath-in-morning-fog-in-autumn-colored-forest.webp?b=1&s=170667a&w=0&k=20&c=SZhH4WCyCs24s1r00enpgmRGoP1zs-nx_p1Lakpv6-0=" alt="" class="img-responsive" />
                     </div>
                 </div>
