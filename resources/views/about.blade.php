@@ -159,70 +159,79 @@
                     <h4 class="section-title uppercase">運営サイト</h4>
                     <div class="title-line-8 yellow left"></div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="team-holder5 text-center bmargin">
-                        <div class="image-holder">
-                            <div class="hover-box">
-                                <p class="text-white"> 日本No1の日本留学案内総合サイトです。
-                                    78校以上の厳選された優良な日本語学校に留学できます。あなたの日本での成功をお手伝いします。
-                                </p>
+
+                <a href="http://www.studyjapan.info/" target="_blank">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-holder5 text-center bmargin">
+                            <div class="image-holder">
+                                <div class="hover-box">
+                                    <p class="text-white"> 日本No1の日本留学案内総合サイトです。
+                                        78校以上の厳選された優良な日本語学校に留学できます。あなたの日本での成功をお手伝いします。
+                                    </p>
+                                </div>
+                                <img src="{{ asset('images/navi.jpg') }}" alt="" class="img-responsive" />
                             </div>
-                            <img src="{{ asset('images/navi.jpg') }}" alt="" class="img-responsive" />
+                            <div class="clearfix"></div>
+                            <br />
+                            <h5 class="less-mar1">日本留学ナビ</h5>
+                            {{-- <span class="text-yellow">Founder and CEO</span> --}}
                         </div>
-                        <div class="clearfix"></div>
-                        <br />
-                        <h5 class="less-mar1">日本留学ナビ</h5>
-                        {{-- <span class="text-yellow">Founder and CEO</span> --}}
                     </div>
-                </div>
+                </a>
                 <!--end item-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="team-holder5 text-center bmargin">
-                        <div class="image-holder">
-                            <div class="hover-box">
-                                <p class="text-white"> 日本国内の340万人の外国人消費者にアジア食品を提供するECモールです。日本語と英語を併用して利用できます。</p>
+                <a href="https://asian-food.site/" target="_blank">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-holder5 text-center bmargin">
+                            <div class="image-holder">
+                                <div class="hover-box">
+                                    <p class="text-white">日本国内の340万人の外国人消費者にアジア食品を提供するECモールです。日本語と英語を併用して利用できます。</p>
+                                </div>
+                                <img src="{{ asset('images/asfm.jpg') }}" alt="" class="img-responsive" />
                             </div>
-                            <img src="{{ asset('images/asfm.jpg') }}" alt="" class="img-responsive" />
+                            <div class="clearfix"></div>
+                            <br />
+                            <h5 class="less-mar1">アジア食彩館</h5>
+                            {{-- <span class="text-yellow">Architect</span> --}}
                         </div>
-                        <div class="clearfix"></div>
-                        <br />
-                        <h5 class="less-mar1">アジア食彩館</h5>
-                        {{-- <span class="text-yellow">Architect</span> --}}
                     </div>
-                </div>
+                </a>
                 <!--end item-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="team-holder5 text-center bmargin">
-                        <div class="image-holder">
-                            <div class="hover-box">
-                                <p class="text-white">日本国内消費者向けに商品を販売するECモールです。日本語と英語を併用して利用可能です。</p>
+                <a href="https://new-style.life/" target="_blank">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-holder5 text-center bmargin">
+                            <div class="image-holder">
+                                <div class="hover-box">
+                                    <p class="text-white">日本国内消費者向けに商品を販売するECモールです。日本語と英語を併用して利用可能です。</p>
+                                </div>
+                                <img src="{{ asset('images/nsl.jpg') }}" alt="" class="img-responsive" />
                             </div>
-                            <img src="{{ asset('images/nsl.jpg') }}" alt="" class="img-responsive" />
+                            <div class="clearfix"></div>
+                            <br />
+                            <h5 class="less-mar1">New Style Life（新生活）</h5>
+                            {{-- <span class="text-yellow">Project Menager</span> --}}
                         </div>
-                        <div class="clearfix"></div>
-                        <br />
-                        <h5 class="less-mar1">New Style Life（新生活）</h5>
-                        {{-- <span class="text-yellow">Project Menager</span> --}}
                     </div>
-                </div>
+                </a>
                 <!--end item-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="team-holder5 text-center bmargin">
-                        <div class="image-holder">
-                            <div class="hover-box">
-                                <p class="text-white">New Style Life（新生活）から日本製品だけ自動同期されるECモールです。日本製品を海外向けに販売できます。</p>
+                <a href="https://madein-japan.com/" target="_blank">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-holder5 text-center bmargin">
+                            <div class="image-holder">
+                                <div class="hover-box">
+                                    <p class="text-white">New Style Life（新生活）から日本製品だけ自動同期されるECモールです。日本製品を海外向けに販売できます。</p>
+                                </div>
+                                <img src="{{ asset('images/mdin.jpg') }}" alt="" class="img-responsive" />
                             </div>
-                            <img src="{{ asset('images/mdin.jpg') }}" alt="" class="img-responsive" />
+                            <div class="clearfix"></div>
+                            <br />
+                            <h5 class="less-mar1"></h5>
+                            {{-- <span class="text-yellow">Finance Manager</span> --}}
                         </div>
-                        <div class="clearfix"></div>
-                        <br />
-                        <h5 class="less-mar1">Made in Japan(日本製品）</h5>
-                        {{-- <span class="text-yellow">Finance Manager</span> --}}
                     </div>
-                </div>
+                </a>
                 <!--end item-->
             </div>
         </div>
