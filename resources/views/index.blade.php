@@ -449,7 +449,7 @@
                             <div class="feature-box30 bmargin">
                                 <div class="iconbox-large left">
                                     <div class="img-holder">
-                                        <div class="img-inner overflow-hidden"> <img src="http://placehold.it/120x120"
+                                        <div class="img-inner overflow-hidden"> <img src="{{ asset('images/co01.png') }}"
                                                 alt="" class="img-responsive" /> </div>
                                     </div>
                                 </div>
@@ -468,7 +468,7 @@
                             <div class="feature-box30 bmargin">
                                 <div class="iconbox-large left">
                                     <div class="img-holder">
-                                        <div class="img-inner overflow-hidden"> <img src="http://placehold.it/120x120"
+                                        <div class="img-inner overflow-hidden"> <img src="{{ asset('images/co02.png') }}"
                                                 alt="" class="img-responsive" /> </div>
                                     </div>
                                 </div>
