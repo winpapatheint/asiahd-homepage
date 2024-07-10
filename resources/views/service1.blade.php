@@ -79,7 +79,7 @@
                 </div>
                 <!--end item-->
 
-                <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
+                <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="col-md-12 bmargin"> <img src="{{ asset('images/ser01.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">SES/請負開発</h5>
@@ -101,5 +101,5 @@
         </div>
     </section>
     <!--end section-->
-    <div class="clearfix"></div>
+
 </x-guest-layout>

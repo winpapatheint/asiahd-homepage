@@ -127,7 +127,7 @@
         <div class="clearfix"></div>
 
 
-        <section class="sec-padding">
+        <section class="sec-padding-pj">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-left nopadding">

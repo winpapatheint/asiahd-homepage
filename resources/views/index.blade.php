@@ -124,12 +124,6 @@
                 <h3 class="ms-layer text16" style="top: 280px; left:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                {{-- <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
-                    data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
-                    consectetuer
-                    adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
-
                 <a class="ms-layer sbut6 yellow" style="left: 230px; top: 350px;" data-type="text" data-delay="2000"
                     data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> SES/請負開発 </a>
             </div>
@@ -145,11 +139,6 @@
 
                 <h3 class="ms-layer text16" style="top: 280px; right:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
-
-                {{-- <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
-                    data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
-                    consectetuer adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
                 <a class="ms-layer sbut6 yellow" style="right: 230px; top: 350px;" data-type="text"
                     data-delay="2000" data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)">
@@ -169,12 +158,6 @@
                 <h3 class="ms-layer text16" style="top: 280px; left:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
 
-                {{-- <h3 class="ms-layer text17" style="top: 330px; left:230px;" data-type="text" data-effect="top(45)"
-                    data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
-                    consectetuer
-                    adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
-
                 <a class="ms-layer sbut6 yellow" style="left: 230px; top: 350px;" data-type="text" data-delay="2000"
                     data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)"> 日本留学ナビ運営 </a>
             </div>
@@ -190,11 +173,6 @@
 
                 <h3 class="ms-layer text16" style="top: 280px; right:230px;" data-type="text" data-delay="1000"
                     data-ease="easeOutExpo" data-duration="1230" data-effect="scale(1.5,1.6)"> your visions</h3>
-
-                {{-- <h3 class="ms-layer text7" style="top: 330px; right:230px;" data-type="text" data-effect="top(45)"
-                    data-duration="2000" data-delay="1500" data-ease="easeOutExpo"> Lorem ipsum dolor sit amet
-                    consectetuer adipiscing elit Suspendisse et justo <br />
-                    Praesent mattis commodo augue Aliquam ornare. </h3> --}}
 
                 <a class="ms-layer sbut6 yellow" style="right: 230px; top: 350px;" data-type="text"
                     data-delay="2000" data-ease="easeOutExpo" data-duration="1200" data-effect="scale(1.5,1.6)">
@@ -212,10 +190,6 @@
                         <h3 class="text-white less-mar3">情熱と技術が国境を越え、グローバル展開へ！</h3>
                         <p class="text-white">様々な経験者・技術者が、国境を越え技術を集結し挑戦して参ります。</p>
                     </div>
-                    {{-- <div class="col-md-3">
-                <div class="margin-top2"></div>
-                <a class="btn btn-border white btn-large pull-right" href="#">Read more</a>
-            </div> --}}
                 </div>
             </div>
         </section>
@@ -231,7 +205,6 @@
                         <div class="divider-line solid yellow margin"></div>
                         <p>ソフト開発において、顧客のニーズにマッチする実践力のあ るエンジニアをご提案します。</p>
                         <br />
-                        {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
                     <!--end item-->
 
@@ -241,7 +214,6 @@
                         <div class="divider-line solid yellow margin"></div>
                         <p>弊社保有のITパッケージを手ごろな価格で中小企業に提供し、 中小企業の売上向上に貢献します。</p>
                         <br />
-                        {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
                     <!--end item-->
 
@@ -251,7 +223,6 @@
                         <div class="divider-line solid yellow margin"></div>
                         <p>EC/ECモールの構築やECモールの運営で、人々に必要な商品を届けします。</p>
                         <br />
-                        {{-- <a class="btn btn-yellow btn-round">Read more</a> --}}
                     </div>
                     <!--end item-->
 
@@ -418,7 +389,7 @@
                             <br />
                             <div class="feature-box29">
                                 <div class="image-holder">
-                                    <img src="http://placehold.it/400x200" alt="" class="img-responsive" />
+                                    <img src="{{ asset('images/Vision.jpg') }}" alt="" class="img-responsive" />
                                 </div>
                                 <div class="clearfix"></div>
                                 <br />

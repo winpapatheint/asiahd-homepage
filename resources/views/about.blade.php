@@ -91,7 +91,7 @@
                 <table class="job-listing">
                     <tr>
                         <th>商号</th>
-                        <td>アジア人材開発株式会社
+                        <td>アジア人材開発株式会社<br>
                             Asia Human Development, Inc.</td>
                     </tr>
                     <tr>
@@ -145,14 +145,6 @@
     <div class="clearfix"></div>
 
     <section class="sec-padding">
-        {{-- <div class="container">
-            <div class="row">
-                <h5 class="uppercase less-mar1">組織体制</h5>
-                <div class="divider-line solid margin yellow"></div>
-                <div class="col-md-6"> <img src="https://asia-hd.com/img/institution2.jpg" class="img-responsive" /> <br />
-            </div>
-        </div> --}}
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-left nopadding">

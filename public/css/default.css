@@ -3291,6 +3291,9 @@ a.topbar-btn.active {
 .sec-padding {
     padding: 80px 0 80px 0;
 }
+.sec-padding-pj {
+    padding: 80px 0 100px 0;
+}
 .sec-bpadding-2 {
     padding-bottom: 80px;
 }
