@@ -816,7 +816,7 @@ Construction layout Styles
 	margin: 0px;
 	border-radius: 100%;
 	transition: all 0.3s ease-out 0s;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: #514f4f;
 }
 .feature-box30 .img-holder .img-inner {
 	width: 110px;

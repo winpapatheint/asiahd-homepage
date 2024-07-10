@@ -6082,10 +6082,9 @@ div.demo .title span {
 
 .service {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 30%;
-    max-width: 600px;
-    line-height: 2;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 30px;
+    line-height: 3;
 }
 
 @media (max-width: 600px) {
@@ -6094,3 +6093,4 @@ div.demo .title span {
         gap: 10px 0;
     }
 }
+

@@ -79,7 +79,7 @@
                 </div>
                 <!--end item-->
 
-                <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
+                <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="col-md-12 bmargin"> <img src="{{ asset('images/ser02.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">IT導入支援</h5>
@@ -96,6 +96,7 @@
                             <div class="col-left">・予約システム</div>
                             <div class="col-left">・顧客管理システム</div>
                             <div class="col-left">・ECサイト/ECモール</div>
+                            <div class="col-left">・宿泊予約システム</div>
                         </div>
                     </div>
                     <!--end item-->

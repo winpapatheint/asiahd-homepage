@@ -69,7 +69,7 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12 bmargin">
+                <div class="col-md-3 col-sm-12 col-xs-12">
                     <ul class="side-nav-list">
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i> &nbsp;SES/請負開発 </a></li>
                         <li><a href="{{ url('/service2') }}"><i class="fa fa-angle-right"></i> &nbsp;IT導入支援 </a></li>
@@ -79,7 +79,7 @@
                 </div>
                 <!--end item-->
 
-                <div class="col-md-9 col-sm-12 col-xs-12 bmargin">
+                <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="col-md-12 bmargin"> <img src="{{ asset('images/ser03.jpg') }}" alt=""
                             class="img-responsive" /> <br />
                         <h5 class="uppercase less-mar1">日本留学ナビ運営</h5>
@@ -88,9 +88,8 @@
                             78校以上の厳選された優良な日本語学校に留学できます。<br>
                             あなたの日本での成功をお手伝いします。</p><br>
                         <a class="btn btn-yellow btn-round" href="http://www.studyjapan.info/" target="_blank">公式サイトはこちら</a>
-
                     </div>
-                                    </div>
+                </div>
             </div>
         </div>
     </section>
