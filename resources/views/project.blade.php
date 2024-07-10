@@ -127,7 +127,7 @@
         <div class="clearfix"></div>
 
 
-        <section class="sec-padding-pj">
+        <section class="sec-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-left nopadding">
@@ -139,7 +139,7 @@
                     </div>
                     <div class="clearfix"></div>
 
-                    <div class="demo-full-width">
+                    <div class="demo-full-width bmargin">
                         <div id="grid-container" class="cbp">
                             <div class="cbp-item identity logos">
                                 <a href="{{url('/project1')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
