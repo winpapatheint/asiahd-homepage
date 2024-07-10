@@ -227,7 +227,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <br />
-                            <h5 class="less-mar1"></h5>
+                            <h5 class="less-mar1">Made in Japan（日本製品）</h5>
                             {{-- <span class="text-yellow">Finance Manager</span> --}}
                         </div>
                     </div>
