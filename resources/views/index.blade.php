@@ -663,7 +663,6 @@
     <script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
     <script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
-
     <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
 </body>
 

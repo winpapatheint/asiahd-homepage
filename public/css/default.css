@@ -2428,6 +2428,7 @@ a.read-more.cyan:hover {
     padding: 0;
     width: 100%;
     z-index: 999;
+    box-shadow: 8px 0 10px rgba(0, 0, 0, 0.1);
 }
 #header2 {
     position: relative;

@@ -116,7 +116,7 @@
                         </div>
 
                         <div class="col-md-6 text-right">
-                            <div class="pagenation_links"><a href="index.html">Home</a> <i>/</i> Projects
+                            <div class="pagenation_links">Home <i>/</i> Projects
                             </div>
                         </div>
                     </div>
