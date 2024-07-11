@@ -816,7 +816,7 @@ Construction layout Styles
 	margin: 0px;
 	border-radius: 100%;
 	transition: all 0.3s ease-out 0s;
-	background-color: #514f4f;
+	background-color: #507925;
 }
 .feature-box30 .img-holder .img-inner {
 	width: 110px;
@@ -836,7 +836,7 @@ Construction layout Styles
 	padding: 0 0 0 141px;
 }
 .feature-box30:hover .img-holder, .feature-box30.active .img-holder {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: #514f4f;
 }
 /*============ Team Section ============ */
 /* Team Style 5
