@@ -99,7 +99,7 @@
                                 </ul>
                             </li>
                             <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
-                            <li> <a href="{{ url('/recruit') }}" class="dropdown-toggle">採用情報</a></li>
+                            <li> <a href="{{ url('/recruit') }}" class="dropdown-toggle active">採用情報</a></li>
                             <li> <a href="{{ url('/contact') }}" class="dropdown-toggle">お問合せ</a></li>
                         </ul>
                     </div>
