@@ -44,5 +44,5 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::get('/privacy', [UserController::class,'privacy']);
 
-
+Route::post('/addproject', [AdminController::class, 'saveProject']);
 

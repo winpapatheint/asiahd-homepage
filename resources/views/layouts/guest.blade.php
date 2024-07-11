@@ -108,6 +108,7 @@
                     <div class="footer-title-bottomstrip"></div>
                     <ul class="usefull-links yellow">
                         <li><a href="{{ url('/news') }}"><i class="fa fa-angle-right"></i>新着情報</a></li>
+                        <li><a href="{{ url('/recruit') }}"><i class="fa fa-angle-right"></i>採用情報</a></li>
                         <li><a href="{{ url('/contact') }}"><i class="fa fa-angle-right"></i>お問合せ</a></li>
                         <li><a href="{{ url('/privacy') }}"><i class="fa fa-angle-right"></i>プライバシーポリシー</a></li>
                     </ul>

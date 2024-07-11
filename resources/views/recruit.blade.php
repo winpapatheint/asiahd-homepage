@@ -65,7 +65,7 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-
+                <div class="layout">
                     <div class="title_r">募集要項</div>
                     <table class="job-listing">
                         <tr>
