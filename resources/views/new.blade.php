@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Hasta - Responsive MultiPurpose HTML5 Template</title>
+<title>Asia Human Development, Inc.</title>
 <meta charset="utf-8">
 <!-- Meta -->
 <meta name="keywords" content="" />
@@ -22,21 +22,41 @@
 <link href='https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="js/bootstrap/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="js/mainmenu/menu.css" type="text/css" />
-<link rel="stylesheet" href="css/default.css" type="text/css" />
-<link rel="stylesheet" href="css/layouts.css" type="text/css" />
-<link rel="stylesheet" href="css/shortcodes.css" type="text/css" />
-<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" media="screen" href="css/responsive-leyouts.css" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
-<link rel="stylesheet" href="css/et-line-font/et-line-font.css">
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link rel="stylesheet" href="js/jFlickrFeed/style.css" />
+<link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/layouts.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/shortcodes.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
+<link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" media="screen" />
+<link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
+<link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
 </head>
 
 <body>
 <div class="site_wrapper">
+    <div class="topbar dark topbar-padding">
+        <div class="container">
+            <div class="topbar-left-items">
+                <ul class="toplist toppadding pull-left paddtop1">
+                    <li class="rightl"><i class="fa fa-phone"></i>03-3981-5090</li>
+                    <li><i class="fa fa-envelope"></i>info@asia-hd.com</li>
+                </ul>
+            </div>
+            <!--end left-->
+
+            <div class="topbar-right-items pull-right">
+                <ul class="toplist toppadding">
+                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+                    <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
     <div id="header">
         <div class="container">
             <div class="navbar yellow navbar-default yamm">

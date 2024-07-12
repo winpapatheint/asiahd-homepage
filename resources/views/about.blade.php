@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Hasta - Responsive MultiPurpose HTML5 Template</title>
+<title>Asia Human Development, Inc.</title>
 <meta charset="utf-8">
 <!-- Meta -->
 <meta name="keywords" content="" />
