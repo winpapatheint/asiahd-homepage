@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SectionStory;
+use App\Models\Story;
 use App\Models\User;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
@@ -112,6 +114,13 @@ class UserController extends Controller
     public function privacy()
     {
         return view('privacy');
+    }
+
+    public function story()
+    {
+        $sectionStories = SectionStory::all();
+        $stories = Story::all();
+        return view('story', compact('sectionStories', 'stories'));
     }
 
 }

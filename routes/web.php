@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,10 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('login', [AuthController::class, 'showLoginForm']);
-Route::post('login', [AuthController::class, 'login']);
-Route::get('logout', [AuthController::class, 'logout']);
-Route::get('forgetpassword', [AuthController::class, 'showForgetPassword']);
-Route::post('password/reset', [AuthController::class, 'reset']);
+// login
+Route::get('admin/login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('admin.login');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('admin.logout');
 
 Route::get('dashboard', [AdminController::class,'dashboard']);
 
@@ -44,6 +44,7 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact/submit', [UserController::class,'submitContactForm']);
 Route::get('/privacy', [UserController::class,'privacy']);
+Route::get('/story', [UserController::class, 'story']);
 
 Route::get('/admin/project', [AdminController::class,'allProject']);
 Route::get('/admin/news', [AdminController::class,'allNews']);
