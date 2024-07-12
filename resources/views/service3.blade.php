@@ -79,7 +79,7 @@
                 <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                     <ul class="nav yellow navbar-nav">
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
-                        <li> <a href="{{ url('/about') }}" class="dropdown-toggle active">会社概要</a></li>
+                        <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
                         <li class="dropdown">
                             <a href="{{ url('/service1') }}" class="active">サービス案内</a>

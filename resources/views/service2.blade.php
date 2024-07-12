@@ -81,7 +81,7 @@
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
                         <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                         <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="{{ url('/service1') }}" class="active">サービス案内</a>
                             <ul class="dropdown-menu five" role="menu">
                                 <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>

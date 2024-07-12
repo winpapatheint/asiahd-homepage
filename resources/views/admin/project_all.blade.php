@@ -97,7 +97,9 @@
             <div class="container">
                 <div class="row">
                     <h2 class="align-item">開発実績管理</h2>
-                <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
+                <a href="">
+                    <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
+                </a>
                 <table class="table-back">
                     <thead>
                         <tr>
