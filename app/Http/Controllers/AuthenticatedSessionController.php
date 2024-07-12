@@ -21,7 +21,7 @@ class AuthenticatedSessionController extends Controller
         $user = Auth::user();
 
         if (!empty($user)) {
-            return redirect('/admin');
+            return redirect('/admin/project');
         }
 
         return view('auth.login');
@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
         $loginUser = User::where('email', $request->email)->first();
         if((!$loginUser) || (!Hash::check($request->password, $loginUser->password)))
         {
-            return back()->with('error', 'Incorrect!')->with('incorrect', 'Email or password is incorrect!');
+            return redirect()->back()->with('error', 'Incorrect Email or password!');
         }
 
         $request->authenticate();

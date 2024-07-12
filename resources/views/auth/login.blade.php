@@ -135,12 +135,13 @@
                             <h3 class="raleway">Login</h3>
                             <br />
                             <br />
+                            @include('components.messagebox')
                             <form method="post" action="{{ route('admin.login') }}" id="login-form">
                                 @csrf
                                 <div>
                                     <div class="section">
                                         <label class="field prepend-icon">
-                                            <input type="email" name="email" id="email"
+                                            <input type="email" name="email" id="email"  value="{{ old('email') }}"
                                                 class="gui-input" placeholder="Email" style="min-width: 400px;">
                                             <span class="field-icon"><i class="fa fa-user"></i></span> 
                                             <span class="error" style="color:red" id="error-email"></span>
@@ -149,7 +150,7 @@
 
                                     <div class="section">
                                         <label class="field prepend-icon">
-                                            <input type="password" name="password" id="password"
+                                            <input type="password" name="password" id="password"  value="{{ old('password') }}"
                                                 class="gui-input" placeholder="Password" style="min-width: 400px;">
                                             <span class="field-icon"><i class="fa fa-key"></i></span>
                                             <span class="error" style="color:red" id="error-password"></span>
@@ -262,12 +263,15 @@
 
         if (!email) {
             isValid = false;
-            document.getElementById("error-email").textContent = "Enter your email";
+            document.getElementById("error-email").textContent = "Please provide your email";
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            isValid = false;
+            document.getElementById('error-email').textContent = 'Please provide a valid email address.';
         }
 
         if (!password) {
             isValid = false;
-            document.getElementById("error-password").textContent = "Enter your password";
+            document.getElementById("error-password").textContent = "Please provide your password";
         }
 
         if (isValid) {

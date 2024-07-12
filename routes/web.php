@@ -19,7 +19,7 @@ use App\Http\Controllers\AuthenticatedSessionController;
 // login
 Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('admin.login');
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('admin.logout');
+Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('admin.logout');
 
 Route::get('dashboard', [AdminController::class,'dashboard']);
 

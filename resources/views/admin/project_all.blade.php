@@ -82,7 +82,7 @@
                                     <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle">新着情報</a></li>
                                     <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle">広告情報</a></li>
                                     <li> <a href="#" class="dropdown-toggle">パスワード修正</a></li>
-                                    <li> <a href="#" class="logout-link">ログアウト</a></li>
+                                    <li> <a href="{{ url('/logout') }}" class="logout-link">ログアウト</a></li>
                                 </ul>
                             </div>
                         </ul>
