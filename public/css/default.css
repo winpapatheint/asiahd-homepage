@@ -2920,7 +2920,7 @@ a.topbar-btn.active {
     background-color: #fff;
 }
 
-/* title bottom line 4
+/* title bottom line
  ------------------------------ */
 .title-line-4 {
     width: 34px;
@@ -6094,4 +6094,16 @@ div.demo .title span {
         gap: 10px 0;
     }
 }
+
+.logout-link {
+    color: black !important;;
+    margin: 25px 15px;
+    background-color: #71ac34;
+    padding: 10px 10px !important;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
 

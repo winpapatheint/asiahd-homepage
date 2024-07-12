@@ -28,6 +28,17 @@ class AdminController extends Controller
         return view('admin.dashboard');
     }
 
+    public function allProject()
+    {
+        return view('admin.project_all');
+    }
+
+    public function allNews()
+    {
+        return view('admin.news_all');
+    }
+
+
     public function saveProject(Request $request)
     {
         $project = new Project();
@@ -48,5 +59,6 @@ class AdminController extends Controller
 
         return back()->with('success', 'Data added successfully!');
     }
+
 
 }

@@ -55,13 +55,6 @@
                     </ul>
                 </div>
                 <!--end left-->
-                <div class="topbar-right-items pull-right">
-                    <ul class="toplist toppadding">
-                        <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-                        <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -78,21 +71,9 @@
                     </div>
                     <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                         <ul class="nav yellow navbar-nav">
-                            <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
-                            <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
                             <li> <a href="{{ url('/project') }}" class="dropdown-toggle active">開発実績</a></li>
-                            <li class="dropdown">
-                                <a href="{{ url('/service1') }}">サービス案内</a>
-                                <ul class="dropdown-menu five" role="menu">
-                                    <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
-                                    <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
-                                    <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
-                                    <li><a href="{{ url('/service4') }}">EC事業</a></li>
-                                </ul>
-                            </li>
                             <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
-                            <li> <a href="{{ url('/recruit') }}" class="dropdown-toggle">採用情報</a></li>
-                            <li> <a href="{{ url('/contact') }}" class="dropdown-toggle">お問合せ</a></li>
+                            <li> <a href="#" class="dropdown-toggle">広告情報</a></li>
                         </ul>
                     </div>
                 </div>
@@ -113,26 +94,6 @@
         </section>
         <!-- end header inner -->
         <div class="clearfix"></div>
-
-        <section>
-            <div class="pagenation-holder">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Projects</h3>
-                        </div>
-
-                        <div class="col-md-6 text-right">
-                            <div class="pagenation_links">Home <i>/</i> Projects
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--end section-->
-        <div class="clearfix"></div>
-
 
         <section class="sec-padding">
             <div class="container">

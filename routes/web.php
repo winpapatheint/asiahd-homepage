@@ -45,5 +45,8 @@ Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact/submit', [UserController::class,'submitContactForm']);
 Route::get('/privacy', [UserController::class,'privacy']);
 
+Route::get('/admin/project', [AdminController::class,'allProject']);
+Route::get('/admin/news', [AdminController::class,'allNews']);
 Route::post('/addproject', [AdminController::class, 'saveProject']);
+
 
