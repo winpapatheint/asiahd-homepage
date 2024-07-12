@@ -1,66 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<title>Asia Human Development, Inc.</title>
+<meta charset="utf-8">
+<!-- Meta -->
+<meta name="keywords" content="" />
+<meta name="author" content="">
+<meta name="robots" content="" />
+<meta name="description" content="" />
+
+<!-- this styles only adds some repairs on idevices  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="{{ asset('images/asiahd_slogo.png') }}">
+
+<!-- Google fonts - witch you want to use - (rest you can just remove) -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/layouts.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/shortcodes.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
+<link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" media="screen" />
+<link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
+<link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
 </head>
 
-<body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand" href="index.html">Dashboard</a>
-
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-            </div>
-        </form>
-        <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{ url('logout') }}">Logout</a></li>
+<body>
+<div class="site_wrapper">
+    <div class="topbar dark topbar-padding">
+        <div class="container">
+            <div class="topbar-left-items">
+                <ul class="toplist toppadding pull-left paddtop1">
+                    <li class="rightl"><i class="fa fa-phone"></i>03-3981-5090</li>
+                    <li><i class="fa fa-envelope"></i>info@asia-hd.com</li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
-    <div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                <div class="sb-sidenav-menu">
-                    <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Admin</div>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            開発事績
-                        </a>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            新着情報
-                        </a>
-                    </div>
-                </div>
-            </nav>
+            </div>
+            <!--end left-->
+
+            <div class="topbar-right-items pull-right">
+                <ul class="toplist toppadding">
+                    <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+                    <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="header">
+        <div class="container">
+            <div class="navbar yellow navbar-default yamm">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
+                        class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                            class="icon-bar"></span></button>
+                    <a href="{{ url('/') }}" class="navbar-brand"><img src="{{ asset('images/asia-hd_logo.png') }}"
+                            alt="" /></a>
+                </div>
+                <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                    <ul class="nav yellow navbar-nav">
+                        <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                            <ul class="nav yellow navbar-nav">
+                                <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle">開発実績</a></li>
+                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle">新着情報</a></li>
+                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle active">広告情報</a></li>
+                                <li> <a href="#" class="dropdown-toggle">パスワード修正</a></li>
+                                <li> <a href="#" class="logout-link">ログアウト</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end menu-->
+    <div class="clearfix"></div>
         {{ $slot }}
     </div>
+    <div class="clearfix"></div>
+    <section class="section-fulldark sec-padding">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 clearfix">
+                    <div class="footer-logo"><img src="{{ asset('images/asia-hd_logo.png') }}" alt="" />
+                    </div>
+                        <ul class="address-info">
+                            <li>〒171-0014 <br>
+                                東京都豊島区池袋4-27-5和田ビル502号
+                            </li>
+                            <li><i class="fa fa-phone"></i> TEL: 03-3981-5090 （代表）</li>
+                            <li><i class="fa fa-fax"></i> Fax: 03-3981-5092</li>
+                            <li class="last"><i class="fa fa-envelope"></i> Email: info@asia-hd.com</li>
+                        </ul>
+                    </div>
+                <!--end item-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-    </script>
-    <script src="{{ asset('js/admin.js') }}"></script>
+                <div class="col-md-1 clearfix"></div>
+
+                <div class="col-md-3 clearfix">
+                    <h4 class="uppercase footer-title less-mar3">会社情報</h4>
+                    <div class="clearfix"></div>
+                    <div class="footer-title-bottomstrip"></div>
+                    <ul class="usefull-links yellow">
+                        <li><a href="{{ url('/') }}"><i class="fa fa-angle-right"></i>HOME</a></li>
+                        <li><a href="{{ url('/about') }}"><i class="fa fa-angle-right"></i>会社概要</a></li>
+                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>開発実績</a></li>
+                        <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
+                    </ul>
+                </div>
+                <!--end item-->
+
+                <div class="col-md-1 clearfix"></div>
+
+                <div class="col-md-3 clearfix">
+                    <h4 class="uppercase footer-title less-mar3">その他</h4>
+                    <div class="clearfix"></div>
+                    <div class="footer-title-bottomstrip"></div>
+                    <ul class="usefull-links yellow">
+                        <li><a href="{{ url('/news') }}"><i class="fa fa-angle-right"></i>新着情報</a></li>
+                        <li><a href="{{ url('/recruit') }}"><i class="fa fa-angle-right"></i>採用情報</a></li>
+                        <li><a href="{{ url('/contact') }}"><i class="fa fa-angle-right"></i>お問合せ</a></li>
+                        <li><a href="{{ url('/privacy') }}"><i class="fa fa-angle-right"></i>プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+                <!--end item-->
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <section class="section-copyrights sec-moreless-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span>Copyright Asia Human Development, Inc. all rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <div class="clearfix"></div>
+
+    <a href="#" class="scrollup yellow"></a><!-- end scroll to top of the page-->
+    </div>
+<!-- end site wraper -->
+
+
+<!-- ============ JS FILES ============ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
+<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
+<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
+<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
+<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
 </body>
 </html>

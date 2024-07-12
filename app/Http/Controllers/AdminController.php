@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Admin;
 use App\Models\Project;
+use App\Models\SectionStory;
+use App\Models\Story;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -40,7 +42,9 @@ class AdminController extends Controller
 
     public function allAdvertise()
     {
-        return view('admin.advertise_all');
+        $sectionStories = SectionStory::all();
+        $stories = Story::all();
+        return view('admin.advertise_all', compact('sectionStories', 'stories'));
     }
 
 

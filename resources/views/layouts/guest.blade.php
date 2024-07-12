@@ -26,6 +26,22 @@
 <![endif]-->
 
 <!-- Stylesheets -->
+{{-- <link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/layouts.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/shortcodes.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
+<link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('js/masterslider/style/masterslider.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" media="screen" />
+<link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
+<link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs.css') }}">
+<link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}"> --}}
+
 <link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
@@ -45,6 +61,25 @@
 
 <body>
     <div class="site_wrapper">
+        <div class="topbar dark topbar-padding">
+            <div class="container">
+                <div class="topbar-left-items">
+                    <ul class="toplist toppadding pull-left paddtop1">
+                        <li class="rightl"><i class="fa fa-phone"></i>03-3981-5090</li>
+                        <li><i class="fa fa-envelope"></i>info@asia-hd.com</li>
+                    </ul>
+                </div>
+                <!--end left-->
+                <div class="topbar-right-items pull-right">
+                    <ul class="toplist toppadding">
+                        <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+                        <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
         <div id="header">
             <div class="container">
                 <div class="navbar yellow navbar-default yamm">
@@ -179,7 +214,7 @@
 
 
 <!-- ============ JS FILES ============ -->
-<script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
 <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
 <script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
@@ -220,6 +255,125 @@
 <script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
 <script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
+<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script> --}}
+
+{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
+<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
+<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
+<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
 <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script>
+<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
+<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
+<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
+<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script> --}}
+
+{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
+<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
+<script type="text/javascript">
+    (function($) {
+    "use strict";
+        var slider = new MasterSlider();
+        slider.control('arrows');
+        slider.control('bullets');
+
+        slider.setup('masterslider' , {
+            width:1600,
+            height:665,
+            space:0,
+            speed:45,
+            layout:'fullwidth',
+            loop:true,
+            preload:0,
+            autoplay:true,
+            view:"parallaxMask"
+        });
+
+    })(jQuery);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
+<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
+<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
+<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
+<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
+<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
+<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
+<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script> --}}
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
+
+<!-- Bootstrap -->
+<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+
+<!-- jFlickrFeed -->
+<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
+
+<!-- Main Menu -->
+<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
+<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
+
+<!-- Scroll to Top -->
+<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
+
+<!-- General Functions -->
+<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
+
+<!-- Smart Forms -->
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script>
+
+<!-- Master Slider -->
+<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
+
+<!-- Cube Portfolio -->
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
+{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script> --}}
+{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main3.js') }}"></script> --}}
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main2.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
+
+<!-- Animations -->
+<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
+
+<!-- Owl Carousel -->
+<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
+<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
+
+<!-- Tabs -->
+<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
+
 </body>
 </html>
