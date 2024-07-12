@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row">
                     <h2 class="align-item">開発実績管理</h2>
-                <a href="">
+                <a href="{{ url('/admin/project/add') }}">
                     <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
                 </a>
                 <table class="table-back">
@@ -13,7 +13,6 @@
                             <th>作成日</th>
                             <th>イメージ写真</th>
                             <th>タイトル</th>
-                            <th>作成者</th>
                             <th>アクション</th>
                         </tr>
                     </thead>
@@ -23,7 +22,6 @@
                             <td>2022/11/23 10:32</td>
                             <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
                             <td>リリースのお知らせ</td>
-                            <td>ADMIN</td>
                             <td>
                                 <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
                                 <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
@@ -34,7 +32,6 @@
                             <td>2022/11/23 10:32</td>
                             <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
                             <td>リリースのお知らせ</td>
-                            <td>ADMIN</td>
                             <td>
                                 <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
                                 <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>

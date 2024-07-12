@@ -239,7 +239,7 @@
                         <div class="col-sm-12 text-left nopadding">
                             <h4 class="section-title uppercase text-white">開発実績</h4>
                             <div class="title-line-8 yellow left"></div>
-                            <p>企業様向けにカスタマイズ可能な様々なソフトウェアシステムを用意しております。<br />
+                            <p class="text-white">企業様向けにカスタマイズ可能な様々なソフトウェアシステムを用意しております。<br />
                                 システム導入については、気軽にお問い合わせください。</p>
                             <br />
                         </div>

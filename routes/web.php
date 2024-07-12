@@ -47,8 +47,9 @@ Route::get('/privacy', [UserController::class,'privacy']);
 Route::get('/story', [UserController::class, 'story']);
 
 Route::get('/admin/project', [AdminController::class,'allProject']);
+Route::get('/admin/project/add', [AdminController::class,'addProject']);
+Route::get('/admin/project/save', [AdminController::class,'saveProject']);
 Route::get('/admin/news', [AdminController::class,'allNews']);
 Route::get('/admin/advertise', [AdminController::class,'allAdvertise']);
-Route::post('/addproject', [AdminController::class, 'saveProject']);
 
 

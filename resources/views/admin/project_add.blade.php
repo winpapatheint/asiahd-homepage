@@ -37,11 +37,73 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
     <link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}"
-        media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}"　media="screen" />
     <link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
     <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
+    {{-- <link href="{{ asset('css/admin.css') }}" rel="stylesheet" /> --}}
+<style>
+.container_p {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #71ac34;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+</style>
 </head>
 
 <body>
@@ -55,6 +117,13 @@
                     </ul>
                 </div>
                 <!--end left-->
+                <div class="topbar-right-items pull-right">
+                    <ul class="toplist toppadding">
+                        <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
+                        <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -71,9 +140,17 @@
                     </div>
                     <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                         <ul class="nav yellow navbar-nav">
-                            <li> <a href="{{ url('/project') }}" class="dropdown-toggle active">開発実績</a></li>
-                            <li> <a href="{{ url('/news') }}" class="dropdown-toggle">新着情報</a></li>
-                            <li> <a href="#" class="dropdown-toggle">広告情報</a></li>
+                            <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                                <ul class="nav yellow navbar-nav">
+                                    <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle active">開発実績</a>
+                                    </li>
+                                    <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle">新着情報</a></li>
+                                    <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle">広告情報</a>
+                                    </li>
+                                    <li> <a href="#" class="dropdown-toggle">パスワード修正</a></li>
+                                    <li> <a href="#" class="logout-link">ログアウト</a></li>
+                                </ul>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -82,154 +159,26 @@
         <!--end menu-->
         <div class="clearfix"></div>
 
-        <section>
-            <div class="header-inner two">
-                <div class="inner text-center">
-                    <h4 class="title text-white uppercase">開発実績</h4>
-                    <h5 class="text-white uppercase">Projects</h5>
-                </div>
-                <div class="overlay bg-opacity-5"></div>
-                <img src="{{ asset('images/project.jpg') }}" alt="" class="img-responsive" />
-            </div>
-        </section>
-        <!-- end header inner -->
-        <div class="clearfix"></div>
-
         <section class="sec-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-left nopadding">
-                        <h4 class="section-title uppercase">開発実績</h4>
-                        <div class="title-line-8 yellow left"></div>
-                        <p>企業様向けにカスタマイズ可能な様々なソフトウェアシステムを用意しております。<br />
-                            システム導入については、気軽にお問い合わせください。</p>
-                        <br />
+            <div class="container_p">
+                <h1>新着情報登録</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="title">タイトル<span class="required">*</span></label>
+                        <input type="text" id="title" name="title" required>
                     </div>
-                    <div class="clearfix"></div>
-
-                    <div class="demo-full-width bmargin">
-                        <div id="grid-container" class="cbp">
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project1')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">オンライン教室システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project2')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">IBT試験システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project3')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">受発注システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project4')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">中古品販売システ</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project5')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">求人/求職システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project6')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">予約システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project7')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">顧客管理システム</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cbp-item identity logos">
-                                <a href="{{url('/project8')}}" class="cbp-caption" data-title="Suspendisse Imperdiet<br>by Codelayers">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">ECサイト/ECモール構築</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="file">ファイルを選択</label>
+                        <input type="file" id="file" name="file">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="content">内容<span class="required">*</span></label>
+                        <textarea id="content" name="content" rows="10" required></textarea>
+                    </div>
+                    <button type="submit">登録する</button>
+                </form>
             </div>
         </section>
-        <!--end section-->
-        <div class="clearfix"></div>
-
 
         <section class="section-fulldark sec-padding">
             <div class="container ">
@@ -237,15 +186,15 @@
                     <div class="col-md-4 clearfix">
                         <div class="footer-logo"><img src="{{ asset('images/asia-hd_logo.png') }}" alt="" />
                         </div>
-                            <ul class="address-info">
-                                <li>〒171-0014 <br>
-                                    東京都豊島区池袋4-27-5和田ビル502号
-                                </li>
-                                <li><i class="fa fa-phone"></i> TEL: 03-3981-5090 （代表）</li>
-                                <li><i class="fa fa-fax"></i> Fax: 03-3981-5092</li>
-                                <li class="last"><i class="fa fa-envelope"></i> Email: info@asia-hd.com</li>
-                            </ul>
-                        </div>
+                        <ul class="address-info">
+                            <li>〒171-0014 <br>
+                                東京都豊島区池袋4-27-5和田ビル502号
+                            </li>
+                            <li><i class="fa fa-phone"></i> TEL: 03-3981-5090 （代表）</li>
+                            <li><i class="fa fa-fax"></i> Fax: 03-3981-5092</li>
+                            <li class="last"><i class="fa fa-envelope"></i> Email: info@asia-hd.com</li>
+                        </ul>
+                    </div>
                     <!--end item-->
 
                     <div class="col-md-1 clearfix"></div>
@@ -300,28 +249,26 @@
 
 
     <!-- ============ JS FILES ============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"
+        integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
-    {{-- <script>
-        $('#basicuse').jflickrfeed({
-            limit: 6,
-            qstrings: {
-                id: '133294431@N08'
-            },
-            itemTemplate: '<li>' +
-                '<a href="{{ image_b }}"><img src="{{ image_s }}" alt="{{ title }}" /></a>' +
-                '</li>'
-        });
-    </script> --}}
-
     <script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
     <script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/cubeportfolio/main2.js') }}"></script>
     <script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
-
     <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
+    {{-- <script src="{{ asset('js/admin.js') }}"></script> --}}
 </body>
 
 </html>

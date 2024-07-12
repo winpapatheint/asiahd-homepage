@@ -6157,5 +6157,46 @@ div.demo .title span {
     text-align: center !important;
 }
 
+.custom-form-container {
+    max-width: 600px; /* Set width to match screenshot */
+    margin: 0 auto;
+    padding: 20px; /* Padding for inner spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.form-header {
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust font size for header */
+    font-weight: bold; /* Bold font for header */
+    text-align: center; /* Center align the header */
+}
+
+.form-control-file {
+    width: 100%; /* Full width for file input */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px; /* Padding for height */
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 15px; /* Padding for button height */
+    background-color: #28a745; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center align text */
+}
+
+.form-submit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
 
 

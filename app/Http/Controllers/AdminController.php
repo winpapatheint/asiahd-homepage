@@ -47,6 +47,11 @@ class AdminController extends Controller
         return view('admin.advertise_all', compact('sectionStories', 'stories'));
     }
 
+    public function addProject()
+    {
+        return view('admin.project_add');
+    }
+
 
     public function saveProject(Request $request)
     {
