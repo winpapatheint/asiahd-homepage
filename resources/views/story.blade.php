@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en">
 <head>
 <title>Asia Human Development</title>
@@ -68,10 +68,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--end menu-->
-    <div class="clearfix"></div>
-
+<x-guest-layout>
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
@@ -198,9 +197,8 @@
         @endforeach
     </section>
     <!--end section-->
-
-    <div class="clearfix"></div>
-    <section class="section-fulldark sec-padding">
+</x-guest-layout>
+    {{-- <section class="section-fulldark sec-padding">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4 clearfix">
@@ -278,4 +276,4 @@
 <script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
 <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
 </body>
-</html>
+</html> --}}

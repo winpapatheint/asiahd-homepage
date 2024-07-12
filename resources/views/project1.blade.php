@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en">
 
 <head>
@@ -92,8 +92,8 @@
             </div>
         </div>
         <!--end menu-->
-        <div class="clearfix"></div>
-
+        <div class="clearfix"></div> --}}
+<x-guest-layout>
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
@@ -153,7 +153,8 @@
         </div>
     </section>
     <!--end section-->
-    <div class="clearfix"></div>
+</x-guest-layout>
+    {{-- <div class="clearfix"></div>
     <section class="section-fulldark sec-padding">
         <div class="container ">
             <div class="row">
@@ -269,4 +270,4 @@
 <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
 </body>
 </html>
-
+ --}}

@@ -45,29 +45,68 @@
 
 <body>
     <div class="site_wrapper">
-    <div class="topbar dark topbar-padding">
-        <div class="container">
-        <div class="topbar-left-items">
-            <ul class="toplist toppadding pull-left paddtop1">
-            <li class="rightl"><i class="fa fa-phone"></i>03-3981-5090</li>
-            <li><i class="fa fa-envelope"></i>info@asia-hd.com</li>
-            </ul>
+        <div id="header">
+            <div class="container">
+                <div class="navbar yellow navbar-default yamm">
+                    <div class="navbar-header">
+                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
+                            class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                                class="icon-bar"></span></button>
+                        <a href="{{ url('/') }}" class="navbar-brand"><img src="{{ asset('images/asia-hd_logo.png') }}"
+                                alt="" /></a>
+                    </div>
+                    <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
+                        <ul class="nav yellow navbar-nav">
+                            <li> <a href="{{ url('/') }}" class="dropdown-toggle {{request()->is('/') ? 'active' : ''}}">
+                                Home</a>
+                            </li>
+                            <li> <a href="{{ url('/about') }}" class="dropdown-toggle {{request()->is('about') ? 'active' : ''}}">
+                                会社概要</a>
+                            </li>
+                            <li> <a href="{{ url('/project') }}" class="dropdown-toggle 
+                                {{request()->is('project') || 
+                                request()->is('project1') || 
+                                request()->is('project2') || 
+                                request()->is('project3') || 
+                                request()->is('project4') || 
+                                request()->is('project5') || 
+                                request()->is('project6') || 
+                                request()->is('project7') || 
+                                request()->is('project8') ? 'active' : ''}}">
+                                開発実績</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ url('/service1') }}" class="dropdown-toggle 
+                                {{request()->is('service1') || 
+                                request()->is('service2') || 
+                                request()->is('service3') || 
+                                request()->is('service4') ? 'active' : ''}}">
+                                    サービス案内</a>
+                                <ul class="dropdown-menu five" role="menu">
+                                    <li><a href="{{ url('/service1') }}">SES/請負開発</a></li>
+                                    <li><a href="{{ url('/service2') }}">IT導入支援</a></li>
+                                    <li><a href="{{ url('/service3') }}">日本留学ナビ運営</a></li>
+                                    <li><a href="{{ url('/service4') }}">EC事業</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="{{ url('/news') }}" class="dropdown-toggle {{request()->is('news') ? 'active' : ''}}">
+                                新着情報</a>
+                            </li>
+                            <li> <a href="{{ url('/recruit') }}" class="dropdown-toggle {{request()->is('recruit') ? 'active' : ''}}">
+                                採用情報</a>
+                            </li>
+                            <li> <a href="{{ url('/contact') }}" class="dropdown-toggle {{request()->is('contact') ? 'active' : ''}}">
+                                お問合せ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--end left-->
-
-        <div class="topbar-right-items pull-right">
-            <ul class="toplist toppadding">
-            <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
-            <li class="last"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
+        <div class="clearfix"></div>
 
     {{$slot}}
-
+        <div class="clearfix"></div>
     <section class="section-fulldark sec-padding">
         <div class="container ">
             <div class="row">
