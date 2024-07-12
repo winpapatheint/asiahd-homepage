@@ -37,11 +37,9 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
     <link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}"
-        media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" media="screen" />
     <link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
     <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
-
 </head>
 
 <body>
@@ -82,7 +80,7 @@
                                 <ul class="nav yellow navbar-nav">
                                     <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle active">開発実績</a></li>
                                     <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle">新着情報</a></li>
-                                    <li> <a href="#" class="dropdown-toggle">広告情報</a></li>
+                                    <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle">広告情報</a></li>
                                     <li> <a href="#" class="dropdown-toggle">パスワード修正</a></li>
                                     <li> <a href="#" class="logout-link">ログアウト</a></li>
                                 </ul>
@@ -95,8 +93,50 @@
         <!--end menu-->
         <div class="clearfix"></div>
 
-
-
+        <section class="sec-padding">
+            <div class="container">
+                <div class="row">
+                    <h2 class="align-item">開発実績管理</h2>
+                <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
+                <table class="table-back">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>作成日</th>
+                            <th>イメージ写真</th>
+                            <th>タイトル</th>
+                            <th>作成者</th>
+                            <th>アクション</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2022/11/23 10:32</td>
+                            <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
+                            <td>リリースのお知らせ</td>
+                            <td>ADMIN</td>
+                            <td>
+                                <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2022/11/23 10:32</td>
+                            <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
+                            <td>リリースのお知らせ</td>
+                            <td>ADMIN</td>
+                            <td>
+                                <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </section>
 
         <section class="section-fulldark sec-padding">
             <div class="container ">
@@ -167,6 +207,10 @@
 
 
     <!-- ============ JS FILES ============ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>

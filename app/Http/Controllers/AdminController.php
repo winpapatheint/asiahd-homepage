@@ -38,6 +38,11 @@ class AdminController extends Controller
         return view('admin.news_all');
     }
 
+    public function allAdvertise()
+    {
+        return view('admin.advertise_all');
+    }
+
 
     public function saveProject(Request $request)
     {

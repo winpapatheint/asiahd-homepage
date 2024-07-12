@@ -103,7 +103,7 @@ body {
     font-weight: normal;
     font-style: normal;
     line-height: 25px;
-    color: #727272;
+    color: #333;
 }
 /* a link Styles
  ------------------------------ */
@@ -6097,7 +6097,7 @@ div.demo .title span {
 
 .logout-link {
     color: black !important;;
-    margin: 25px 15px;
+    margin: 25px;
     background-color: #71ac34;
     padding: 10px 10px !important;
     border-radius: 10px;
@@ -6105,5 +6105,57 @@ div.demo .title span {
     display: inline-block;
     transition: background-color 0.3s;
   }
+
+.new-entry-btn {
+    border-style: none;
+    background-color: inherit;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.table-back {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-back th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-back th {
+    background-color: #333;
+    font-weight: bold;
+    color: #fff
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.action-btn.settings {
+    color: #333;
+}
+
+.action-btn.delete {
+    color: #dc3545;
+}
+
+.align-item {
+    text-align: center !important;
+}
+
 
 

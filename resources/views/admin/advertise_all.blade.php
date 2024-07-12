@@ -72,8 +72,8 @@
                         <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                             <ul class="nav yellow navbar-nav">
                                 <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle">開発実績</a></li>
-                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle active">新着情報</a></li>
-                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle">広告情報</a></li>
+                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle">新着情報</a></li>
+                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle active">広告情報</a></li>
                                 <li> <a href="#" class="dropdown-toggle">パスワード修正</a></li>
                                 <li> <a href="#" class="logout-link">ログアウト</a></li>
                             </ul>
@@ -89,7 +89,7 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-                <h2 class="align-item">新着情報管理</h2>
+                <h2 class="align-item">広告管理</h2>
             <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
             <table class="table-back">
                 <thead>
