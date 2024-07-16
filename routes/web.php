@@ -42,7 +42,7 @@ Route::get('/service2', [UserController::class, 'service2']);
 Route::get('/service3', [UserController::class, 'service3']);
 Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
-Route::post('/contact/submit', [UserController::class,'submitContactForm']);
+Route::post('/contact', [UserController::class,'sendContact'])->name('contact.send');
 Route::get('/privacy', [UserController::class,'privacy']);
 Route::get('/ad/ad', [UserController::class, 'story']);
 Route::post('/inquiry', [UserController::class, 'storeInquiry'])->name('inquiry.store');

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Contact</title>
+</head>
+<body>
+    <h1>New Contact Received</h1>
+    <p><strong>Subject:</strong> {{ $inquiry['subject'] }}</p>
+    <p><strong>Name:</strong> {{ $inquiry['name'] }}</p>
+    <p><strong>Email:</strong> {{ $inquiry['email'] }}</p>
+    <p><strong>Phone:</strong> {{ $inquiry['phone'] }}</p>
+    <p><strong>Message:</strong> {{ $inquiry['message'] }}</p>
+</body>
+</html>

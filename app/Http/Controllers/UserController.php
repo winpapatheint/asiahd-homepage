@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Mail;
 use App\Models\User;
 use App\Models\Story;
+use App\Mail\ContactMail;
 use App\Mail\InquiryMail;
 use App\Models\Prefecture;
 use App\Models\SectionStory;
@@ -144,4 +145,15 @@ class UserController extends Controller
         return redirect()->back()->with('success', 'Your inquiry has been sent successfully!');
     }
 
+    public function sendContact(Request $request) {
+        $inquiry = $request->only([
+            'subject',
+            'name',
+            'email',
+            'phone',
+            'message',
+        ]);
+        Mail::to(config('mail.from.address'))->send(new ContactMail($inquiry));
+        return redirect()->back()->with('success', 'Your contact has been sent successfully!');
+    }
 }

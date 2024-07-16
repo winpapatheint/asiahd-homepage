@@ -83,7 +83,7 @@
                                     request()->is('admin/advertise-story-add') ||
                                     request()->is('admin/advertise-story-edit/*')
                                     ? 'active' : ''}}">
-                                    広告情報</a>
+                                    広告管理</a>
                                 </li>
                                 <li> <a href="#" class="dropdown-toggle">
                                     パスワード修正</a>
