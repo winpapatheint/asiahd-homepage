@@ -427,7 +427,7 @@
 
 <!-- Cube Portfolio -->
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     (function($) {
         "use strict";
         $(document).ready(function() {
@@ -465,7 +465,7 @@
             });
         });
     })(jQuery);
-</script>
+</script> --}}
 {{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script> --}}
 {{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main3.js') }}"></script> --}}
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/main2.js') }}"></script>
