@@ -44,12 +44,19 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact/submit', [UserController::class,'submitContactForm']);
 Route::get('/privacy', [UserController::class,'privacy']);
-Route::get('/story', [UserController::class, 'story']);
+Route::get('/ad/advertisement', [UserController::class, 'story']);
 
 Route::get('/admin/project', [AdminController::class,'allProject']);
 Route::get('/admin/project/add', [AdminController::class,'addProject']);
 Route::get('/admin/project/save', [AdminController::class,'saveProject']);
 Route::get('/admin/news', [AdminController::class,'allNews']);
-Route::get('/admin/advertise', [AdminController::class,'allAdvertise']);
+Route::get('/admin/advertise', [AdminController::class,'allAdvertise'])->name('admin.advertise.show');
+Route::get('/admin/advertise-section-add', [AdminController::class,'addSectionAdvertise'])->name('admin.section.add');
+Route::post('/admin/advertise-section-store', [AdminController::class,'storeSectionAdvertise'])->name('admin.section.store');
+Route::get('/admin/advertise-story-add', [AdminController::class,'addStoryAdvertise'])->name('admin.story.add');
+Route::post('/admin/advertise-story-store', [AdminController::class,'storeStoryAdvertise'])->name('admin.story.store');
+Route::get('/admin/advertise-story-edit/{id}', [AdminController::class,'editStoryAdvertise'])->name('admin.story.edit');
+Route::post('/admin/advertise-story-update', [AdminController::class,'updateStoryAdvertise'])->name('admin.story.update');
+Route::post('/admin/advertise-story-delete', [AdminController::class,'deleteStoryAdvertise'])->name('admin.story.delete');
 
 

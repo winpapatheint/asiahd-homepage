@@ -42,9 +42,70 @@ class AdminController extends Controller
 
     public function allAdvertise()
     {
-        $sectionStories = SectionStory::all();
         $stories = Story::all();
-        return view('admin.advertise_all', compact('sectionStories', 'stories'));
+        return view('admin.advertise_all', compact('stories'));
+    }
+
+    public function addSectionAdvertise() {
+        return view('admin.advertise_section_add');
+    }
+
+    public function storeSectionAdvertise(Request $request) {
+        SectionStory::create([
+            'type' => $request->type,
+            'section' => $request->section
+        ]);
+        return view('admin.advertise_story_add');
+    }
+
+    public function addStoryAdvertise() {
+        $sectionStories = SectionStory::all();
+        return view('admin.advertise_story_add', compact('sectionStories'));
+    }
+
+    public function storeStoryAdvertise(Request $request) {
+        if (!empty($request->image)) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+        } else {
+            $imageName = null;
+        }
+
+        Story::create([
+            'section_story_id' => $request->section,
+            'title' => $request->title,
+            'body' => $request->body,
+            'image' => $imageName
+        ]);
+        return redirect('/admin/advertise')->with('success', 'Added Story Successfully!');
+    }
+
+    public function editStoryAdvertise($id) {
+        $sectionStories = SectionStory::all();
+        $story = Story::find($id);
+        return view('admin.advertise_story_edit', compact('sectionStories', 'story'));
+    }
+
+    public function updateStoryAdvertise(Request $request) {
+        $updateData = [
+            'section_story_id' => $request->section,
+            'title' => $request->title,
+            'body' => $request->body,
+        ];
+
+        if (!empty($request->image)) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $updateData['image'] = $imageName;
+        }
+    
+        Story::where('id', $request->id)->update($updateData);
+        return redirect('/admin/advertise')->with('success', 'Added Story Successfully!');
+    }
+
+    public function deleteStoryAdvertise(Request $request) {
+        Story::where('id', $request->id)->delete();
+        return redirect()->back()->with('success', 'Deleted Story Successfully!');
     }
 
     public function addProject()

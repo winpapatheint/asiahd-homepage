@@ -3,44 +3,78 @@
         <div class="container">
             <div class="row">
                 <h2 class="align-item">広告管理</h2>
-            <button class="new-entry-btn"><h5>+ 新規登録</h5></button>
+                <div style="display: flex;">
+                    <button class="new-entry-btn">
+                        <a href="{{ route('admin.section.add') }}">
+                        <h5>+ セクション登録</h5>
+                        </a>
+                    </button>
+                    <button class="new-entry-btn">
+                        <a href="{{ route('admin.story.add') }}">
+                        <h5>+ ストーリー登録</h5>
+                        </a>
+                    </button>
+                </div>
             <table class="table-back">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>作成日</th>
-                        <th>イメージ写真</th>
+                        <th>タイプ</th>
+                        <th>セクション</th>
                         <th>タイトル</th>
-                        <th>作成者</th>
-                        <th>アクション</th>
+                        <th>体</th>
+                        <th>画像</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($stories as $key => $story)
                     <tr>
-                        <td>1</td>
-                        <td>2022/11/23 10:32</td>
-                        <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
-                        <td>リリースのお知らせ</td>
-                        <td>ADMIN</td>
+                        <td>{{ $key + 1 }}</td>
+                        <td>{{ $story->sectionStory->type }}</td>
+                        <td>{{ $story->sectionStory->section }}</td>
+                        <td>{{ $story->title }}</td>
+                        <td>{{ $story->body }}</td>
+                        <td><img src="{{ asset('images/' . $story->image ) }}" alt="story-image" class="thumbnail"></td>
                         <td>
-                            <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                            <button class="action-btn settings">
+                                <a href="{{ route('admin.story.edit', $story->id) }}">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                            </button>
+                            <button class="action-btn delete" data-toggle="modal" data-target="#confirmDeleteModal" data-id="{{ $story->id }}">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2022/11/23 10:32</td>
-                        <td><img src="image.jpg" alt="イメージ写真" class="thumbnail"></td>
-                        <td>リリースのお知らせ</td>
-                        <td>ADMIN</td>
-                        <td>
-                            <button class="action-btn settings"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
             </div>
         </div>
     </section>
+    <!-- Confirm Delete Modal -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center">Are you Sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                    The story will be deleted permanently.
+                </div>
+                <div class="modal-footer">
+                    <form id="deleteStoryForm" method="POST" action="{{ route('admin.story.delete') }}">
+                        @csrf
+                        <input type="hidden" id="id" name="id" value="{{ $story->id }}">
+                        <button type="submit" class="btn btn-success">Yes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </x-auth-layout>
