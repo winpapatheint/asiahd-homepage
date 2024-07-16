@@ -37,6 +37,61 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs.css') }}">
 <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}">
+<style>
+    .notice-form {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .notice-form h3 {
+        margin-bottom: 30px;
+    }
+    .form-group label {
+        text-align: right;
+    }
+    .required::after {
+        content: "必須";
+        color: red;
+        margin-left: 5px;
+    }
+    .optional::after {
+        content: "任意";
+        color: #999;
+        margin-left: 5px;
+    }
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #2c6c6e;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #234f50;
+    }
+
+    .error {
+        display: block;
+        text-align: left;
+    }
+    .custom-checkbox .form-check {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-checkbox .form-check-input {
+        margin-right: 10px;
+    }
+</style>
 </head>
 
 <body>
@@ -132,8 +187,101 @@
         {{-- grid section end --}}
         @endif
         @endforeach
-    </section>
     <!--end section-->
+    {{-- start form section --}}
+        <div class="container">
+            <div class="row">
+                <div class="notice-form">
+                    <h3>お問い合わせフォーム</h3>
+                    <form id="Inquiry-Form" method="POST" action="{{ route('inquiry.store') }}">
+                        @csrf
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label required">ご氏名</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="例）渡辺　太郎">
+                                <span class="error" style="color:red" id="error-name"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label required">メールアドレス</label>
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="例）info@asia-hd.com">
+                                <span class="error" style="color:red" id="error-email"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-md-4 col-form-label"></span>
+                            <div class="col-md-8">
+                                <label for="confirm-email" style="text-align: left; display: block;">※確認のため、もう一度ご入力ください</label>
+                                <input type="email" class="form-control" id="confirm-email" name="confirm-email" placeholder="例）info@asia-hd.com">
+                                <span class="error" style="color:red" id="error-confirm-email"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-4 col-form-label required">電話番号</label>
+                            <div class="col-md-8">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="例）0339815090">
+                                <span class="error" style="color:red" id="error-phone"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="age" class="col-md-4 col-form-label optional">年齢</label>
+                            <div class="col-md-8">
+                                <input type="number" class="form-control" id="age" name="age" placeholder="例）32">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="postal-code" class="col-md-4 col-form-label optional">郵便番号</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="例）171-0014">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="prefecture" class="col-md-4 col-form-label optional">都道府県</label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="prefecture" name="prefecture">
+                                    <option value="">選択してください</option>
+                                    @foreach ($prefecture as $pref)
+                                    <option value="{{ $pref->name }}">{{ $pref->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="address" class="col-md-4 col-form-label optional">住所</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="例）豊島区池袋4-27-5">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="building" class="col-md-4 col-form-label optional">建物名</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="building" name="building" placeholder="例）和田ビル502号">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inquiry" class="col-md-4 col-form-label optional">お問い合わせ内容</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="inquiry" name="inquiry" rows="4" placeholder="お電話をお掛けして良い曜日・時間帯があればご記入下さい。例）月〜金、14：00以降"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8 custom-checkbox">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy-policy" name="privacy-policy">
+                                    <label class="form-check-label" for="privacy-policy">プライバシーポリシーに同意する</label>
+                                </div>
+                                <span class="error" style="color:red" id="error-privacy-policy"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn" onclick="validateInquiryForm()">確認画面へ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- end form section --}}
     <section class="section-fulldark sec-padding">
         <div class="container ">
             <div class="row">
@@ -239,6 +387,64 @@
 <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
 <script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
+
+<script>
+    function validateInquiryForm() {
+        let isValid = true;
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const confirmEmail = document.getElementById('confirm-email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const checkbox = document.getElementById('privacy-policy');
+
+        document.querySelectorAll('.error').forEach(el => el.textContent = '');
+
+        if (!name) {
+            isValid = false;
+            document.getElementById('error-name').textContent = '※ご氏名を入力してください';
+        } else if (name.length > 255) {
+            isValid = false;
+            document.getElementById('error-name').textContent = '※ご氏名は 255 文字を超えてはなりません。';
+        }
+
+        if (!email) {
+            isValid = false;
+            document.getElementById('error-email').textContent = '※メールアドレスを入力してください';
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            isValid = false;
+            document.getElementById('error-email').textContent = '※有効なメールアドレスを入力してください。';
+        }
+
+        if (email) {
+            if (!confirmEmail) {
+                isValid = false;
+                document.getElementById('error-confirm-email').textContent = '※確認のためメールアドレスを入力してください。';
+            } else if (email != confirmEmail) {
+                isValid = false;
+                document.getElementById('error-confirm-email').textContent = '※同じメールアドレスを入力してください。';
+            }
+        }
+
+        if (!phone) {
+            isValid = false;
+            document.getElementById('error-phone').textContent = '※電話番号を入力してください';
+        } else if (!/^\d+$/.test(phone)) {
+            isValid = false;
+            document.getElementById('error-phone').textContent = '※有効な電話番号を入力してください。(例: 09077554361)';
+        }
+
+        if (!checkbox.checked) {
+            isValid = false;
+            document.getElementById('error-privacy-policy').textContent = 'お問い合わせいただくにはプライバシーポリシーに同意いただく必要があります。';
+        }
+
+        if (isValid) {
+            document.getElementById('Inquiry-Form').submit();
+        }
+
+    }
+</script>
 
 </body>
 </html>

@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SectionStory;
-use App\Models\Story;
+use Mail;
 use App\Models\User;
+use App\Models\Story;
+use App\Mail\InquiryMail;
+use App\Models\Prefecture;
+use App\Models\SectionStory;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
 
@@ -120,7 +124,24 @@ class UserController extends Controller
     {
         $sectionStories = SectionStory::all();
         $stories = Story::all();
-        return view('story', compact('sectionStories', 'stories'));
+        $prefecture = Prefecture::all();
+        return view('story', compact('sectionStories', 'stories', 'prefecture'));
+    }
+
+    public function storeInquiry(Request $request) {
+        $inquiry = $request->only([
+            'name',
+            'email',
+            'phone',
+            'age',
+            'postal-code',
+            'prefecture',
+            'address',
+            'building',
+            'inquiry',
+        ]);
+        Mail::to(config('mail.from.address'))->send(new InquiryMail($inquiry));
+        return redirect()->back()->with('success', 'Your inquiry has been sent successfully!');
     }
 
 }

@@ -4426,9 +4426,9 @@ Medical layout Styles
 
 /* radio Button Style
  ------------------------------ */
-.feature-box-87 input[type=radio], input[type=checkbox] {
+/* .feature-box-87 input[type=radio], input[type=checkbox] {
 	    display:none;
-	}
+	} */
 .feature-box-87 input[type=radio] + label:before {
 	    content: "";
 	    display: inline-block;

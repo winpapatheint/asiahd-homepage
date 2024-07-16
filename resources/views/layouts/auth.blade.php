@@ -77,7 +77,12 @@
                                 <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle {{request()->is('admin/news') ? 'active' : ''}}">
                                     新着情報</a>
                                 </li>
-                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle {{request()->is('admin/advertise') ? 'active' : ''}}">
+                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle 
+                                    {{request()->is('admin/advertise') ||
+                                    request()->is('admin/advertise-section-add') ||
+                                    request()->is('admin/advertise-story-add') ||
+                                    request()->is('admin/advertise-story-edit/*')
+                                    ? 'active' : ''}}">
                                     広告情報</a>
                                 </li>
                                 <li> <a href="#" class="dropdown-toggle">

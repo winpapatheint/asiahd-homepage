@@ -44,8 +44,11 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact/submit', [UserController::class,'submitContactForm']);
 Route::get('/privacy', [UserController::class,'privacy']);
-Route::get('/ad/advertisement', [UserController::class, 'story']);
+Route::get('/ad/ad', [UserController::class, 'story']);
+Route::post('/inquiry', [UserController::class, 'storeInquiry'])->name('inquiry.store');
 
+
+// Admin
 Route::get('/admin/project', [AdminController::class,'allProject']);
 Route::get('/admin/project/add', [AdminController::class,'addProject']);
 Route::get('/admin/project/save', [AdminController::class,'saveProject']);
