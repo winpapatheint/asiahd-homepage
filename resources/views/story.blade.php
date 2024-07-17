@@ -63,10 +63,13 @@
         text-align: left;
     }
     h3 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .col-form-label {
+        text-align: right;
+    }
 </style>
 </head>
 
@@ -194,8 +197,8 @@
                         <form id="Inquiry-Form" method="POST" action="{{ route('inquiry.store') }}">
                             @csrf
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="name" class="col-form-label required">ご氏名</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="name" class="required">ご氏名</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="例）渡辺　太郎">
@@ -203,8 +206,8 @@
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="email" class="col-form-label required">メールアドレス</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="email" class="required">メールアドレス</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="例）info@asia-hd.com">
@@ -219,8 +222,8 @@
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="phone" class="col-form-label required">電話番号</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="phone" class="required">電話番号</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="tel" class="form-control" id="phone" name="phone" placeholder="例）0339815090">
@@ -228,24 +231,24 @@
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="age" class="col-form-label optional">年齢</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="age" class="optional">年齢</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="number" class="form-control" id="age" name="age" placeholder="例）32">
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="postal-code" class="col-form-label optional">郵便番号</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="postal-code" class="optional">郵便番号</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="例）171-0014">
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="prefecture" class="col-form-label optional">都道府県</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="prefecture" class="optional">都道府県</label>
                                 </div>
                                 <div class="col-md-8">
                                     <select class="form-control" id="prefecture" name="prefecture">
@@ -257,24 +260,24 @@
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="address" class="col-form-label optional">住所</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="address" class="optional">住所</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="address" name="address" placeholder="例）豊島区池袋4-27-5">
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="building" class="col-form-label optional">建物名</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="building" class="optional">建物名</label>
                                 </div>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="building" name="building" placeholder="例）和田ビル502号">
                                 </div>
                             </div>
                             <div class="row section">
-                                <div class="col-md-4">
-                                    <label for="inquiry" class="col-form-label optional">お問い合わせ内容</label>
+                                <div class="col-md-4 col-form-label">
+                                    <label for="inquiry" class="optional">お問い合わせ内容</label>
                                 </div>
                                 <div class="col-md-8">
                                     <textarea class="form-control" id="inquiry" name="inquiry" rows="4" placeholder="お電話をお掛けして良い曜日・時間帯があればご記入下さい。例）月〜金、14：00以降"></textarea>
@@ -325,7 +328,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>Copyright Asia Human Development, Inc. all rights reserved</span>
+                    <span style="color: white;">Copyright Asia Human Development, Inc. all rights reserved</span>
                 </div>
             </div>
         </div>
@@ -333,7 +336,7 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <a href="#" class="scrollup yellow"></a><!-- end scroll to top of the page-->
+    <a href="#" class="scrollup" style="background-color: #559119"></a><!-- end scroll to top of the page-->
     </div>
     <!-- jQuery Library -->
 <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>

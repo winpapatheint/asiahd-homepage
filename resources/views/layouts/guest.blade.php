@@ -206,7 +206,7 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <a href="#" class="scrollup yellow-green"></a><!-- end scroll to top of the page-->
+    <a href="#" class="scrollup" style="background-color: #559119"></a><!-- end scroll to top of the page-->
     </div>
 <!-- end site wraper -->
 
