@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Story;
 use App\Mail\ContactMail;
 use App\Mail\InquiryMail;
+use App\Models\PageSection;
 use App\Models\Prefecture;
 use App\Models\SectionStory;
 use Illuminate\Http\Request;
@@ -122,12 +123,13 @@ class UserController extends Controller
         return view('privacy');
     }
 
-    public function story()
+    public function story($id)
     {
-        $sectionStories = SectionStory::all();
+        $pageSection = PageSection::find($id);
+        $sectionStories = SectionStory::where('page_section_id', $id)->get();
         $stories = Story::all();
         $prefecture = Prefecture::all();
-        return view('story', compact('sectionStories', 'stories', 'prefecture'));
+        return view('story', compact('pageSection', 'sectionStories', 'stories', 'prefecture'));
     }
 
     public function storeInquiry(Request $request) {

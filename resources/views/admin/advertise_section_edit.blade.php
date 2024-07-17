@@ -64,15 +64,16 @@
         </style>
     <section class="sec-padding">
         <div class="container_p">
-            <h1>新しいセクション登録</h1>
-            <form method="POST" action="{{ route('admin.section.store') }}" id="sectionRegisterForm">
+            <h1>セクション修正</h1>
+            <form method="POST" action="{{ route('admin.section.update') }}" id="sectionEditForm">
                 @csrf
+                <input type="hidden" id="id" name="id" value="{{ $sectionStory->id }}">
                 <div class="form-group">
                     <label for="page">ページ<span class="required">*</span></label>
                     <select name="page">
                         <option>ページを選択</option>
                         @foreach ($pageSections as $pageSection)
-                        <option value="{{ $pageSection->id }}">{{ $pageSection->name }}</option>
+                        <option value="{{ $pageSection->id }}" {{ $pageSection->id == $sectionStory->page_section_id ? 'selected' : '' }}>{{ $pageSection->name }}</option>
                         @endforeach
                     </select>
                     <span class="error" style="color:red" id="error-page"></span>
@@ -81,24 +82,24 @@
                     <label for="type">タイプ<span class="required">*</span></label>
                     <select name="type">
                         <option>タイプを選択</option>
-                        <option value="list">List</option>
-                        <option value="grid">Grid</option>
+                        <option value="list" {{ $sectionStory->type == 'list' ? 'selected' : ''  }}>List</option>
+                        <option value="grid" {{ $sectionStory->type == 'grid' ? 'selected' : ''  }}>Grid</option>
                     </select>
                     <span class="error" style="color:red" id="error-type"></span>
                 </div>
                 <div class="form-group">
                     <label for="section">セクション<span class="required">*</span></label>
-                    <input type="text" id="section" name="section" required>
+                    <input type="text" id="section" name="section" value="{{ $sectionStory->section }}" required>
                     <span class="error" style="color:red" id="error-section"></span>
                 </div>
-                <button type="button" onclick="validateSectionForm()">登録する</button>
+                <button type="button" onclick="validateSectionForm()">修正する</button>
             </form>
         </div>
     </section>
     <script>
         function validateSectionForm() {
             let isValid = true;
-            document.querySelectorAll('#sectionRegisterForm .error').forEach(el => el.textContent = '');
+            document.querySelectorAll('#sectionEditForm .error').forEach(el => el.textContent = '');
 
             const page = document.querySelector('select[name="page"]').value;
             const type = document.querySelector('select[name="type"]').value;
@@ -123,11 +124,11 @@
             }
 
             if (isValid) {
-                document.getElementById('sectionRegisterForm').submit();
+                document.getElementById('sectionEditForm').submit();
             }
         }
     
-        document.getElementById('sectionRegisterForm').addEventListener('submit', function(event) {
+        document.getElementById('sectionEditForm').addEventListener('submit', function(event) {
             event.preventDefault();
             validateSectionForm();
         });

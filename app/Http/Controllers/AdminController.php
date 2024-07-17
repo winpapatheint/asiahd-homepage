@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\News;
 use App\Models\User;
 use App\Models\Admin;
+use App\Models\PageSection;
 use App\Models\Story;
 use App\Models\Project;
 use App\Models\ListContent;
@@ -66,16 +67,84 @@ class AdminController extends Controller
         return view('admin.advertise_all', compact('stories'));
     }
 
+    public function addPageAdvertise() {
+        return view('admin.advertise_page_add');
+    }
+
+    public function storePageAdvertise(Request $request) {
+        PageSection::create([
+            'name' => $request->name
+        ]);
+        $pageSections = PageSection::all();
+        return view('admin.advertise_section_add', compact('pageSections'));
+    }
+
+    public function editPageAdvertise($id) {
+        $pageSection = PageSection::find($id);
+        return view('admin.advertise_page_edit', compact('pageSection'));
+    }
+
+    public function updatePageAdvertise(Request $request) {
+        $updateData = [
+            'name' => $request->name,
+        ];
+
+        PageSection::where('id', $request->id)->update($updateData);
+        return redirect('/admin/advertise')->with('success', 'ページが正常に更新されました!');
+    }
+
+    public function deletePageAdvertise(Request $request) {
+        // PageSection::where('id', $request->id)->delete();
+        // SectionStory::where('page_section_id', $request->id)->delete();
+        $pageSection = PageSection::findOrFail($request->id);
+    
+        $sectionStories = $pageSection->sectionStory()->get();
+        foreach ($sectionStories as $sectionStory) {
+            $sectionStory->story()->delete();
+        }
+
+        $pageSection->sectionStory()->delete();
+
+        $pageSection->delete();
+        return redirect()->back()->with('success', 'ページを正常に削除しました!');
+    }
+
     public function addSectionAdvertise() {
-        return view('admin.advertise_section_add');
+        $pageSections = PageSection::all();
+        return view('admin.advertise_section_add', compact('pageSections'));
     }
 
     public function storeSectionAdvertise(Request $request) {
         SectionStory::create([
+            'page_section_id' => $request->page,
             'type' => $request->type,
             'section' => $request->section
         ]);
-        return view('admin.advertise_story_add');
+        $sectionStories = SectionStory::all();
+        return view('admin.advertise_story_add', compact('sectionStories'));
+    }
+
+    public function editSectionAdvertise($id) {
+        $pageSections = PageSection::all();
+        $sectionStory = SectionStory::find($id);
+        return view('admin.advertise_section_edit', compact('pageSections', 'sectionStory'));
+    }
+
+    public function updateSectionAdvertise(Request $request) {
+        $updateData = [
+            'page_section_id' => $request->page,
+            'type' => $request->type,
+            'section' => $request->section,
+        ];
+
+        SectionStory::where('id', $request->id)->update($updateData);
+        return redirect('/admin/advertise')->with('success', 'セクションが正常に更新されました!');
+    }
+
+    public function deleteSectionAdvertise(Request $request) {
+        SectionStory::where('id', $request->id)->delete();
+        Story::where('section_story_id', $request->id)->delete();
+        return redirect()->back()->with('success', 'セクションを正常に削除しました!');
     }
 
     public function addStoryAdvertise() {

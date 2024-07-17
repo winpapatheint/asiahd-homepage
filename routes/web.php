@@ -44,7 +44,7 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact', [UserController::class,'sendContact'])->name('contact.send');
 Route::get('/privacy', [UserController::class,'privacy']);
-Route::get('/ad/ad', [UserController::class, 'story']);
+Route::get('/ad/{id}', [UserController::class, 'story']);
 Route::post('/inquiry', [UserController::class, 'storeInquiry'])->name('inquiry.store');
 
 
@@ -54,8 +54,16 @@ Route::get('/admin/project/add', [AdminController::class,'addProject']);
 Route::get('/admin/project/save', [AdminController::class,'saveProject']);
 Route::get('/admin/news', [AdminController::class,'allNews']);
 Route::get('/admin/advertise', [AdminController::class,'allAdvertise'])->name('admin.advertise.show');
+Route::get('/admin/advertise-page-add', [AdminController::class,'addPageAdvertise'])->name('admin.page.add');
+Route::post('/admin/advertise-page-store', [AdminController::class,'storePageAdvertise'])->name('admin.page.store');
+Route::get('/admin/advertise-page-edit/{id}', [AdminController::class,'editPageAdvertise'])->name('admin.page.edit');
+Route::post('/admin/advertise-page-update', [AdminController::class,'updatePageAdvertise'])->name('admin.page.update');
+Route::post('/admin/advertise-page-delete', [AdminController::class,'deletePageAdvertise'])->name('admin.page.delete');
 Route::get('/admin/advertise-section-add', [AdminController::class,'addSectionAdvertise'])->name('admin.section.add');
 Route::post('/admin/advertise-section-store', [AdminController::class,'storeSectionAdvertise'])->name('admin.section.store');
+Route::get('/admin/advertise-section-edit/{id}', [AdminController::class,'editSectionAdvertise'])->name('admin.section.edit');
+Route::post('/admin/advertise-section-update', [AdminController::class,'updateSectionAdvertise'])->name('admin.section.update');
+Route::post('/admin/advertise-section-delete', [AdminController::class,'deleteSectionAdvertise'])->name('admin.section.delete');
 Route::get('/admin/advertise-story-add', [AdminController::class,'addStoryAdvertise'])->name('admin.story.add');
 Route::post('/admin/advertise-story-store', [AdminController::class,'storeStoryAdvertise'])->name('admin.story.store');
 Route::get('/admin/advertise-story-edit/{id}', [AdminController::class,'editStoryAdvertise'])->name('admin.story.edit');

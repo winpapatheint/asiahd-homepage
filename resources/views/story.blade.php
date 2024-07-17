@@ -98,6 +98,15 @@
     <!--start section-->
     <section class="sec-padding">
         {{-- list section --}}
+    @if ($pageSection)
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                    <h1>{{ $pageSection->name }}</h1>
+                    <div class="divider-line solid margin yellow"></div>
+                </div>
+            </div>
+        </div>
         @foreach ($sectionStories as $sectionKey => $sectionStory)
         @if ($sectionStory->type == 'list')
         <div class="container">
@@ -187,6 +196,16 @@
         {{-- grid section end --}}
         @endif
         @endforeach
+    @else
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                <h1>No advertise page found!</h1>
+                <div class="divider-line solid margin yellow"></div>
+            </div>
+        </div>
+    </div>
+    @endif
     <!--end section-->
     {{-- start form section --}}
         <div class="container">

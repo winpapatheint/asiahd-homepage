@@ -79,6 +79,7 @@
                                 </li>
                                 <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle 
                                     {{request()->is('admin/advertise') ||
+                                    request()->is('admin/advertise-page-add') ||
                                     request()->is('admin/advertise-section-add') ||
                                     request()->is('admin/advertise-story-add') ||
                                     request()->is('admin/advertise-story-edit/*')
