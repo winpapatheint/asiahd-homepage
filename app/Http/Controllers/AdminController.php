@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+use App\Models\News;
 use App\Models\User;
 use App\Models\Admin;
 use App\Models\Story;
 use App\Models\Project;
+use App\Models\ListContent;
 use App\Models\SectionStory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -49,13 +52,13 @@ class AdminController extends Controller
 
     public function allProject()
     {
-        return view('admin.project_all');
+        $limit = 10;
+        $projects = Project::latest()->paginate($limit);
+        $ttl = $projects->total();
+        $ttlpage = ceil($ttl / $limit);
+        return view('admin.project_all', compact('projects', 'ttl', 'ttlpage',));
     }
 
-    public function allNews()
-    {
-        return view('admin.news_all');
-    }
 
     public function allAdvertise()
     {
@@ -115,7 +118,7 @@ class AdminController extends Controller
             $request->image->move(public_path('images'), $imageName);
             $updateData['image'] = $imageName;
         }
-    
+
         Story::where('id', $request->id)->update($updateData);
         return redirect('/admin/advertise')->with('success', 'ストーリーが正常に更新されました!');
     }
@@ -131,26 +134,194 @@ class AdminController extends Controller
     }
 
 
+    public function editProject($id)
+    {
+        $projects = Project::findOrFail($id);
+        return view('admin.project_edit', compact('projects'));
+    }
+
+
     public function saveProject(Request $request)
     {
         $project = new Project();
         $request->validate([
-            'name' => 'required|string|max:255',
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'paragraph' => 'required|string',
+            'title' => 'required|string|max:255',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'content' => 'required|string',
         ]);
 
-        if ($request->hasFile('photo')) {
-            $imageName = time().'.'.$request->photo->extension();
-            $request->photo->move(public_path('images'), $imageName);
-            $project->photo = $imageName;
+        if ($request->hasFile('image')) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $project->image = $imageName;
         }
-        $project->name = $request->name;
-        $project->paragraph = $request->paragraph;
+        $project->title = $request->title;
+        $project->content = $request->content;
         $project->save();
 
-        return back()->with('success', 'Data added successfully!');
+        return redirect('/admin/project')->with('success', 'Data added successfully!');
     }
 
 
+    public function updateProject(Request $request)
+    {
+        $project = Project::find($request->id);
+        $old_img = $request->old_img;
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'content' => 'required|string|max:255',
+        ]);
+
+        if ($request->hasFile('image')) {
+            if (File::exists($old_img)) {
+                File::delete($old_img);
+            }
+            $imageName = time() . '.' . $request->image->getClientOriginalExtension();
+            $request->image->move(public_path('images'), $imageName);
+            $project->image = $imageName;
+        } else {
+            $filename = $old_img;
+        }
+        $project->title = $request->title;
+        $project->content = $request->content;
+        $project->update();
+
+        return back()->with('success', 'Data updated successfully!');
+    }
+
+
+    public function deleteProject($id)
+    {
+        $data = Project::findOrFail($id);
+        $imagePath = public_path('images' . $data->image);
+        $data->delete();
+        if (File::exists($imagePath)) {
+            File::delete($imagePath);
+        }
+
+        return back()->with('success', 'Data deleted successfully');
+    }
+
+
+    public function allNews()
+    {
+        $limit = 10;
+        $news = News::latest()->paginate($limit);
+        $ttl = $news->total();
+        $ttlpage = ceil($ttl / $limit);
+        return view('admin.news_all', compact('news', 'ttl', 'ttlpage',));
+    }
+
+
+    public function addNews()
+    {
+        return view('admin.news_add');
+    }
+
+
+    public function editNews($id)
+    {
+        $news = News::with('listContents')->find($id);
+        $news->list = $news->listContents->pluck('list')->toArray();
+
+        return view('admin.news_edit', compact('news'));
+    }
+
+
+
+    public function saveNews(Request $request)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'content' => 'required|string',
+        ]);
+
+        $news = new News();
+        if ($request->hasFile('image')) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $news->image = $imageName;
+        }
+
+        $news->title = $request->title;
+        $news->content = $request->content;
+        $news->created_at = Carbon::now();
+        $news->save();
+
+        if ($request->has('list')) {
+            $lists = $request->input('list', []);
+            foreach ($lists as $item) {
+                ListContent::create([
+                    'content_id' => $news->id,
+                    'list' => $item,
+                    'created_at' => Carbon::now(),
+                ]);
+            }
+        }
+
+        return redirect('/admin/news')->with('success', 'Data added successfully!');
+    }
+
+
+    public function updateNews(Request $request)
+    {
+        $news = News::find($request->id);
+        $old_img = $request->old_img;
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'content' => 'required|string',
+            'list' => 'array'
+        ]);
+
+        if ($request->hasFile('image')) {
+            if (File::exists(public_path('images/') . $old_img)) {
+                File::delete(public_path('images/') . $old_img);
+            }
+            $imageName = time() . '.' . $request->image->getClientOriginalExtension();
+            $request->image->move(public_path('images'), $imageName);
+            $news->image = $imageName;
+        } else {
+            $news->image = $old_img;
+        }
+
+        $news->title = $request->title;
+        $news->content = $request->content;
+        $news->updated_at = Carbon::now();
+        $news->save();
+
+        if ($request->has('list')) {
+            ListContent::where('content_id', $news->id)->delete();
+            $lists = $request->input('list', []);
+            foreach ($lists as $item) {
+                ListContent::create([
+                    'content_id' => $news->id,
+                    'list' => $item,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]);
+            }
+        }
+
+        return redirect('/admin/news')->with('success', 'Data updated successfully!');
+    }
+
+
+
+    public function deleteNews($id)
+    {
+        $data = News::findOrFail($id);
+        $list = ListContent::where('content_id', $id)->delete();
+        $imagePath = public_path('images' . $data->image);
+        $data->delete();
+        if (File::exists($imagePath)) {
+            File::delete($imagePath);
+        }
+
+        return back()->with('success', 'Data deleted successfully');
+    }
 }

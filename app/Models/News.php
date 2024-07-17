@@ -11,8 +11,13 @@ class News extends Model
 
     protected $fillable = [
         'title',
-        'photo',
-        'paragraph',
-        'list',
-        ];
+        'image',
+        'content',
+        'list'
+    ];
+
+    public function listContents()
+    {
+        return $this->hasMany(ListContent::class, 'content_id');
+    }
 }

@@ -63,5 +63,22 @@ Route::post('/admin/advertise-story-update', [AdminController::class,'updateStor
 Route::post('/admin/advertise-story-delete', [AdminController::class,'deleteStoryAdvertise'])->name('admin.story.delete');
 Route::get('/admin/change-password', [AdminController::class,'changePassword'])->name('admin.password.change');
 Route::post('/admin/change-password', [AdminController::class,'updatePassword'])->name('admin.password.update');
+//Project
+Route::get('/admin/project', [AdminController::class,'allProject'])->name('project');
+Route::get('/admin/project/add', [AdminController::class,'addProject'])->name('add.project');
+Route::post('/admin/project/save', [AdminController::class,'saveProject'])->name('save.project');
+Route::get('/admin/project/edit/{id}', [AdminController::class,'editProject'])->name('edit.project');
+Route::post('/admin/project/update', [AdminController::class,'updateProject'])->name('update.project');
+Route::get('/admin/project/delete/{id}', [AdminController::class,'deleteProject'])->name('delete.project');
+
+//News
+Route::get('/admin/news', [AdminController::class,'allNews'])->name('news');
+Route::get('/admin/news/add', [AdminController::class,'addNews'])->name('add.news');
+Route::post('/admin/news/save', [AdminController::class,'saveNews'])->name('save.news');
+Route::get('/admin/news/edit/{id}', [AdminController::class,'editNews'])->name('edit.news');
+Route::post('/admin/news/update', [AdminController::class,'updateNews'])->name('update.news');
+Route::get('/admin/news/delete/{id}', [AdminController::class,'deleteNews'])->name('delete.news');
+
+Route::get('/admin/advertise', [AdminController::class,'allAdvertise']);
 
 

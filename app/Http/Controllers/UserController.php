@@ -22,7 +22,8 @@ class UserController extends Controller
 
     public function project()
     {
-        return view('project');
+        $projects = Project::latest()->get();
+        return view('project',compact('projects'));
     }
 
     public function project1()

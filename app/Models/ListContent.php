@@ -5,13 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class ListContent extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'image',
-        'content',
-        ];
+    protected $fillable = ['content_id', 'list'];
+
 }
