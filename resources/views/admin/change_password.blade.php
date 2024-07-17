@@ -1,16 +1,6 @@
 <x-auth-layout>
     <style>
-        .container_p {
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            width: 500px;
-            max-width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        h1 {
+        h3 {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
@@ -34,7 +24,7 @@
             font-size: 16px;
         }
         
-        button {
+        .btn1 {
             width: 100%;
             padding: 10px;
             background-color: #71ac34;
@@ -45,7 +35,7 @@
             cursor: pointer;
         }
         
-        button:hover {
+        .btn1:hover {
             background-color: #333;
         }
         
@@ -56,31 +46,37 @@
         
         </style>
     <section class="sec-padding">
-        <div class="container_p">
-            <h1>パスワード修正</h1>
-            @include('components.messagebox')
-            <form method="POST" action="{{ route('admin.password.update') }}" id="updatePasswordForm">
-                @csrf
-                <div class="form-group">
-                    <label for="oldPassword">Old Password<span class="required">*</span></label>
-                    <input type="password" id="oldPassword" name="oldPassword" value="{{ old('oldPassword') }}" required>
-                    <span class="error" style="color:red" id="error-oldPassword"></span>
-                    @error('oldPassword')
-                        <span class="error" style="color:red">{{ $message }}</span>
-                    @enderror
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="smart-forms bmargin">
+                        <h3 class="raleway">パスワード修正</h3>
+                        @include('components.messagebox')
+                        <form method="POST" action="{{ route('admin.password.update') }}" id="updatePasswordForm">
+                            @csrf
+                            <div class="form-group">
+                                <label for="oldPassword">Old Password<span class="required">*</span></label>
+                                <input type="password" id="oldPassword" name="oldPassword" class="gui-password" value="{{ old('oldPassword') }}" required>
+                                <span class="error" style="color:red" id="error-oldPassword"></span>
+                                @error('oldPassword')
+                                    <span class="error" style="color:red">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="newPassword">New Password<span class="required">*</span></label>
+                                <input type="password" id="newPassword" name="newPassword" value="{{ old('newPassword') }}" required>
+                                <span class="error" style="color:red" id="error-newPassword"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password<span class="required">*</span></label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" value="{{ old('confirmPassword') }}" required>
+                                <span class="error" style="color:red" id="error-confirmPassword"></span>
+                            </div>
+                            <button type="button" class="btn1" onclick="validateChangePasswordForm()">修正する</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="newPassword">New Password<span class="required">*</span></label>
-                    <input type="password" id="newPassword" name="newPassword" value="{{ old('newPassword') }}" required>
-                    <span class="error" style="color:red" id="error-newPassword"></span>
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password<span class="required">*</span></label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" value="{{ old('confirmPassword') }}" required>
-                    <span class="error" style="color:red" id="error-confirmPassword"></span>
-                </div>
-                <button type="button" onclick="validateChangePasswordForm()">修正する</button>
-            </form>
+            </div>
         </div>
     </section>
     <script>

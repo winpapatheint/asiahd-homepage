@@ -65,7 +65,13 @@
                             </button>
                         </td>
                         <td>{{ $story->title }}</td>
-                        <td>{{ $story->body }}</td>
+                        <td>
+                            @if (mb_strlen($story->body) > 200)
+                                {!! mb_substr($story->body, 0, 200) . '...' !!}
+                            @else
+                                {!! nl2br(e($story->body)) !!}
+                            @endif
+                        </td>
                         <td><img src="{{ asset('images/' . $story->image ) }}" alt="story-image" class="thumbnail"></td>
                         <td>
                             <button class="action-btn settings">
@@ -84,8 +90,9 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center">Are you Sure?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                        style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -109,8 +116,9 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center">Are you Sure?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                        style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -133,8 +141,9 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center">Are you Sure?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                        style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>

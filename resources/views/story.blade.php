@@ -38,21 +38,6 @@
 <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}">
 <style>
-    .notice-form {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    .notice-form h3 {
-        margin-bottom: 30px;
-    }
-    .form-group label {
-        text-align: right;
-    }
     .required::after {
         content: "必須";
         color: red;
@@ -67,29 +52,16 @@
         display: block;
         width: 100%;
         padding: 15px;
-        background-color: #2c6c6e;
-        color: #fff;
         text-align: center;
         border: none;
         border-radius: 4px;
         font-size: 16px;
         cursor: pointer;
     }
-    .btn:hover {
-        background-color: #234f50;
-    }
 
     .error {
         display: block;
         text-align: left;
-    }
-    .custom-checkbox .form-check {
-        display: flex;
-        align-items: center;
-    }
-
-    .custom-checkbox .form-check-input {
-        margin-right: 10px;
     }
 </style>
 </head>
@@ -98,204 +70,223 @@
     <!--start section-->
     <section class="sec-padding">
         {{-- list section --}}
-    @if ($pageSection)
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3" style="text-align: center;">
-                    <h1>{{ $pageSection->name }}</h1>
-                    <div class="divider-line solid margin yellow"></div>
-                </div>
-            </div>
-        </div>
-        @foreach ($sectionStories as $sectionKey => $sectionStory)
-        @if ($sectionStory->type == 'list')
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-left nopadding">
-                    <div class="divider-line solid margin yellow"></div>
-                    <h4 class="section-title uppercase">{{ $sectionStory->section }}</h4>
-                    <div class="title-line-8 yellow left"></div>
-                </div>
-
-                @php
-                    $listStories = $stories->where('section_story_id', $sectionStory->id);
-                    $counter = 0;
-                @endphp
-                @foreach ($listStories as $key => $story)
-                @if ($counter % 2 == 0)
-                <div class="col-md-6 bmargin">
-                    <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
-                    <div class="divider-line solid margin yellow"></div>
-                    <p>
-                        {{ $story->body }}
-                    </p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="blog-holder6 bmargin">
-                        <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+        @if ($pageSection)
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                        <h1>{{ $pageSection->name }}</h1>
+                        <div class="divider-line solid margin yellow"></div>
                     </div>
                 </div>
-                @else
-                <div class="col-md-6">
-                    <div class="blog-holder6 bmargin">
-                        <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
-                    </div>
-                </div>
-
-                <div class="col-md-6 bmargin">
-                    <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
-                    <div class="divider-line solid margin yellow"></div>
-                    <p>
-                        {{ $story->body }}
-                    </p>
-                </div>
-                @endif
-                <div class="clearfix"></div>
-                <br /><br />
-                <!--end item-->
-                @php
-                    $counter++;
-                @endphp
-                @endforeach
             </div>
-        </div>
-        {{-- list section end --}}
-        @else
-        {{-- grid section --}}
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-left nopadding">
-                    <div class="divider-line solid margin yellow"></div>
-                    <h4 class="section-title uppercase">{{ $sectionStory->section }}</h4>
-                    <div class="title-line-8 yellow left"></div>
-                </div>
-                @php
-                    $gridStories = $stories->where('section_story_id', $sectionStory->id);
-                    $counter = 0;
-                @endphp
-                @foreach ($gridStories as $story)
-                <div class="col-md-4 col-sm-6">
-                    <div class="team-holder5 text-center bmargin">
-                        <div class="image-holder">
-                            <div class="hover-box"><br>
-                                <p class="text-white"> {{ $story->body }}
+            @foreach ($sectionStories as $sectionKey => $sectionStory)
+                @if ($sectionStory->type == 'list')
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-left nopadding">
+                                <div class="divider-line solid margin yellow"></div>
+                                <h4 class="section-title uppercase">{{ $sectionStory->section }}</h4>
+                                <div class="title-line-8 yellow left"></div>
+                            </div>
+
+                            @php
+                                $listStories = $stories->where('section_story_id', $sectionStory->id);
+                                $counter = 0;
+                            @endphp
+                            @foreach ($listStories as $key => $story)
+                            @if ($counter % 2 == 0)
+                            <div class="col-md-6 bmargin">
+                                <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
+                                <div class="divider-line solid margin yellow"></div>
+                                <p>
+                                    {{ $story->body }}
                                 </p>
                             </div>
-                            <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+
+                            <div class="col-md-6">
+                                <div class="blog-holder6 bmargin">
+                                    <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                            @else
+                            <div class="col-md-6">
+                                <div class="blog-holder6 bmargin">
+                                    <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 bmargin">
+                                <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
+                                <div class="divider-line solid margin yellow"></div>
+                                <p>
+                                    {{ $story->body }}
+                                </p>
+                            </div>
+                            @endif
+                            <div class="clearfix"></div>
+                            <br /><br />
+                            <!--end item-->
+                            @php
+                                $counter++;
+                            @endphp
+                            @endforeach
                         </div>
-                        <div class="clearfix"></div>
-                        <br />
-                        <h5 class="less-mar1">{{ $story->title }}</h5>
+                    </div>
+                {{-- list section end --}}
+                @else
+                {{-- grid section --}}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-left nopadding">
+                                <div class="divider-line solid margin yellow"></div>
+                                <h4 class="section-title uppercase">{{ $sectionStory->section }}</h4>
+                                <div class="title-line-8 yellow left"></div>
+                            </div>
+                            @php
+                                $gridStories = $stories->where('section_story_id', $sectionStory->id);
+                                $counter = 0;
+                            @endphp
+                            @foreach ($gridStories as $story)
+                            <div class="col-md-4 col-sm-6">
+                                <div class="team-holder5 text-center bmargin">
+                                    <div class="image-holder">
+                                        <div class="hover-box"><br>
+                                            <p class="text-white"> {{ $story->body }}
+                                            </p>
+                                        </div>
+                                        <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <br />
+                                    <h5 class="less-mar1">{{ $story->title }}</h5>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            @endforeach
+                        </div>
+                    </div>
+                    {{-- grid section end --}}
+                @endif
+            @endforeach
+        @else
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                        <h1>広告ページが見つかりません!</h1>
+                        <div class="divider-line solid margin yellow"></div>
                     </div>
                 </div>
-                <!--end item-->
-                @endforeach
             </div>
-        </div>
-        {{-- grid section end --}}
         @endif
-        @endforeach
-    @else
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3" style="text-align: center;">
-                <h1>No advertise page found!</h1>
-                <div class="divider-line solid margin yellow"></div>
-            </div>
-        </div>
-    </div>
-    @endif
-    <!--end section-->
-    {{-- start form section --}}
+        <!--end section-->
+        {{-- start form section --}}
         <div class="container">
             <div class="row">
-                <div class="notice-form">
-                    <h3>お問い合わせフォーム</h3>
-                    <form id="Inquiry-Form" method="POST" action="{{ route('inquiry.store') }}">
-                        @csrf
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label required">ご氏名</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="例）渡辺　太郎">
-                                <span class="error" style="color:red" id="error-name"></span>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label required">メールアドレス</label>
-                            <div class="col-md-8">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="例）info@asia-hd.com">
-                                <span class="error" style="color:red" id="error-email"></span>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <span class="col-md-4 col-form-label"></span>
-                            <div class="col-md-8">
-                                <label for="confirm-email" style="text-align: left; display: block;">※確認のため、もう一度ご入力ください</label>
-                                <input type="email" class="form-control" id="confirm-email" name="confirm-email" placeholder="例）info@asia-hd.com">
-                                <span class="error" style="color:red" id="error-confirm-email"></span>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="phone" class="col-md-4 col-form-label required">電話番号</label>
-                            <div class="col-md-8">
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="例）0339815090">
-                                <span class="error" style="color:red" id="error-phone"></span>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="age" class="col-md-4 col-form-label optional">年齢</label>
-                            <div class="col-md-8">
-                                <input type="number" class="form-control" id="age" name="age" placeholder="例）32">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="postal-code" class="col-md-4 col-form-label optional">郵便番号</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="例）171-0014">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="prefecture" class="col-md-4 col-form-label optional">都道府県</label>
-                            <div class="col-md-8">
-                                <select class="form-control" id="prefecture" name="prefecture">
-                                    <option value="">選択してください</option>
-                                    @foreach ($prefecture as $pref)
-                                    <option value="{{ $pref->name }}">{{ $pref->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="address" class="col-md-4 col-form-label optional">住所</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="address" name="address" placeholder="例）豊島区池袋4-27-5">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="building" class="col-md-4 col-form-label optional">建物名</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="building" name="building" placeholder="例）和田ビル502号">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inquiry" class="col-md-4 col-form-label optional">お問い合わせ内容</label>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="inquiry" name="inquiry" rows="4" placeholder="お電話をお掛けして良い曜日・時間帯があればご記入下さい。例）月〜金、14：00以降"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-8 custom-checkbox">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="privacy-policy" name="privacy-policy">
-                                    <label class="form-check-label" for="privacy-policy">プライバシーポリシーに同意する</label>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="smart-forms bmargin">
+                        <h3 class="raleway">お問い合わせフォーム</h3>
+                        @include('components.messagebox')
+                        <form id="Inquiry-Form" method="POST" action="{{ route('inquiry.store') }}">
+                            @csrf
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="name" class="col-form-label required">ご氏名</label>
                                 </div>
-                                <span class="error" style="color:red" id="error-privacy-policy"></span>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="例）渡辺　太郎">
+                                    <span class="error" style="color:red" id="error-name"></span>
+                                </div>
                             </div>
-                        </div>
-                        <button type="button" class="btn" onclick="validateInquiryForm()">確認画面へ</button>
-                    </form>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="email" class="col-form-label required">メールアドレス</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="例）info@asia-hd.com">
+                                    <span class="error" style="color:red" id="error-email"></span>
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-8 col-md-offset-4">
+                                    <label for="confirm-email" style="text-align: left; display: block;">※確認のため、もう一度ご入力ください</label>
+                                    <input type="email" class="form-control" id="confirm-email" name="confirm-email" placeholder="例）info@asia-hd.com">
+                                    <span class="error" style="color:red" id="error-confirm-email"></span>
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="phone" class="col-form-label required">電話番号</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="例）0339815090">
+                                    <span class="error" style="color:red" id="error-phone"></span>
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="age" class="col-form-label optional">年齢</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="number" class="form-control" id="age" name="age" placeholder="例）32">
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="postal-code" class="col-form-label optional">郵便番号</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="例）171-0014">
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="prefecture" class="col-form-label optional">都道府県</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select class="form-control" id="prefecture" name="prefecture">
+                                        <option value="">選択してください</option>
+                                        @foreach ($prefecture as $pref)
+                                        <option value="{{ $pref->name }}">{{ $pref->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="address" class="col-form-label optional">住所</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="例）豊島区池袋4-27-5">
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="building" class="col-form-label optional">建物名</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="building" name="building" placeholder="例）和田ビル502号">
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-md-4">
+                                    <label for="inquiry" class="col-form-label optional">お問い合わせ内容</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="inquiry" name="inquiry" rows="4" placeholder="お電話をお掛けして良い曜日・時間帯があればご記入下さい。例）月〜金、14：00以降"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row section">
+                                <div class="col-md-8 col-md-offset-4 custom-checkbox">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="privacy-policy" name="privacy-policy">
+                                        <label class="form-check-label" for="privacy-policy">プライバシーポリシーに同意する</label>
+                                    </div>
+                                    <span class="error" style="color:red" id="error-privacy-policy"></span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary yellow" onclick="validateInquiryForm()">送信する</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,7 +446,7 @@
 
         if (!checkbox.checked) {
             isValid = false;
-            document.getElementById('error-privacy-policy').textContent = 'お問い合わせいただくにはプライバシーポリシーに同意いただく必要があります。';
+            document.getElementById('error-privacy-policy').textContent = '※お問い合わせいただくにはプライバシーポリシーに同意いただく必要があります。';
         }
 
         if (isValid) {

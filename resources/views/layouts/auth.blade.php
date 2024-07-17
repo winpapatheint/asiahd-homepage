@@ -90,7 +90,8 @@
                                     {{request()->is('admin/change-password') ? 'active' : ''}}">
                                     パスワード修正</a>
                                 </li>
-                                <li> <a href="{{ route('admin.logout') }}" class="logout-link">
+                                <li> <a href="#" class="logout-link"
+                                    data-toggle="modal" data-target="#confirmLogoutModal" >
                                     ログアウト</a>
                                 </li>
                             </ul>
@@ -104,6 +105,30 @@
     <div class="clearfix"></div>
         {{ $slot }}
     </div>
+    <!-- Confirm Logout Modal -->
+    <div class="modal fade" id="confirmLogoutModal" tabindex="-1" role="dialog" aria-labelledby="confirmLogoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmLogoutModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 15px; top: 15px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                    You will be logging out.
+                </div>
+                <div class="modal-footer">
+                    <form id="logoutForm" method="get" action="{{ route('admin.logout') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-success">Yes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="clearfix"></div>
     <section class="section-fulldark sec-padding">
         <div class="container ">
