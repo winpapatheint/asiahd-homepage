@@ -186,6 +186,7 @@
         {{-- start form section --}}
         <div class="container">
             <div class="row">
+                <div class="divider-line solid margin yellow"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="smart-forms bmargin">
                         <h3 class="raleway">お問い合わせフォーム</h3>
