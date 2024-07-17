@@ -38,7 +38,7 @@
                 <tbody>
                     @foreach ($stories as $key => $story)
                     <tr>
-                        <td>{{ $key + 1 }}</td>
+                        <td>{{ $ttl + 1 - ($stories->firstItem() + $key) }}</td>
                         <td>{{ $story->sectionStory->pageSection->name }}</td>
                         <td>
                             <button class="action-btn settings">
