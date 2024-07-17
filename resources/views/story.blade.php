@@ -58,11 +58,15 @@
         font-size: 16px;
         cursor: pointer;
     }
-
     .error {
         display: block;
         text-align: left;
     }
+    h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 </style>
 </head>
 
