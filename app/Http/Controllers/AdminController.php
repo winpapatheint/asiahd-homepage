@@ -298,9 +298,7 @@ class AdminController extends Controller
 
     public function editNews($id)
     {
-        $news = News::with('listContents')->find($id);
-        $news->list = $news->listContents->pluck('list')->toArray();
-
+        $news = News::find($id);
         return view('admin.news_edit', compact('news'));
     }
 
@@ -326,17 +324,6 @@ class AdminController extends Controller
         $news->created_at = Carbon::now();
         $news->save();
 
-        if ($request->has('list')) {
-            $lists = $request->input('list', []);
-            foreach ($lists as $item) {
-                ListContent::create([
-                    'content_id' => $news->id,
-                    'list' => $item,
-                    'created_at' => Carbon::now(),
-                ]);
-            }
-        }
-
         return redirect('/admin/news')->with('success', 'Data added successfully!');
     }
 
@@ -350,7 +337,6 @@ class AdminController extends Controller
             'title' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'content' => 'required|string',
-            'list' => 'array'
         ]);
 
         if ($request->hasFile('image')) {
@@ -369,19 +355,6 @@ class AdminController extends Controller
         $news->updated_at = Carbon::now();
         $news->save();
 
-        if ($request->has('list')) {
-            ListContent::where('content_id', $news->id)->delete();
-            $lists = $request->input('list', []);
-            foreach ($lists as $item) {
-                ListContent::create([
-                    'content_id' => $news->id,
-                    'list' => $item,
-                    'created_at' => Carbon::now(),
-                    'updated_at' => Carbon::now()
-                ]);
-            }
-        }
-
         return redirect('/admin/news')->with('success', 'Data updated successfully!');
     }
 
@@ -390,7 +363,6 @@ class AdminController extends Controller
     public function deleteNews($id)
     {
         $data = News::findOrFail($id);
-        $list = ListContent::where('content_id', $id)->delete();
         $imagePath = public_path('images' . $data->image);
         $data->delete();
         if (File::exists($imagePath)) {

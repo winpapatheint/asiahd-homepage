@@ -19,18 +19,6 @@
                     <label for="content">内容<span class="required">*</span></label>
                     <textarea id="content" name="content" rows="5" required>{{ $news->content }}</textarea>
                 </div>
-
-                @foreach ($news->list as $item)
-                    <div class="form-group">
-                        <label for="list">リスト</label>
-                        <div id="input-container">
-                            <div class="input-wrapper">
-                                <input type="text" id="list" name="list[]" value="{{ $item }}">
-                                <button type="button" class="add-button">+</button>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
                 <button class="btn-style" type="submit">修正する</button>
             </form>
         </div>

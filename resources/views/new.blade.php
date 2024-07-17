@@ -48,14 +48,6 @@
                         <div class="divider-line solid margin yellow"></div>
                         <p>{!! nl2br(e($item->content)) !!}</p>
                         <br />
-
-                        @if ($item->listContents->isNotEmpty())
-                            <ul class="iconlist yellow">
-                                @foreach ($item->listContents as $value)
-                                    <li><i class="fa fa-arrow-circle-right"></i> {{ $value->list }}</li>
-                                @endforeach
-                            </ul>
-                        @endif
                     </div>
                     <!--end item-->
 

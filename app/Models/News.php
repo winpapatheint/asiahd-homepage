@@ -13,11 +13,6 @@ class News extends Model
         'title',
         'image',
         'content',
-        'list'
     ];
 
-    public function listContents()
-    {
-        return $this->hasMany(ListContent::class, 'content_id');
-    }
 }

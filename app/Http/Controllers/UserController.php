@@ -80,7 +80,7 @@ class UserController extends Controller
     public function new()
     {
         $limit = 5;
-        $news = News::with('listContents')->latest()->paginate($limit);
+        $news = News::latest()->paginate($limit);
         $ttl = $news->total();
         $ttlpage = ceil($ttl / $limit);
 
