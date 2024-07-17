@@ -120,7 +120,7 @@ class UserController extends Controller
             'inquiry',
         ]);
         Mail::to(config('mail.from.address'))->send(new InquiryMail($inquiry));
-        return redirect()->back()->with('success', 'Your inquiry has been sent successfully!');
+        return redirect()->back()->with('success', 'お問い合わせは正常に送信されました。');
     }
 
     public function sendContact(Request $request)
@@ -133,6 +133,6 @@ class UserController extends Controller
             'message',
         ]);
         Mail::to(config('mail.from.address'))->send(new ContactMail($inquiry));
-        return redirect()->back()->with('success', 'Your contact has been sent successfully!');
+        return redirect()->back()->with('success', 'お問合せは正常に送信されました。');
     }
 }

@@ -55,7 +55,7 @@
                         <form method="POST" action="{{ route('admin.password.update') }}" id="updatePasswordForm">
                             @csrf
                             <div class="form-group">
-                                <label for="oldPassword">Old Password<span class="required">*</span></label>
+                                <label for="oldPassword">古いパスワード<span class="required">*</span></label>
                                 <input type="password" id="oldPassword" name="oldPassword" class="gui-password" value="{{ old('oldPassword') }}" required>
                                 <span class="error" style="color:red" id="error-oldPassword"></span>
                                 @error('oldPassword')
@@ -63,12 +63,12 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="newPassword">New Password<span class="required">*</span></label>
+                                <label for="newPassword">新しいパスワード<span class="required">*</span></label>
                                 <input type="password" id="newPassword" name="newPassword" value="{{ old('newPassword') }}" required>
                                 <span class="error" style="color:red" id="error-newPassword"></span>
                             </div>
                             <div class="form-group">
-                                <label for="confirmPassword">Confirm Password<span class="required">*</span></label>
+                                <label for="confirmPassword">確認パスワード<span class="required">*</span></label>
                                 <input type="password" id="confirmPassword" name="confirmPassword" value="{{ old('confirmPassword') }}" required>
                                 <span class="error" style="color:red" id="error-confirmPassword"></span>
                             </div>

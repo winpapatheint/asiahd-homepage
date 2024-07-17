@@ -97,8 +97,6 @@ class AdminController extends Controller
     }
 
     public function deletePageAdvertise(Request $request) {
-        // PageSection::where('id', $request->id)->delete();
-        // SectionStory::where('page_section_id', $request->id)->delete();
         $pageSection = PageSection::findOrFail($request->id);
 
         $sectionStories = $pageSection->sectionStory()->get();

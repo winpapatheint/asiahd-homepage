@@ -90,21 +90,21 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="text-align: center">
-                                    The page and its stories will all be deleted permanently.
+                                    ページとそのストーリーはすべて削除されます。
                                 </div>
                                 <div class="modal-footer">
                                     <form id="deletePageForm" method="POST" action="{{ route('admin.page.delete') }}">
                                         @csrf
                                         <input type="hidden" id="id" name="id" value="{{ $story->sectionStory->pageSection->id }}">
-                                        <button type="submit" class="btn btn-success">Yes</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                        <button type="submit" class="btn btn-success">はい</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">いいえ</button>
                                     </form>
                                 </div>
                             </div>
@@ -116,21 +116,21 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="text-align: center">
-                                    The section and its stories will all be deleted permanently.
+                                    セクションとそのストーリーはすべて削除されます。
                                 </div>
                                 <div class="modal-footer">
                                     <form id="deletePageForm" method="POST" action="{{ route('admin.section.delete') }}">
                                         @csrf
                                         <input type="hidden" id="id" name="id" value="{{ $story->sectionStory->id }}">
-                                        <button type="submit" class="btn btn-success">Yes</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                        <button type="submit" class="btn btn-success">はい</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">いいえ</button>
                                     </form>
                                 </div>
                             </div>
@@ -141,21 +141,21 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">Are you Sure?</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="text-align: center">
-                                    The story will be deleted permanently.
+                                    ストーリーは削除されます。
                                 </div>
                                 <div class="modal-footer">
                                     <form id="deleteStoryForm" method="POST" action="{{ route('admin.story.delete') }}">
                                         @csrf
                                         <input type="hidden" id="id" name="id" value="{{ $story->id }}">
-                                        <button type="submit" class="btn btn-success">Yes</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                        <button type="submit" class="btn btn-success">はい</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">いいえ</button>
                                     </form>
                                 </div>
                             </div>
