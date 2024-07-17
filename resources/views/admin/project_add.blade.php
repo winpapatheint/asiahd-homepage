@@ -1,7 +1,7 @@
 <x-auth-layout>
     <section class="sec-padding">
         <div class="container_p">
-            <h1 class="h1-style">開発事績登録</h1>
+            <h1 class="h1-style">開発実績登録</h1>
             <form method="POST" action="{{ url('/admin/project/save') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">

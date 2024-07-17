@@ -1,7 +1,7 @@
 <x-auth-layout>
     <section class="sec-padding">
         <div class="container_p">
-            <h1 class="h1-style">開発事績修正</h1>
+            <h1 class="h1-style">開発実績修正</h1>
             <form method="POST" action="{{ route('update.project') }}" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="id" value="{{ $projects->id }}">

@@ -27,14 +27,6 @@ Route::get('/', [AdminController::class,'welcome']);
 Route::get('/about', [UserController::class,'about']);
 Route::get('/project', [UserController::class,'project']);
 Route::get('/project/{id}', [UserController::class,'showProject'])->name('project.show');
-Route::get('/project1', [UserController::class,'project1']);
-Route::get('/project2', [UserController::class,'project2']);
-Route::get('/project3', [UserController::class,'project3']);
-Route::get('/project4', [UserController::class,'project4']);
-Route::get('/project5', [UserController::class,'project5']);
-Route::get('/project6', [UserController::class,'project6']);
-Route::get('/project7', [UserController::class,'project7']);
-Route::get('/project8', [UserController::class,'project8']);
 Route::get('/news', [UserController::class, 'new']);
 Route::get('/recruit', [UserController::class, 'recruit']);
 Route::get('/service', [UserController::class, 'service']);
@@ -50,10 +42,6 @@ Route::post('/inquiry', [UserController::class, 'storeInquiry'])->name('inquiry.
 
 
 // Admin
-Route::get('/admin/project', [AdminController::class,'allProject']);
-Route::get('/admin/project/add', [AdminController::class,'addProject']);
-Route::get('/admin/project/save', [AdminController::class,'saveProject']);
-Route::get('/admin/news', [AdminController::class,'allNews']);
 Route::get('/admin/advertise', [AdminController::class,'allAdvertise'])->name('admin.advertise.show');
 Route::get('/admin/advertise-page-add', [AdminController::class,'addPageAdvertise'])->name('admin.page.add');
 Route::post('/admin/advertise-page-store', [AdminController::class,'storePageAdvertise'])->name('admin.page.store');
@@ -88,7 +76,3 @@ Route::post('/admin/news/save', [AdminController::class,'saveNews'])->name('save
 Route::get('/admin/news/edit/{id}', [AdminController::class,'editNews'])->name('edit.news');
 Route::post('/admin/news/update', [AdminController::class,'updateNews'])->name('update.news');
 Route::get('/admin/news/delete/{id}', [AdminController::class,'deleteNews'])->name('delete.news');
-
-Route::get('/admin/advertise', [AdminController::class,'allAdvertise']);
-
-

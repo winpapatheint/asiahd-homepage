@@ -28,7 +28,9 @@ class AdminController extends Controller
 {
     public function welcome()
     {
-        return view('index');
+        $projects = Project::latest()->get();
+        $news = News::latest()->get();
+        return view('index', compact('projects','news'));
     }
 
     public function dashboard()
@@ -98,7 +100,7 @@ class AdminController extends Controller
         // PageSection::where('id', $request->id)->delete();
         // SectionStory::where('page_section_id', $request->id)->delete();
         $pageSection = PageSection::findOrFail($request->id);
-    
+
         $sectionStories = $pageSection->sectionStory()->get();
         foreach ($sectionStories as $sectionStory) {
             $sectionStory->story()->delete();
