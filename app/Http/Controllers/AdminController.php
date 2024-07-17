@@ -66,8 +66,11 @@ class AdminController extends Controller
 
     public function allAdvertise()
     {
-        $stories = Story::all();
-        return view('admin.advertise_all', compact('stories'));
+        $limit = 10;
+        $stories = Story::paginate($limit);
+        $ttl = $stories->total();
+        $ttlpage = ceil($ttl / $limit);
+        return view('admin.advertise_all', compact('stories', 'ttl', 'ttlpage'));
     }
 
     public function addPageAdvertise() {

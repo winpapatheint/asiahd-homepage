@@ -164,6 +164,7 @@
                     @endforeach
                 </tbody>
             </table>
+            @include('components.pagination')
             </div>
         </div>
     </section>
