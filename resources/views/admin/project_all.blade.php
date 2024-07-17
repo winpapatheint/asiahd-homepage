@@ -11,7 +11,7 @@
                 </a>
                 <table class="table-back">
                     <thead>
-                        <tr>
+                        <tr class="table-tr">
                             <th>#</th>
                             <th>作成日</th>
                             <th>タイトル</th>
