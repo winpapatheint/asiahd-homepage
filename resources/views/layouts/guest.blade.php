@@ -198,7 +198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>Copyright Asia Human Development, Inc. all rights reserved</span>
+                    <span style="color: white;">Copyright Asia Human Development, Inc. all rights reserved</span>
                 </div>
             </div>
         </div>
@@ -206,7 +206,7 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <a href="#" class="scrollup yellow"></a><!-- end scroll to top of the page-->
+    <a href="#" class="scrollup yellow-green"></a><!-- end scroll to top of the page-->
     </div>
 <!-- end site wraper -->
 
