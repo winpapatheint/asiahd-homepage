@@ -100,14 +100,8 @@
                             </li>
                             <li> <a href="{{ url('/project') }}" class="dropdown-toggle 
                                 {{request()->is('project') || 
-                                request()->is('project1') || 
-                                request()->is('project2') || 
-                                request()->is('project3') || 
-                                request()->is('project4') || 
-                                request()->is('project5') || 
-                                request()->is('project6') || 
-                                request()->is('project7') || 
-                                request()->is('project8') ? 'active' : ''}}">
+                                request()->is('project/*') 
+                                ? 'active' : ''}}">
                                 開発実績</a>
                             </li>
                             <li class="dropdown">
