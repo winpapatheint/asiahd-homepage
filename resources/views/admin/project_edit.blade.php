@@ -1,7 +1,6 @@
 <x-auth-layout>
     <section class="sec-padding">
         <div class="container_p">
-            @include('components.messagebox')
             <h1 class="h1-style">開発事績修正</h1>
             <form method="POST" action="{{ route('update.project') }}" enctype="multipart/form-data">
                 @csrf
@@ -13,7 +12,7 @@
                 </div>
                 <div class="form-group">
                     <label for="file">ファイルを選択<span class="required">*</span></label>
-                    <input type="file" id="file" name="image" required>
+                    <input type="file" id="file" name="image">
                     <img src="{{ asset('images/' . $projects->image) }}" width="80">
                 </div>
                 <div class="form-group">

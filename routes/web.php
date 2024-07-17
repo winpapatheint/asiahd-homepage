@@ -26,6 +26,7 @@ Route::get('dashboard', [AdminController::class,'dashboard']);
 Route::get('/', [AdminController::class,'welcome']);
 Route::get('/about', [UserController::class,'about']);
 Route::get('/project', [UserController::class,'project']);
+Route::get('/project/{id}', [UserController::class,'showProject'])->name('project.show');
 Route::get('/project1', [UserController::class,'project1']);
 Route::get('/project2', [UserController::class,'project2']);
 Route::get('/project3', [UserController::class,'project3']);
@@ -71,6 +72,7 @@ Route::post('/admin/advertise-story-update', [AdminController::class,'updateStor
 Route::post('/admin/advertise-story-delete', [AdminController::class,'deleteStoryAdvertise'])->name('admin.story.delete');
 Route::get('/admin/change-password', [AdminController::class,'changePassword'])->name('admin.password.change');
 Route::post('/admin/change-password', [AdminController::class,'updatePassword'])->name('admin.password.update');
+
 //Project
 Route::get('/admin/project', [AdminController::class,'allProject'])->name('project');
 Route::get('/admin/project/add', [AdminController::class,'addProject'])->name('add.project');

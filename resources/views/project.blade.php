@@ -46,17 +46,17 @@
 
                 <div class="demo-full-width bmargin">
                     <div id="grid-container" class="cbp">
-                        @foreach ($variable as $key => $value)
+                        @foreach ($projects as $item)
                             <div class="cbp-item identity logos">
-                                <a href="{{ url('/project1') }}" class="cbp-caption"
+                                <a href="{{ route('project.show', ['id' => $item->id]) }}" class="cbp-caption"
                                     data-title="Suspendisse Imperdiet<br>by Codelayers">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="http://placehold.it/1000x800" alt="">
+                                        <img id="uniform-size" src="{{ asset('images/' . $item->image) }}" class="img-responsive">
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignLeft">
                                             <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-title">オンライン教室システム</div>
+                                                <div class="cbp-l-caption-title">{{ $item->title }}</div>
                                             </div>
                                         </div>
                                     </div>

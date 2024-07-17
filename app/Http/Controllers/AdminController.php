@@ -14,6 +14,7 @@ use App\Models\SectionStory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 
 /**
@@ -239,25 +240,27 @@ class AdminController extends Controller
 
         $request->validate([
             'title' => 'required|string|max:255',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'content' => 'required|string|max:255',
         ]);
 
         if ($request->hasFile('image')) {
-            if (File::exists($old_img)) {
-                File::delete($old_img);
+            if (File::exists(public_path('images/') . $old_img)) {
+                File::delete(public_path('images/') . $old_img);
             }
             $imageName = time() . '.' . $request->image->getClientOriginalExtension();
             $request->image->move(public_path('images'), $imageName);
             $project->image = $imageName;
         } else {
-            $filename = $old_img;
+            $project->image = $old_img;
         }
+
         $project->title = $request->title;
         $project->content = $request->content;
-        $project->update();
+        $project->updated_at = Carbon::now();
+        $project->save();
 
-        return back()->with('success', 'Data updated successfully!');
+        return redirect('/admin/project')->with('success', 'Data updated successfully!');
     }
 
 

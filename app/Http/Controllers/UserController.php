@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use App\Models\News;
 use App\Models\User;
 use App\Models\Story;
+use App\Models\Project;
 use App\Mail\ContactMail;
 use App\Mail\InquiryMail;
 use App\Models\PageSection;
@@ -24,48 +26,15 @@ class UserController extends Controller
     public function project()
     {
         $projects = Project::latest()->get();
-        return view('project',compact('projects'));
+        return view('project', compact('projects'));
     }
 
-    public function project1()
+    public function showProject($id)
     {
-        return view('project1');
+        $project = Project::find($id);
+        return view('project_detail', compact('project'));
     }
 
-    public function project2()
-    {
-        return view('project2');
-    }
-
-    public function project3()
-    {
-        return view('project3');
-    }
-
-    public function project4()
-    {
-        return view('project4');
-    }
-
-    public function project5()
-    {
-        return view('project5');
-    }
-
-    public function project6()
-    {
-        return view('project6');
-    }
-
-    public function project7()
-    {
-        return view('project7');
-    }
-
-    public function project8()
-    {
-        return view('project8');
-    }
 
     public function service()
     {
@@ -110,7 +79,12 @@ class UserController extends Controller
 
     public function new()
     {
-        return view('new');
+        $limit = 10;
+        $news = News::with('listContents')->latest()->paginate($limit);
+        $ttl = $news->total();
+        $ttlpage = ceil($ttl / $limit);
+
+        return view('new', compact('news', 'ttl', 'ttlpage',));
     }
 
     public function recruit()
@@ -132,7 +106,8 @@ class UserController extends Controller
         return view('story', compact('pageSection', 'sectionStories', 'stories', 'prefecture'));
     }
 
-    public function storeInquiry(Request $request) {
+    public function storeInquiry(Request $request)
+    {
         $inquiry = $request->only([
             'name',
             'email',
@@ -148,7 +123,8 @@ class UserController extends Controller
         return redirect()->back()->with('success', 'Your inquiry has been sent successfully!');
     }
 
-    public function sendContact(Request $request) {
+    public function sendContact(Request $request)
+    {
         $inquiry = $request->only([
             'subject',
             'name',

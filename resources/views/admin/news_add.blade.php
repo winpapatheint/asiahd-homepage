@@ -1,7 +1,6 @@
 <x-auth-layout>
     <section class="sec-padding">
         <div class="container_p">
-            @include('components.messagebox')
             <h1 class="h1-style">新着情報登録</h1>
             <form method="POST" action="{{ url('/admin/news/save') }}" enctype="multipart/form-data">
                 @csrf
