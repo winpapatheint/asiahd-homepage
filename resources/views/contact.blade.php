@@ -39,6 +39,7 @@
                                 あらかじめご了承ください。</p>
                             <br />
                             <br />
+                            @include('components.messagebox')
                             <form action="{{ route('contact.send') }}" method="POST" id="Contact-Form">
                                 @csrf
                                 <div>

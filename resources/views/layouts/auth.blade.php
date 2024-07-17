@@ -85,7 +85,8 @@
                                     ? 'active' : ''}}">
                                     広告管理</a>
                                 </li>
-                                <li> <a href="#" class="dropdown-toggle">
+                                <li> <a href="{{ url('/admin/change-password') }}" class="dropdown-toggle 
+                                    {{request()->is('admin/change-password') ? 'active' : ''}}">
                                     パスワード修正</a>
                                 </li>
                                 <li> <a href="{{ route('admin.logout') }}" class="logout-link">

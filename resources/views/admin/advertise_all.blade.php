@@ -39,11 +39,11 @@
                         <td>
                             <button class="action-btn settings">
                                 <a href="{{ route('admin.story.edit', $story->id) }}">
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa fa-pencil-square-o"></i>
                                 </a>
                             </button>
                             <button class="action-btn delete" data-toggle="modal" data-target="#confirmDeleteModal" data-id="{{ $story->id }}">
-                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa fa-trash"></i>
                             </button>
                         </td>
                     </tr>

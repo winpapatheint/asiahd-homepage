@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
         $loginUser = User::where('email', $request->email)->first();
         if((!$loginUser) || (!Hash::check($request->password, $loginUser->password)))
         {
-            return redirect()->back()->with('error', 'Incorrect Email or password!');
+            return redirect()->back()->with('error', 'メールアドレスまたはパスワードが間違っています。');
         }
 
         $request->authenticate();

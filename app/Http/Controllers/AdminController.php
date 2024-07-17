@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Admin;
+use App\Models\Story;
 use App\Models\Project;
 use App\Models\SectionStory;
-use App\Models\Story;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * Store a newly created resource in storage.
@@ -28,6 +29,22 @@ class AdminController extends Controller
     public function dashboard()
     {
         return view('admin.dashboard');
+    }
+
+    public function changePassword() {
+        return view('admin.change_password');
+    }
+
+    public function updatePassword(Request $request) {
+        $user = User::find(Auth::user()->id);
+
+        if (!Hash::check($request->oldPassword, $user->password)) {
+            return redirect()->back()->withErrors(['oldPassword' => '古いパスワードが正しくありません。'])->withInput();
+        }
+        $user->password = Hash::make($request->newPassword);
+        $user->save();
+
+        return redirect()->back()->with('success', 'パスワードが正常に更新されました');
     }
 
     public function allProject()
@@ -77,7 +94,7 @@ class AdminController extends Controller
             'body' => $request->body,
             'image' => $imageName
         ]);
-        return redirect('/admin/advertise')->with('success', 'Added Story Successfully!');
+        return redirect('/admin/advertise')->with('success', 'ストーリーが正常に追加されました!');
     }
 
     public function editStoryAdvertise($id) {
@@ -100,12 +117,12 @@ class AdminController extends Controller
         }
     
         Story::where('id', $request->id)->update($updateData);
-        return redirect('/admin/advertise')->with('success', 'Added Story Successfully!');
+        return redirect('/admin/advertise')->with('success', 'ストーリーが正常に更新されました!');
     }
 
     public function deleteStoryAdvertise(Request $request) {
         Story::where('id', $request->id)->delete();
-        return redirect()->back()->with('success', 'Deleted Story Successfully!');
+        return redirect()->back()->with('success', 'ストーリーを正常に削除しました!');
     }
 
     public function addProject()

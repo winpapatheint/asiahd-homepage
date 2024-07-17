@@ -61,5 +61,7 @@ Route::post('/admin/advertise-story-store', [AdminController::class,'storeStoryA
 Route::get('/admin/advertise-story-edit/{id}', [AdminController::class,'editStoryAdvertise'])->name('admin.story.edit');
 Route::post('/admin/advertise-story-update', [AdminController::class,'updateStoryAdvertise'])->name('admin.story.update');
 Route::post('/admin/advertise-story-delete', [AdminController::class,'deleteStoryAdvertise'])->name('admin.story.delete');
+Route::get('/admin/change-password', [AdminController::class,'changePassword'])->name('admin.password.change');
+Route::post('/admin/change-password', [AdminController::class,'updatePassword'])->name('admin.password.update');
 
 
