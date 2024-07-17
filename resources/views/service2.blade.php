@@ -61,7 +61,7 @@
                             <div class="col-left">・予約システム</div>
                             <div class="col-left">・顧客管理システム</div>
                             <div class="col-left">・ECサイト/ECモール</div>
-                            <div class="col-left">・宿泊予約システム</div>
+                            <div class="col-left">・EngQ英語</div>
                         </div>
                     </div>
                     <!--end item-->
