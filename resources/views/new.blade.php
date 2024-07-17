@@ -59,7 +59,7 @@
                     </div>
                     <!--end item-->
 
-                    <div class="clearfix"></div>
+                    <div class="clearfix"></div><br>
                 </div>
             @endforeach
         </div>
