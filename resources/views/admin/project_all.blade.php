@@ -35,7 +35,13 @@
                                         <img width="50" height="50"
                                         src="{{ asset('images/' . $item->image) }}">
                                     </td>
-                                    <td class="content-column">{!! nl2br(e($item->content)) !!}</td>
+                                    <td class="content-column">
+                                        @if (mb_strlen($item->content) > 200)
+                                            {!! mb_substr($item->content, 0, 200) . '...' !!}
+                                        @else
+                                            {!! nl2br(e($item->content)) !!}
+                                        @endif
+                                    </td>
                                     <td>
                                         <a href="{{ route('edit.project', $item->id) }}"><button class="action-btn settings"><i class="fa fa-pencil-square-o"></i></button></a>
                                         <a href="{{ route('delete.project', $item->id) }}"><button class="action-btn delete"><i class="fa fa-trash"></i></button></a>
