@@ -172,7 +172,6 @@
                         <h4 class="uppercase">選ばれる理由</h4>
                         <div class="title-line-8 yellow left"></div>
                         <br />
-                        <br />
                         <div class="clearfix"></div>
                         <ul class="tabs10">
                             <li><a href="#example-10-tab-1" target="_self">デザイン </a></li>
@@ -205,11 +204,11 @@
                         <!-- end all tabs -->
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 align-left clearfix">
                     <div class="item-holder bmargin">
                         <h4 class="uppercase">会社ビジョン</h4>
                         <div class="title-line-8 yellow left"></div>
-                        <br />
                         <br />
                         <div class="feature-box29">
                             <div class="image-holder">
@@ -225,7 +224,6 @@
                     <div class="item-holder bmargin">
                         <h4 class="uppercase">サービス内容</h4>
                         <div class="title-line-8 yellow left"></div>
-                        <br />
                         <br />
                         <div class="accordion_holder">
                             <div class="accordion_example1">
@@ -312,7 +310,7 @@
         </div>
     </section>
     <!--end section-->
-    <div class="clearfix"></div>
+    <div class="clearfix"></div><br>
 
     <section class="sec-tpadding-2 sec-bpadding less-padding">
         <div class="container">
