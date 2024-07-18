@@ -37,7 +37,7 @@
                                     </td>
                                     <td class="content-column">
                                         @if (mb_strlen($item->content) > 200)
-                                            {!! mb_substr($item->content, 0, 200) . '...' !!}
+                                            {!! nl2br(e(mb_substr($item->content, 0, 200) . '...')) !!}
                                         @else
                                             {!! nl2br(e($item->content)) !!}
                                         @endif
