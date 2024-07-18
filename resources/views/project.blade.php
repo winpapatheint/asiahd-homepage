@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignLeft">
-                                            <div class="cbp-l-caption-body">
+                                            <div class="cbp-l-caption-body" style="text-align: center;">
                                                 <div class="cbp-l-caption-title">{{ $item->title }}</div>
                                             </div>
                                         </div>
