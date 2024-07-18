@@ -171,7 +171,7 @@
                     <div class="item-holder bmargin">
                         <h4 class="uppercase">選ばれる理由</h4>
                         <div class="title-line-8 yellow left"></div>
-                        <br />
+
                         <div class="clearfix"></div>
                         <ul class="tabs10">
                             <li><a href="#example-10-tab-1" target="_self">デザイン </a></li>
@@ -220,6 +220,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 align-left last">
                     <div class="item-holder bmargin">
                         <h4 class="uppercase">サービス内容</h4>
@@ -338,7 +339,7 @@
                             <div class="text-box-inner" style="overflow: hidden;">
                                 <h5 class="uppercase less-mar1" style="margin-bottom: auto;"><a href="#">{{ $new->title }}</a></h5>
                                 <div class="divider-line solid margin yellow"></div>
-                        
+
                                 <p>
                                     @if (mb_strlen($new->content) > 300)
                                     {!! mb_substr($new->content, 0, 300) . '...'  !!}<br>
@@ -349,7 +350,7 @@
                                 <a class="read-more yellow" href="{{ url('/news') }}">
                                 <i class="fa fa-angle-double-right"></i> もっと見る</a>
                             </div>
-                        </div>                    
+                        </div>
                     </div>
                 </div>
                 <!--end item-->
