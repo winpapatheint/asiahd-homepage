@@ -71,10 +71,18 @@
                     <ul class="nav yellow navbar-nav">
                         <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                             <ul class="nav yellow navbar-nav">
-                                <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle {{request()->is('admin/project') ? 'active' : ''}}">
+                                <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle 
+                                    {{request()->is('admin/project') ||
+                                    request()->is('admin/project/add') ||
+                                    request()->is('admin/project/edit/*') 
+                                    ? 'active' : ''}}">
                                     製品一覧</a>
                                 </li>
-                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle {{request()->is('admin/news') ? 'active' : ''}}">
+                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle 
+                                    {{request()->is('admin/news') ||
+                                    request()->is('admin/news/add') ||
+                                    request()->is('admin/news/edit/*') 
+                                    ? 'active' : ''}}">
                                     新着情報</a>
                                 </li>
                                 <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle
