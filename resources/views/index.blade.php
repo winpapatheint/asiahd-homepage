@@ -325,34 +325,36 @@
                 </div>
                 <div class="clearfix"></div>
 
-                @foreach ($news as $key => $item)
-                    <div class="col-md-6">
-                        <div class="blog-holder6 bmargin">
-                            <div class="col-md-6 col-sm-6 nopadding">
-                                <div class="image-holder">
-                                    <div class="post-date-box">
-                                        {{ \Carbon\Carbon::parse($item->created_at)->format('d') }}
-                                        <span>{{ \Carbon\Carbon::parse($item->created_at)->format('m, Y') }}</span>
-                                    </div>
-                                    <img src="{{ asset('images/' . $item->image) }}" class="img-responsive" />
+                <div class="col-md-12">
+                    <div class="blog-holder6 bmargin">
+                        <div class="col-md-4 col-sm-4 nopadding">
+                            <div class="image-holder">
+                                <div class="post-date-box">
+                                    {{ \Carbon\Carbon::parse($new->created_at)->format('d') }}
+                                    <span>{{ \Carbon\Carbon::parse($new->created_at)->format('m, Y') }}</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 nopadding">
-                                <div class="text-box-inner">
-                                    <h5 class="uppercase less-mar1"><a href="#">{{ $item->title }}</a></h5>
-                                    <div class="divider-line solid margin yellow"></div>
-
-                                    <p>{!! nl2br(e(Illuminate\Support\Str::limit($item->content, 40, '...'))) !!}</p>
-                                    <br />
-                                    <a class="read-more yellow" href="{{ url('/news') }}"><i
-                                            class="fa fa-angle-double-right"></i>
-                                        もっと見る</a>
-                                </div>
+                                <img src="{{ asset('images/' . $new->image) }}" class="img-responsive"/>
                             </div>
                         </div>
+                        <div class="col-md-8 col-sm-8 nopadding">
+                            <div class="text-box-inner" style="overflow: hidden;">
+                                <h5 class="uppercase less-mar1" style="margin-bottom: auto;"><a href="#">{{ $new->title }}</a></h5>
+                                <div class="divider-line solid margin yellow"></div>
+                        
+                                <p>
+                                    @if (mb_strlen($new->content) > 300)
+                                    {!! mb_substr($new->content, 0, 300) . '...'  !!}<br>
+                                    @else
+                                    {!! $new->content  !!}<br>
+                                    @endif
+                                </p>
+                                <a class="read-more yellow" href="{{ url('/news') }}">
+                                <i class="fa fa-angle-double-right"></i> もっと見る</a>
+                            </div>
+                        </div>                    
                     </div>
-                    <!--end item-->
-                @endforeach
+                </div>
+                <!--end item-->
             </div>
         </div>
     </section>

@@ -29,8 +29,8 @@ class AdminController extends Controller
     public function welcome()
     {
         $projects = Project::latest()->get();
-        $news = News::latest()->get();
-        return view('index', compact('projects','news'));
+        $new = News::latest()->first();
+        return view('index', compact('projects','new'));
     }
 
 
