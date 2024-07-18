@@ -110,8 +110,6 @@
             const section = document.querySelector('select[name="section"]').value;
             const title = document.getElementById('title').value.trim();
             const body = document.getElementById('body').value.trim();
-            const image = document.getElementById('image').files[0];
-            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
 
             if(!section || section == 'Choose Section') {
                 isValid = false;
@@ -129,14 +127,6 @@
             if (!body) {
                 isValid = false;
                 document.getElementById('error-body').textContent = 'Please provide your body.';
-            }
-
-            if (!image) {
-                isValid = false;
-                document.getElementById('error-image').textContent = 'Please provide your image.';
-            } else if (!allowedExtensions.exec(image.name)) {
-                isValid = false;
-                document.getElementById('error-image').textContent = 'Please choose a valid image.';
             }
 
             if (isValid) {

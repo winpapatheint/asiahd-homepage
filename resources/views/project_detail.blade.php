@@ -41,7 +41,7 @@
                     <br />
                     <h5 class="uppercase less-mar1">詳細</h5>
                     <div class="divider-line solid margin yellow"></div>
-                    <p>{!! nl2br(e($project->content)) !!}</p>
+                    <p>{!! nl2br($project->content) !!}</p>
                 </div>
                 <!--end item-->
             </div>

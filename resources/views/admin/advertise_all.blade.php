@@ -2,6 +2,7 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
+                @include('components.messagebox')
                 <h2 class="align-item">広告管理</h2>
                 <div style="display: flex;">
                     <button class="new-entry-btn">
