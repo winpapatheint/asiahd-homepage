@@ -28,7 +28,7 @@
 	font-size: 18px;
 	height: 50px;
 	line-height: 20px;
-	padding: 21px 0 0;
+	/* padding: 21px 0 0; */
 }
 .navbar-default {
 	background: none;
@@ -44,8 +44,8 @@ ul.nav>li>a:hover.active {
 	color: #fd602c;
 }
 .navbar-nav > li > a {
-	padding-bottom: 36px;
-	padding-top: 36px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	text-transform: uppercase;
 }
 .dropdown-submenu {
@@ -96,8 +96,7 @@ ul.nav>li>a:hover.active {
     padding: 2px;
 }
 
- @media (min-width:769px;
-) {
+ @media (min-width:769px) {
 .dropdown-submenu>.dropdown-menu:last-child {
  border-top: 0px solid #000;
 }

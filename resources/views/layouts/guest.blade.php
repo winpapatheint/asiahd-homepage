@@ -47,14 +47,14 @@
     <div class="site_wrapper">
         <div class="topbar dark topbar-padding">
             <div class="container">
-                <div class="topbar-left-items">
+                <div class="topbar-left-items" style="max-width: 50%;">
                     <ul class="toplist toppadding pull-left paddtop1">
                         <li class="rightl"><i class="fa fa-phone"></i>03-3981-5090</li>
                         <li><i class="fa fa-envelope"></i>info@asia-hd.com</li>
                     </ul>
                 </div>
                 <!--end left-->
-                <div class="topbar-right-items pull-right">
+                <div class="topbar-right-items pull-right" style="max-width: 50%;">
                     <ul class="toplist toppadding">
                         <li><a href="https://www.facebook.com/codelayers"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/codelayers"><i class="fa fa-twitter"></i></a></li>
@@ -68,11 +68,11 @@
             <div class="container">
                 <div class="navbar yellow navbar-default yamm">
                     <div class="navbar-header">
+                        <a href="{{ url('/') }}" class="navbar-brand" style="max-width: 80%;"><img src="{{ asset('images/asia-hd_logo.png') }}"
+                                alt="" /></a>
                         <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
                             class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
                                 class="icon-bar"></span></button>
-                        <a href="{{ url('/') }}" class="navbar-brand"><img src="{{ asset('images/asia-hd_logo.png') }}"
-                                alt="" /></a>
                     </div>
                     <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                         <ul class="nav yellow navbar-nav">
@@ -124,8 +124,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-md-4 clearfix">
-                    <div class="footer-logo"><img src="{{ asset('images/asia-hd_logo.png') }}" alt="" />
-                    </div>
+                    <div class="footer-logo"><img src="{{ asset('images/asia-hd_logo.png') }}" alt="" style="max-width: 80%;"></div>
                         <ul class="address-info">
                             <li>〒171-0014 <br>
                                 東京都豊島区池袋4-27-5和田ビル502号
