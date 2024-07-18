@@ -2,7 +2,7 @@
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
-                <h4 class="title text-white uppercase">製品一覧</h4>
+                <h4 class="title text-white uppercase" style="margin-top: 10px">製品一覧</h4>
                 <h5 class="text-white uppercase">Products</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>

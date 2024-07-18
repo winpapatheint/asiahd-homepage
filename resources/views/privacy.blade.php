@@ -2,7 +2,7 @@
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
-                <h4 class="title text-white uppercase">個人情報保護方針</h4>
+                <h4 class="title text-white uppercase" style="margin-top: 10px">個人情報保護方針</h4>
                 <h5 class="text-white uppercase">Privacy Policy</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>

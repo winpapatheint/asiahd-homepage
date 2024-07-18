@@ -185,9 +185,6 @@ ul.nav>li>a:hover.active {
 .navbar-header {
 	width: 100%;
 }
-.navbar-toggle {
-	margin-top: 19px;
-}
 .yamm.fulldark .navbar-nav > li > a {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -267,6 +264,11 @@ ul.nav.red-2>li>a:hover.active {
 ul.nav.yellow>li>a.active {
 	color: #71ac34;
 	border-bottom: 4px solid #71ac34;
+}
+@media (max-width: 767px) {
+	ul.nav.yellow>li>a.active {
+		border-bottom: none;
+	}
 }
 ul.nav.yellow>li>a:hover.active {
 	color: #71ac34;

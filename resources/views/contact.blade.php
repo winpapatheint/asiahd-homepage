@@ -2,7 +2,7 @@
         <section>
             <div class="header-inner two">
                 <div class="inner text-center">
-                    <h4 class="title text-white uppercase">お問合せ</h4>
+                    <h4 class="title text-white uppercase" style="margin-top: 10px">お問合せ</h4>
                     <h5 class="text-white uppercase">Contact Us</h5>
                 </div>
                 <div class="overlay bg-opacity-5"></div>
