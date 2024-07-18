@@ -90,7 +90,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">削除ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
@@ -116,7 +116,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">削除ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>
@@ -141,7 +141,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
+                                    <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">削除ですか？</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
                                         style="position: absolute; right: 15px; top: 15px;">
                                         <span aria-hidden="true">&times;</span>

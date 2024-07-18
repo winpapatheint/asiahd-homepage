@@ -110,13 +110,13 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="confirmLogoutModalLabel" style="text-align: center; width: 100%;">本気ですか？</h5>
+                    <h5 class="modal-title" id="confirmLogoutModalLabel" style="text-align: center; width: 100%;">ログアウト</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 15px; top: 15px;">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body" style="text-align: center">
-                    ログアウトしようとしています。
+                    ログアウトしますか？
                 </div>
                 <div class="modal-footer">
                     <form id="logoutForm" method="get" action="{{ route('admin.logout') }}">
