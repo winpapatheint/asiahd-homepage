@@ -122,7 +122,7 @@
                         <h3>Privacy Policy</h3>
                     </div>
                     <div class="col-md-6 text-right">
-                        <div class="pagenation_links">Home <i>/</i>Privacy Policy</div>
+                        <div class="pagenation_links">Home <i>/</i> Privacy Policy</div>
                     </div>
                 </div>
             </div>
