@@ -72,12 +72,12 @@
                         <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                             <ul class="nav yellow navbar-nav">
                                 <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle {{request()->is('admin/project') ? 'active' : ''}}">
-                                    開発実績</a>
+                                    製品一覧</a>
                                 </li>
                                 <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle {{request()->is('admin/news') ? 'active' : ''}}">
                                     新着情報</a>
                                 </li>
-                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle 
+                                <li> <a href="{{ url('/admin/advertise') }}" class="dropdown-toggle
                                     {{request()->is('admin/advertise') ||
                                     request()->is('admin/advertise-page-add') ||
                                     request()->is('admin/advertise-section-add') ||
@@ -86,7 +86,7 @@
                                     ? 'active' : ''}}">
                                     広告管理</a>
                                 </li>
-                                <li> <a href="{{ url('/admin/change-password') }}" class="dropdown-toggle 
+                                <li> <a href="{{ url('/admin/change-password') }}" class="dropdown-toggle
                                     {{request()->is('admin/change-password') ? 'active' : ''}}">
                                     パスワード修正</a>
                                 </li>
@@ -155,7 +155,7 @@
                     <ul class="usefull-links yellow">
                         <li><a href="{{ url('/') }}"><i class="fa fa-angle-right"></i>HOME</a></li>
                         <li><a href="{{ url('/about') }}"><i class="fa fa-angle-right"></i>会社概要</a></li>
-                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>開発実績</a></li>
+                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>製品一覧</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
                     </ul>
                 </div>

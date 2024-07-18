@@ -2,8 +2,8 @@
     <section>
         <div class="header-inner two">
             <div class="inner text-center">
-                <h4 class="title text-white uppercase">開発実績</h4>
-                <h5 class="text-white uppercase">Projects</h5>
+                <h4 class="title text-white uppercase">製品一覧</h4>
+                <h5 class="text-white uppercase">Products</h5>
             </div>
             <div class="overlay bg-opacity-5"></div>
             <img src="{{ asset('images/project.jpg') }}" alt="" class="img-responsive" />
@@ -17,11 +17,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Projects</h3>
+                        <h3>Products</h3>
                     </div>
 
                     <div class="col-md-6 text-right">
-                        <div class="pagenation_links">Home <i>/</i> Projects
+                        <div class="pagenation_links">Home <i>/</i> Products
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-left nopadding">
-                    <h4 class="section-title uppercase">開発実績</h4>
+                    <h4 class="section-title uppercase">製品一覧</h4>
                     <div class="title-line-8 yellow left"></div>
                     <p>企業様向けにカスタマイズ可能な様々なソフトウェアシステムを用意しております。<br />
                         システム導入については、気軽にお問い合わせください。</p>

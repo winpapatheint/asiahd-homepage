@@ -98,17 +98,17 @@
                             <li> <a href="{{ url('/about') }}" class="dropdown-toggle {{request()->is('about') ? 'active' : ''}}">
                                 会社概要</a>
                             </li>
-                            <li> <a href="{{ url('/project') }}" class="dropdown-toggle 
-                                {{request()->is('project') || 
-                                request()->is('project/*') 
+                            <li> <a href="{{ url('/project') }}" class="dropdown-toggle
+                                {{request()->is('project') ||
+                                request()->is('project/*')
                                 ? 'active' : ''}}">
-                                開発実績</a>
+                                製品一覧</a>
                             </li>
                             <li class="dropdown">
-                                <a href="{{ url('/service1') }}" class="dropdown-toggle 
-                                {{request()->is('service1') || 
-                                request()->is('service2') || 
-                                request()->is('service3') || 
+                                <a href="{{ url('/service1') }}" class="dropdown-toggle
+                                {{request()->is('service1') ||
+                                request()->is('service2') ||
+                                request()->is('service3') ||
                                 request()->is('service4') ? 'active' : ''}}">
                                     サービス案内</a>
                                 <ul class="dropdown-menu five" role="menu">
@@ -162,7 +162,7 @@
                     <ul class="usefull-links yellow">
                         <li><a href="{{ url('/') }}"><i class="fa fa-angle-right"></i>HOME</a></li>
                         <li><a href="{{ url('/about') }}"><i class="fa fa-angle-right"></i>会社概要</a></li>
-                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>開発実績</a></li>
+                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>製品一覧</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
                     </ul>
                 </div>
@@ -206,168 +206,6 @@
 
 
 
-
-<!-- ============ JS FILES ============ -->
-{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
-<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
-<script type="text/javascript">
-    (function($) {
-    "use strict";
-        var slider = new MasterSlider();
-        slider.control('arrows');
-        slider.control('bullets');
-
-        slider.setup('masterslider' , {
-            width:1600,
-            height:665,
-            space:0,
-            speed:45,
-            layout:'fullwidth',
-            loop:true,
-            preload:0,
-            autoplay:true,
-            view:"parallaxMask"
-        });
-
-    })(jQuery);
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script>
-<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
-<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
-<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
-<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
-<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
-<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script> --}}
-
-{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
-<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
-<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
-<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
-<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script>
-<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
-<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
-<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script> --}}
-
-{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
-<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script>
-<script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
-<script type="text/javascript">
-    (function($) {
-    "use strict";
-        var slider = new MasterSlider();
-        slider.control('arrows');
-        slider.control('bullets');
-
-        slider.setup('masterslider' , {
-            width:1600,
-            height:665,
-            space:0,
-            speed:45,
-            layout:'fullwidth',
-            loop:true,
-            preload:0,
-            autoplay:true,
-            view:"parallaxMask"
-        });
-
-    })(jQuery);
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
-<script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
-<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script>
-<script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ asset('js/owl-carousel/custom.js') }}"></script>
-<script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script>
-<script src="{{ asset('js/scrolltotop/totop.js') }}"></script>
-<script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script> --}}
-
-<!-- jQuery Library -->
-{{-- <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script> --}}
-
-<!-- Bootstrap -->
-{{-- <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script> --}}
-
-<!-- jFlickrFeed -->
-{{-- <script src="{{ asset('js/jFlickrFeed/jflickrfeed.min.js') }}"></script> --}}
-
-<!-- Main Menu -->
-{{-- <script src="{{ asset('js/mainmenu/customeUI.js') }}"></script>
-<script src="{{ asset('js/mainmenu/jquery.sticky.js') }}"></script> --}}
-
-<!-- Scroll to Top -->
-{{-- <script src="{{ asset('js/scrolltotop/totop.js') }}"></script> --}}
-
-<!-- General Functions -->
-{{-- <script src="{{ asset('js/scripts/functions.js') }}" type="text/javascript"></script> --}}
-
-<!-- Smart Forms -->
-{{-- <script type="text/javascript" src="{{ asset('js/smart-forms/jquery.form.min.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/smart-forms/jquery.validate.min.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/smart-forms/additional-methods.min.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/smart-forms/smart-form.js') }}"></script> --}}
-
-<!-- Master Slider -->
-{{-- <script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script> --}}
-{{-- <script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script> --}}
-
-<!-- Cube Portfolio -->
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main3.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main2.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script> --}}
-
-<!-- Animations -->
-{{-- <script src="{{ asset('js/animations/js/appear.min.js') }}" type="text/javascript"></script> --}}
-
-<!-- Owl Carousel -->
-{{-- <script src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script> --}}
-{{-- <script src="{{ asset('js/owl-carousel/custom.js') }}"></script> --}}
-
-<!-- Tabs -->
-{{-- <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/tabs/smk-accordion.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/tabs/custom.js') }}"></script> --}}
 <!-- jQuery Library -->
 <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
 
@@ -421,47 +259,6 @@
 
 <!-- Cube Portfolio -->
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
-{{-- <script type="text/javascript">
-    (function($) {
-        "use strict";
-        $(document).ready(function() {
-            var $cubeportfolio = $('.cbp');
-            if ($cubeportfolio.data('cubeportfolio')) {
-                $cubeportfolio.cubeportfolio('destroy');
-            }
-            $cubeportfolio.cubeportfolio({
-                filters: '#js-filters-cube',
-                layoutMode: 'grid',
-                mediaQueries: [{
-                    width: 1500,
-                    cols: 5
-                }, {
-                    width: 1100,
-                    cols: 4
-                }, {
-                    width: 800,
-                    cols: 3
-                }, {
-                    width: 480,
-                    cols: 2
-                }, {
-                    width: 320,
-                    cols: 1
-                }],
-                defaultFilter: '*',
-                animationType: 'quicksand',
-                gapHorizontal: 10,
-                gapVertical: 10,
-                gridAdjustment: 'responsive',
-                caption: 'zoom',
-                displayType: 'fadeIn',
-                displayTypeSpeed: 100
-            });
-        });
-    })(jQuery);
-</script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main-two-col.js') }}"></script> --}}
-{{-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/main3.js') }}"></script> --}}
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/main2.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
 

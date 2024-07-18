@@ -33,14 +33,18 @@ class AdminController extends Controller
         return view('index', compact('projects','news'));
     }
 
+
     public function dashboard()
     {
         return view('admin.dashboard');
     }
 
+
     public function changePassword() {
+
         return view('admin.change_password');
     }
+
 
     public function updatePassword(Request $request) {
         $user = User::find(Auth::user()->id);
@@ -53,6 +57,7 @@ class AdminController extends Controller
 
         return redirect()->back()->with('success', 'パスワードが正常に更新されました');
     }
+
 
     public function allProject()
     {
@@ -73,9 +78,11 @@ class AdminController extends Controller
         return view('admin.advertise_all', compact('stories', 'ttl', 'ttlpage'));
     }
 
+
     public function addPageAdvertise() {
         return view('admin.advertise_page_add');
     }
+
 
     public function storePageAdvertise(Request $request) {
         PageSection::create([
@@ -85,10 +92,12 @@ class AdminController extends Controller
         return view('admin.advertise_section_add', compact('pageSections'));
     }
 
+
     public function editPageAdvertise($id) {
         $pageSection = PageSection::find($id);
         return view('admin.advertise_page_edit', compact('pageSection'));
     }
+
 
     public function updatePageAdvertise(Request $request) {
         $updateData = [
@@ -98,6 +107,7 @@ class AdminController extends Controller
         PageSection::where('id', $request->id)->update($updateData);
         return redirect('/admin/advertise')->with('success', 'ページが正常に更新されました!');
     }
+
 
     public function deletePageAdvertise(Request $request) {
         $pageSection = PageSection::findOrFail($request->id);
@@ -113,10 +123,12 @@ class AdminController extends Controller
         return redirect()->back()->with('success', 'ページを正常に削除しました!');
     }
 
+
     public function addSectionAdvertise() {
         $pageSections = PageSection::all();
         return view('admin.advertise_section_add', compact('pageSections'));
     }
+
 
     public function storeSectionAdvertise(Request $request) {
         SectionStory::create([
@@ -128,11 +140,13 @@ class AdminController extends Controller
         return view('admin.advertise_story_add', compact('sectionStories'));
     }
 
+
     public function editSectionAdvertise($id) {
         $pageSections = PageSection::all();
         $sectionStory = SectionStory::find($id);
         return view('admin.advertise_section_edit', compact('pageSections', 'sectionStory'));
     }
+
 
     public function updateSectionAdvertise(Request $request) {
         $updateData = [
@@ -145,16 +159,19 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'セクションが正常に更新されました!');
     }
 
+
     public function deleteSectionAdvertise(Request $request) {
         SectionStory::where('id', $request->id)->delete();
         Story::where('section_story_id', $request->id)->delete();
         return redirect()->back()->with('success', 'セクションを正常に削除しました!');
     }
 
+
     public function addStoryAdvertise() {
         $sectionStories = SectionStory::all();
         return view('admin.advertise_story_add', compact('sectionStories'));
     }
+
 
     public function storeStoryAdvertise(Request $request) {
         if (!empty($request->image)) {
@@ -173,11 +190,13 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'ストーリーが正常に追加されました!');
     }
 
+
     public function editStoryAdvertise($id) {
         $sectionStories = SectionStory::all();
         $story = Story::find($id);
         return view('admin.advertise_story_edit', compact('sectionStories', 'story'));
     }
+
 
     public function updateStoryAdvertise(Request $request) {
         $updateData = [
@@ -196,10 +215,12 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'ストーリーが正常に更新されました!');
     }
 
+
     public function deleteStoryAdvertise(Request $request) {
         Story::where('id', $request->id)->delete();
         return redirect()->back()->with('success', 'ストーリーを正常に削除しました!');
     }
+
 
     public function addProject()
     {
@@ -352,7 +373,7 @@ class AdminController extends Controller
 
         $news->title = $request->title;
         $news->content = $request->content;
-        $news->updated_at = Carbon::now();
+        $news->created_at = $request->date;
         $news->save();
 
         return redirect('/admin/news')->with('success', 'Data updated successfully!');

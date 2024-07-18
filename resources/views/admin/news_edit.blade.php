@@ -7,6 +7,10 @@
                 <input type="hidden" name="id" value="{{ $news->id }}">
                 <input type="hidden" name="old_img" value="{{ $news->image }}">
                 <div class="form-group">
+                    <label>作成日</label>
+                    <input type="date" name="date" value="{{ $news->created_at->format('Y-m-d') }}">
+                </div>
+                <div class="form-group">
                     <label for="title">タイトル<span class="required">*</span></label>
                     <input type="text" id="title" name="title" value="{{ $news->title }}" required>
                 </div>

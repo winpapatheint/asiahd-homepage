@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 @include('components.messagebox')
-                <h2 class="align-item">開発実績管理</h2>
+                <h2 class="align-item">製品一覧管理</h2>
                 <a href="{{ route('add.project') }}">
                     <button class="new-entry-btn">
                         <h5>+ 新規登録</h5>

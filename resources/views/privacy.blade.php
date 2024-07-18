@@ -80,7 +80,7 @@
                     <ul class="nav yellow navbar-nav">
                         <li> <a href="{{ url('/') }}" class="dropdown-toggle">Home</a></li>
                         <li> <a href="{{ url('/about') }}" class="dropdown-toggle">会社概要</a></li>
-                        <li> <a href="{{ url('/project') }}" class="dropdown-toggle">開発実績</a></li>
+                        <li> <a href="{{ url('/project') }}" class="dropdown-toggle">製品一覧</a></li>
                         <li class="dropdown">
                             <a href="{{ url('/service1') }}">サービス案内</a>
                             <ul class="dropdown-menu five" role="menu">
@@ -188,7 +188,7 @@
                     <ul class="usefull-links yellow">
                         <li><a href="{{ url('/') }}"><i class="fa fa-angle-right"></i>HOME</a></li>
                         <li><a href="{{ url('/about') }}"><i class="fa fa-angle-right"></i>会社概要</a></li>
-                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>開発実績</a></li>
+                        <li><a href="{{ url('/project') }}"><i class="fa fa-angle-right"></i>製品一覧</a></li>
                         <li><a href="{{ url('/service1') }}"><i class="fa fa-angle-right"></i>サービス案内</a></li>
                     </ul>
                 </div>
