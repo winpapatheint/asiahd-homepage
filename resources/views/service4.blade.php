@@ -47,7 +47,7 @@
 
                     <div class="col-md-6 bmargin"> <img src="{{ asset('images/ser04-1.jpg') }}" alt=""
                             class="img-responsive" /> <br />
-                        <h5 class="uppercase less-mar1">EC/ECモール開発</h5>
+                        <h5 class="uppercase less-mar1">EC/ECモール構築</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>業種別の各種ECサイトやECモールを構築しております。
                             ECサイトやECモールの構築については、気軽にお問い合わせください。</p>
@@ -79,7 +79,7 @@
 
                     <div class="col-md-6 bmargin"> <img src="{{ asset('images/ser04-4.jpg') }}" alt=""
                             class="img-responsive" /><br />
-                        <h5 class="uppercase less-mar1">Isolation</h5>
+                        <h5 class="uppercase less-mar1">New Style Life（新生活）ECモール</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>日本国内の消費者向けに食品以外の商品を販売するECモールです。<br>
                             販売者の出店は無料です。</p>
