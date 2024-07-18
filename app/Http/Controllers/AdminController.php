@@ -85,6 +85,11 @@ class AdminController extends Controller
 
 
     public function storePageAdvertise(Request $request) {
+        $pageSection = PageSection::where('name', $request->name)->first();
+
+        if ($pageSection) {
+            return redirect()->back()->withErrors(['oldName' => 'このページ名は既に存在します'])->withInput();
+        }
         PageSection::create([
             'name' => $request->name,
             'title' => $request->title
@@ -101,6 +106,11 @@ class AdminController extends Controller
 
 
     public function updatePageAdvertise(Request $request) {
+        $pageSection = PageSection::where('name', $request->name)->first();
+
+        if ($pageSection) {
+            return redirect()->back()->withErrors(['oldName' => 'このページ名は既に存在します'])->withInput();
+        }
         $updateData = [
             'name' => $request->name,
             'title' => $request->title

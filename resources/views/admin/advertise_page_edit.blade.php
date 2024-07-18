@@ -72,6 +72,9 @@
                     <label for="name">名前<span class="required">*</span></label>
                     <input type="text" id="name" name="name" value="{{ $pageSection->name }}" required>
                     <span class="error" style="color:red" id="error-name"></span>
+                    @error('oldName')
+                        <span class="error" style="color:red">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="form-group">
                     <label for="title">タイトル<span class="required">*</span></label>

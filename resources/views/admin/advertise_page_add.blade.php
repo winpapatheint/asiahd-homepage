@@ -69,12 +69,15 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">名前<span class="required">*</span></label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" required>
                     <span class="error" style="color:red" id="error-name"></span>
+                    @error('oldName')
+                        <span class="error" style="color:red">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="form-group">
                     <label for="title">タイトル<span class="required">*</span></label>
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="title" value="{{ old('title') }}" required>
                     <span class="error" style="color:red" id="error-title"></span>
                 </div>
                 <button type="button" onclick="validatePageForm()">登録する</button>
