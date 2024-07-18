@@ -68,7 +68,7 @@
             <div class="container">
                 <div class="navbar yellow navbar-default yamm">
                     <div class="navbar-header">
-                        <a href="{{ url('/') }}" class="navbar-brand" style="max-width: 80%;"><img src="{{ asset('images/asia-hd_logo.png') }}"
+                        <a href="{{ url('/') }}" class="navbar-brand" style="max-width: 80%;padding-left: 5%;"><img src="{{ asset('images/asia-hd_logo.png') }}"
                                 alt="" /></a>
                         <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"
                             class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span
