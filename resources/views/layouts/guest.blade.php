@@ -41,6 +41,23 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs.css') }}">
 <link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}">
+<style>
+    .address-info li {
+        color: #999999;
+    }
+
+    .address-info li:hover {
+        color: #ffffff;
+    }
+    .usefull-links.yellow li a {
+        color: #999999;
+    }
+
+    .usefull-links.yellow li a:hover {
+        color: #ffffff;
+    }
+
+</style>
 </head>
 
 <body>

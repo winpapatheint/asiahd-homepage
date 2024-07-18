@@ -97,10 +97,10 @@ class UserController extends Controller
         return view('privacy');
     }
 
-    public function story($id)
+    public function story($name)
     {
-        $pageSection = PageSection::find($id);
-        $sectionStories = SectionStory::where('page_section_id', $id)->get();
+        $pageSection = PageSection::where('name', $name)->first();
+        $sectionStories = SectionStory::where('page_section_id', $pageSection->id)->get();
         $stories = Story::all();
         $prefecture = Prefecture::all();
         return view('story', compact('pageSection', 'sectionStories', 'stories', 'prefecture'));

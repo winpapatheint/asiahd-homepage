@@ -72,7 +72,7 @@
                     <select name="page">
                         <option>ページを選択</option>
                         @foreach ($pageSections as $pageSection)
-                        <option value="{{ $pageSection->id }}">{{ $pageSection->name }}</option>
+                        <option value="{{ $pageSection->id }}">{{ $pageSection->title }}</option>
                         @endforeach
                     </select>
                     <span class="error" style="color:red" id="error-page"></span>

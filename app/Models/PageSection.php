@@ -11,6 +11,7 @@ class PageSection extends Model
 
     protected $fillable = [
         'name',
+        'title',
     ];
 
     public function sectionStory()

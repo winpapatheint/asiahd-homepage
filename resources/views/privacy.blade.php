@@ -32,7 +32,7 @@
     <section class="sec-padding">
         <div class="container">
             <div class="row">
-                <div class="privacy-policy">
+                {{-- <div class="privacy-policy"> --}}
                     <h4 class="header-p">個人情報保護方針</h4>
                     <p>アジア人材開発株式会社（以下、当社）は個人情報保護の重要性を認識しており、関係法令および規範を遵守し、以下の個人情報保護方針を定め確実な履行に努めて参ります。</p>
                     <div class="section-p">
@@ -55,7 +55,7 @@
                         <h5>5. コンプライアンス・プログラムの策定及び継続的改善</h5>
                         <p>当社は、役員及び従業員に個人情報保護の重要性を認識させ、個人情報を適切に利用し、保護するための個人情報保護コンプライアンス・プログラムを策定し、これを実施・維持するとともに継続的改善を行います。</p>
                     </div>
-                </div>
+                {{-- </div> --}}
             </div>
         </div>
     </section>

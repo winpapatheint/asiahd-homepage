@@ -81,7 +81,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3" style="text-align: center;">
-                        <h1>{{ $pageSection->name }}</h1>
+                        <h1>{{ $pageSection->title }}</h1>
                         <div class="divider-line solid margin yellow"></div>
                     </div>
                 </div>

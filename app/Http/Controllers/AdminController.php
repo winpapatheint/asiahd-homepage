@@ -86,7 +86,8 @@ class AdminController extends Controller
 
     public function storePageAdvertise(Request $request) {
         PageSection::create([
-            'name' => $request->name
+            'name' => $request->name,
+            'title' => $request->title
         ]);
         $pageSections = PageSection::all();
         return view('admin.advertise_section_add', compact('pageSections'));
@@ -102,6 +103,7 @@ class AdminController extends Controller
     public function updatePageAdvertise(Request $request) {
         $updateData = [
             'name' => $request->name,
+            'title' => $request->title
         ];
 
         PageSection::where('id', $request->id)->update($updateData);

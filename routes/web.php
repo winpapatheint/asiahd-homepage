@@ -37,7 +37,7 @@ Route::get('/service4', [UserController::class, 'service4']);
 Route::get('/contact', [UserController::class,'contact']);
 Route::post('/contact', [UserController::class,'sendContact'])->name('contact.send');
 Route::get('/privacy', [UserController::class,'privacy']);
-Route::get('/ad/{id}', [UserController::class, 'story']);
+Route::get('/ad/{name}', [UserController::class, 'story']);
 Route::post('/inquiry', [UserController::class, 'storeInquiry'])->name('inquiry.store');
 
 // Admin

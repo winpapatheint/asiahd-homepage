@@ -73,7 +73,9 @@
                     <select name="page">
                         <option>ページを選択</option>
                         @foreach ($pageSections as $pageSection)
-                        <option value="{{ $pageSection->id }}" {{ $pageSection->id == $sectionStory->page_section_id ? 'selected' : '' }}>{{ $pageSection->name }}</option>
+                        <option value="{{ $pageSection->id }}" {{ $pageSection->id == $sectionStory->page_section_id ? 'selected' : '' }}>
+                            {{ $pageSection->title }}
+                        </option>
                         @endforeach
                     </select>
                     <span class="error" style="color:red" id="error-page"></span>

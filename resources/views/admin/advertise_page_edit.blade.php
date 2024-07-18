@@ -73,6 +73,11 @@
                     <input type="text" id="name" name="name" value="{{ $pageSection->name }}" required>
                     <span class="error" style="color:red" id="error-name"></span>
                 </div>
+                <div class="form-group">
+                    <label for="title">タイトル<span class="required">*</span></label>
+                    <input type="text" id="title" name="title" value="{{ $pageSection->title }}" required>
+                    <span class="error" style="color:red" id="error-title"></span>
+                </div>
                 <button type="button" onclick="validatePageForm()">修正する</button>
             </form>
         </div>
@@ -83,13 +88,26 @@
             document.querySelectorAll('#pageEditForm .error').forEach(el => el.textContent = '');
 
             const name = document.getElementById('name').value.trim();
+            const title = document.getElementById('title').value.trim();
+            const namePattern = /^[a-zA-Z0-9-_]+$/; 
 
             if (!name) {
                 isValid = false;
-                document.getElementById('error-name').textContent = 'Please provide your page name.';
+                document.getElementById('error-name').textContent = 'ページ名を入力してください';
             } else if (name.length > 255) {
                 isValid = false;
-                document.getElementById('error-name').textContent = 'Your page name must not exceed 255 characters.';
+                document.getElementById('error-name').textContent = 'ページ名は 255 文字以内でなければなりません';
+            } else if (!namePattern.test(name)) {
+                isValid = false;
+                document.getElementById('error-name').textContent = 'ページ名には英数字、ダッシュ、およびアンダースコアのみを使用できます';
+            }
+
+            if (!title) {
+                isValid = false;
+                document.getElementById('error-title').textContent = 'ページのタイトルを入力してください';
+            } else if (title.length > 255) {
+                isValid = false;
+                document.getElementById('error-title').textContent = 'ページタイトルは255文字以内でなければなりません';
             }
 
             if (isValid) {

@@ -40,7 +40,7 @@
                     @foreach ($stories as $key => $story)
                     <tr>
                         <td>{{ $ttl + 1 - ($stories->firstItem() + $key) }}</td>
-                        <td>{{ $story->sectionStory->pageSection->name }}</td>
+                        <td>{{ $story->sectionStory->pageSection->title }}</td>
                         <td>
                             <button class="action-btn settings">
                                 <a href="{{ route('admin.page.edit', $story->sectionStory->pageSection->id) }}">
