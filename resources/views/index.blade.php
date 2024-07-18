@@ -73,7 +73,7 @@
     <!-- end of masterslider -->
     <div class="clearfix"></div>
 
-    <section class="section-yellow section-less-padding">
+    <section class="section-yellow" style="padding: 20px 0 10px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-9">

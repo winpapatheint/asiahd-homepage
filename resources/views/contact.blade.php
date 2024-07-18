@@ -47,13 +47,14 @@
                                         <label class="field prepend-icon">
                                             <select name="subject" id="subject"
                                                 class="gui-input" placeholder="件名">
-                                            <option>件名を選択</option>
-                                            <option value="SES/請負開発について">SES/請負開発について</option>
-                                            <option value="IT導入について">IT導入について</option>
-                                            <option value="日本留学について">日本留学について</option>
-                                            <option value="EC/ECモール構築について">EC/ECモール構築について</option>
-                                            <option value="その他">その他</option>
-                                            </select> 
+                                                <option>件名を選択</option>
+                                                <option value="SES/請負開発について">SES/請負開発について</option>
+                                                <option value="IT導入について">IT導入について</option>
+                                                <option value="日本留学について">日本留学について</option>
+                                                <option value="EC/ECモール構築について">EC/ECモール構築について</option>
+                                                <option value="その他">その他</option>
+                                            </select>
+                                            <span class="field-icon"><i class="fa fa-lightbulb-o"></i></span>
                                         </label>
                                         <span class="error" style="color:red" id="error-subject"></span>
                                     </div>
@@ -145,15 +146,15 @@
 
                 if(!subject || subject == '件名を選択') {
                     isValid = false;
-                    document.getElementById('error-subject').textContent = "有効な件名を選択してください。";
+                    document.getElementById('error-subject').textContent = "件名を選択してください";
                 }
 
                 if (!name) {
                     isValid = false;
-                    document.getElementById('error-name').textContent = 'お名前を入力してください。';
+                    document.getElementById('error-name').textContent = 'お名前を入力してください';
                 } else if (name.length > 255) {
                     isValid = false;
-                    document.getElementById('error-name').textContent = 'お名前は 255 文字以内でなければなりません。';
+                    document.getElementById('error-name').textContent = 'お名前は 255 文字以内でなければなりません';
                 }
 
                 if (!email) {
@@ -161,7 +162,7 @@
                     document.getElementById('error-email').textContent = '※メールアドレスを入力してください';
                 } else if (!/\S+@\S+\.\S+/.test(email)) {
                     isValid = false;
-                    document.getElementById('error-email').textContent = '有効なメールアドレスを入力してください。';
+                    document.getElementById('error-email').textContent = '有効なメールアドレスを入力してください';
                 }
 
                 if (!phone) {
@@ -174,7 +175,7 @@
 
                 if (!message) {
                     isValid = false;
-                    document.getElementById('error-message').textContent = 'メッセージを入力してください。';
+                    document.getElementById('error-message').textContent = 'メッセージを入力してください';
                 }
 
                 if (isValid) {

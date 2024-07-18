@@ -181,7 +181,7 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <section class="section-copyrights sec-moreless-padding">
+    <section class="section-copyrights" style="padding: 10px 0 10px 0;>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

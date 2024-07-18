@@ -26,22 +26,6 @@
 <![endif]-->
 
 <!-- Stylesheets -->
-{{-- <link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('css/layouts.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('css/shortcodes.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
-<link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
-<link rel="stylesheet" href="{{ asset('js/masterslider/style/masterslider.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" media="screen" />
-<link rel="stylesheet" href="{{ asset('css/et-line-font/et-line-font.css') }}">
-<link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs.css') }}">
-<link rel="stylesheet" href="{{ asset('js/jFlickrFeed/style.css') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('js/smart-forms/smart-forms.css') }}"> --}}
-
 <link rel="stylesheet" media="screen" href="{{ asset('js/bootstrap/bootstrap.min.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('js/mainmenu/menu.css') }}" type="text/css" />
 <link rel="stylesheet" href="{{ asset('css/default.css') }}" type="text/css" />
@@ -188,7 +172,7 @@
     <!--end section-->
     <div class="clearfix"></div>
 
-    <section class="section-copyrights sec-moreless-padding">
+    <section class="section-copyrights" style="padding: 10px 0 10px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -204,8 +188,7 @@
     </div>
 <!-- end site wraper -->
 
-
-
+<!-- ============ JS FILES ============ -->
 <!-- jQuery Library -->
 <script type="text/javascript" src="{{ asset('js/universal/jquery.js') }}"></script>
 
