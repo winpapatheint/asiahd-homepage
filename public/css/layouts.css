@@ -880,10 +880,10 @@ Construction layout Styles
 	background-color: #71ac34;
 }
 .team-holder5:hover .image-holder img {
-	top: -50px;
+	top: -10px;
 }
 .team-holder5:hover .image-holder .hover-box {
-	top: 135px;
+	top: 50px;
 }
 /*============ blog styles ============ */
 

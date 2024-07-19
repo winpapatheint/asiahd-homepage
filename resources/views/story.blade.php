@@ -162,7 +162,7 @@
                             <div class="col-md-4 col-sm-6">
                                 <div class="team-holder5 text-center bmargin">
                                     <div class="image-holder">
-                                        <div class="hover-box"><br>
+                                        <div class="hover-box">
                                             <p class="text-white"> {{ $story->body }}
                                             </p>
                                         </div>
@@ -177,7 +177,7 @@
                             @endforeach
                         </div>
                     </div>
-                    {{-- grid section end --}}
+                {{-- grid section end --}}
                 @endif
             @endforeach
         @else
