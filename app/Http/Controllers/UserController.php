@@ -100,7 +100,12 @@ class UserController extends Controller
     public function story($name)
     {
         $pageSection = PageSection::where('name', $name)->first();
-        $sectionStories = SectionStory::where('page_section_id', $pageSection->id)->get();
+        if ($pageSection){
+            $sectionStories = SectionStory::where('page_section_id', $pageSection->id)->get();
+        }
+        else {
+            $sectionStories = null;
+        }
         $stories = Story::all();
         $prefecture = Prefecture::all();
         return view('story', compact('pageSection', 'sectionStories', 'stories', 'prefecture'));

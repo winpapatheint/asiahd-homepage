@@ -106,7 +106,7 @@
                                 <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
                                 <div class="divider-line solid margin yellow"></div>
                                 <p>
-                                    {{ $story->body }}
+                                    {!! nl2br($story->body) !!}
                                 </p>
                             </div>
 
@@ -126,7 +126,7 @@
                                 <h5 class="uppercase less-mar1 nopadding">{{ $story->title }}</h5>
                                 <div class="divider-line solid margin yellow"></div>
                                 <p>
-                                    {{ $story->body }}
+                                    {!! nl2br($story->body) !!}
                                 </p>
                             </div>
                             @endif
