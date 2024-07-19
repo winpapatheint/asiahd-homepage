@@ -70,6 +70,11 @@
     .col-form-label {
         text-align: right;
     }
+    @media (max-width: 768px) {
+        .col-form-label {
+            text-align: left;
+        }
+    }
 </style>
 </head>
 
