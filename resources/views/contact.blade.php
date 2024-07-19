@@ -175,7 +175,7 @@
 
                 if (!message) {
                     isValid = false;
-                    document.getElementById('error-message').textContent = 'メッセージを入力してください';
+                    document.getElementById('error-message').textContent = '内容を入力してください';
                 }
 
                 if (isValid) {
