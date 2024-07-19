@@ -618,6 +618,17 @@ ul {
 .padding-top-6 {
     padding-top: 60px;
 }
+/* Reset padding for all sizes initially */
+.about-padding-top-6 {
+    padding-top: 0;
+}
+
+/* Apply padding-top only on mobile screens */
+@media (max-width: 768px) {
+    .about-padding-top-6 {
+        padding-top: 6rem;  /* or 6em, depending on your design needs */
+    }
+}
 
 /* left padding
  ------------------------------ */

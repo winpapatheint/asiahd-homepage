@@ -159,7 +159,7 @@
 
                 if (!email) {
                     isValid = false;
-                    document.getElementById('error-email').textContent = '※メールアドレスを入力してください';
+                    document.getElementById('error-email').textContent = 'メールアドレスを入力してください';
                 } else if (!/\S+@\S+\.\S+/.test(email)) {
                     isValid = false;
                     document.getElementById('error-email').textContent = '有効なメールアドレスを入力してください';

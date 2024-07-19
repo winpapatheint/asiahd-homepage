@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Contact</title>
+    <title>お問い合わせ(ASIAHD)</title>
 </head>
 <body>
     <h1>New Contact Received</h1>

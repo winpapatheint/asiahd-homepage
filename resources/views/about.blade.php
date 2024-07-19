@@ -111,7 +111,7 @@
 
         <section class="sec-padding">
             <div class="container">
-                <div class="row">
+                <div class="row about-padding-top-6">
                     <div class="col-sm-12 text-left nopadding">
                         <h4 class="section-title uppercase">運営サイト</h4>
                         <div class="title-line-8 yellow left"></div>
