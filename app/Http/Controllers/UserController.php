@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Models\News;
 use App\Models\User;
 use App\Models\Story;

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Inquiry</title>
+    <title>広告ページからのお問合せ</title>
 </head>
 <body>
-    <h1>New Inquiry Received</h1>
+    <h1>問い合わせ内容</h1>
     <p><strong>Name:</strong> {{ $inquiry['name'] }}</p>
     <p><strong>Email:</strong> {{ $inquiry['email'] }}</p>
     <p><strong>Phone:</strong> {{ $inquiry['phone'] }}</p>
