@@ -31,7 +31,7 @@ class InquiryMail extends Mailable
     public function build()
     {
         return $this->from(config('mail.from.address'))
-                    ->subject('New Inquiry')
+                    ->subject('広告ページからのお問合せ')
                     ->view('emails.inquiry');
     }
 }

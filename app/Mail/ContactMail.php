@@ -31,7 +31,7 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->from(config('mail.from.address'))
-                    ->subject('New Contact')
+                    ->subject('お問い合わせ(ASIAHD)')
                     ->view('emails.contact');
     }
 }
