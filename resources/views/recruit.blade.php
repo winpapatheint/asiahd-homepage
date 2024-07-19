@@ -32,7 +32,7 @@
         <section class="sec-padding">
             <div class="container">
                 <div class="row">
-                    <div class="layout">
+                    {{-- <div class="layout"> --}}
                         <div class="title_r">募集要項</div>
                         <table class="job-listing">
                             <tr>
@@ -85,7 +85,7 @@
                                 入社日は相談に応じます。応募の秘密は厳守します。
                             </div>
                         </div>
-                    </div>
+                    {{-- </div> --}}
                 </div>
             </div>
         </section>
