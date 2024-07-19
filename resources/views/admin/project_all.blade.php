@@ -44,10 +44,40 @@
                                     </td>
                                     <td>
                                         <a href="{{ route('edit.project', $item->id) }}"><button class="action-btn settings"><i class="fa fa-pencil-square-o"></i></button></a>
-                                        <a href="{{ route('delete.project', $item->id) }}"><button class="action-btn delete"><i class="fa fa-trash"></i></button></a>
+                                        <button class="action-btn delete" data-toggle="modal" 
+                                            data-target="#confirmProductDeleteModal_{{ $item->id }}" 
+                                            data-id="{{ $item->id }}">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
                                         </a>
                                     </td>
                                 </tr>
+                                <!-- Confirm Product Delete Modal -->
+                                <div class="modal fade" id="confirmProductDeleteModal_{{ $item->id }}" 
+                                    tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">削除ですか？</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                    style="position: absolute; right: 15px; top: 15px;">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body" style="text-align: center">
+                                                この製品は削除されます。
+                                            </div>
+                                            <div class="modal-footer">
+                                                <form id="deleteProductForm" method="GET" action="{{ route('delete.project', $item->id) }}">
+                                                    @csrf
+                                                    <input type="hidden" id="id" name="id" value="{{ $item->id }}">
+                                                    <button type="submit" class="btn btn-success">はい</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">いいえ</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             @endforeach
                         @endif
                     </tbody>

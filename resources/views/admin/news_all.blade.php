@@ -35,15 +35,52 @@
                                     <td>
                                         <img width="50" height="50" src="{{ asset('images/' . $item->image) }}">
                                     </td>
-                                    <td class="content-column">{!! nl2br(e($item->content)) !!}</td>
+                                    <td class="content-column">
+                                        @if (mb_strlen($item->content) > 200)
+                                            {!! nl2br(e(mb_substr($item->content, 0, 200) . '...')) !!}
+                                        @else
+                                            {!! nl2br(e($item->content)) !!}
+                                        @endif
+                                    </td>
                                     <td>
                                         <a href="{{ route('edit.news', $item->id) }}"><button
                                                 class="action-btn settings"><i class="fa fa-pencil-square-o"></i></button></a>
-                                        <a href="{{ route('delete.news', $item->id) }}"><button
-                                                class="action-btn delete"><i class="fa fa-trash"></i></button></a>
+                                        {{-- <a href="{{ route('delete.news', $item->id) }}"><button
+                                                class="action-btn delete"><i class="fa fa-trash"></i></button></a> --}}
+                                        <button class="action-btn delete" data-toggle="modal" 
+                                            data-target="#confirmNewDeleteModal_{{ $item->id }}" 
+                                            data-id="{{ $item->id }}">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
                                         </a>
                                     </td>
                                 </tr>
+                                <!-- Confirm New Delete Modal -->
+                                <div class="modal fade" id="confirmNewDeleteModal_{{ $item->id }}" 
+                                    tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="confirmDeleteModalLabel" style="text-align: center; width: 100%;">削除ですか？</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                    style="position: absolute; right: 15px; top: 15px;">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body" style="text-align: center">
+                                                この新着情報は削除されます。
+                                            </div>
+                                            <div class="modal-footer">
+                                                <form id="deleteNewForm" method="GET" action="{{ route('delete.news', $item->id) }}">
+                                                    @csrf
+                                                    <input type="hidden" id="id" name="id" value="{{ $item->id }}">
+                                                    <button type="submit" class="btn btn-success">はい</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">いいえ</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             @endforeach
                         @endif
                     </tbody>
