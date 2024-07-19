@@ -67,7 +67,7 @@
 
                     <div class="col-md-6 bmargin"><img src="{{ asset('images/ser04-3.jpg') }}" alt=""
                             class="img-responsive" /><br />
-                        <h5 class="uppercase less-mar1">アジア食彩館ECモール</h5>
+                        <h5 class="uppercase less-mar1">アジア食彩館ECモール運営</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>日本国内の340万外国人消費者に向けにアジア食品関連商品を販売するECモールです。<br>
                             販売者の出店は無料です。</p>
@@ -79,7 +79,7 @@
 
                     <div class="col-md-6 bmargin"> <img src="{{ asset('images/ser04-4.jpg') }}" alt=""
                             class="img-responsive" /><br />
-                        <h5 class="uppercase less-mar1">New Style Life（新生活）ECモール</h5>
+                        <h5 class="uppercase less-mar1">New Style Life（新生活）ECモール運営</h5>
                         <div class="divider-line solid margin yellow"></div>
                         <p>日本国内の消費者向けに食品以外の商品を販売するECモールです。<br>
                             販売者の出店は無料です。</p>
