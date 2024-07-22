@@ -313,47 +313,49 @@
     <!--end section-->
     <div class="clearfix"></div><br>
 
-    <section class="sec-tpadding-2 sec-bpadding less-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-left nopadding">
-                    <h4 class="section-title uppercase">新着情報</h4>
-                    <div class="title-line-8 yellow left"></div>
-                    <p>弊社のサービスや活動に関する各種ニュースを掲載させております。</p>
-                    <br />
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="col-md-12">
-                    <div class="blog-holder6 bmargin">
-                        <div class="col-md-4 col-sm-4 nopadding">
-                            <div class="image-holder">
-                                <div class="post-date-box">
-                                    {{ \Carbon\Carbon::parse($new->created_at)->format('d') }}
-                                    <span>{{ \Carbon\Carbon::parse($new->created_at)->format('m, Y') }}</span>
+    <section class="parallax-section">
+        <div class="section-overlay">
+            <div class="container sec-tpadding-2 sec-bpadding-2">
+                <div class="row">
+                    <div class="col-sm-12 text-left nopadding">
+                        <h4 class="section-title uppercase">新着情報</h4>
+                        <div class="title-line-8 yellow left"></div>
+                        <p>弊社のサービスや活動に関する各種ニュースを掲載させております。</p>
+                        <br />
+                    </div>
+                    <div class="clearfix"></div>
+    
+                    <div class="col-md-12">
+                        <div class="blog-holder6 bmargin">
+                            <div class="col-md-4 col-sm-4 nopadding">
+                                <div class="image-holder">
+                                    <div class="post-date-box">
+                                        {{ \Carbon\Carbon::parse($new->created_at)->format('d') }}
+                                        <span>{{ \Carbon\Carbon::parse($new->created_at)->format('m, Y') }}</span>
+                                    </div>
+                                    <img src="{{ asset('images/' . $new->image) }}" class="img-responsive"/>
                                 </div>
-                                <img src="{{ asset('images/' . $new->image) }}" class="img-responsive"/>
                             </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8 nopadding">
-                            <div class="text-box-inner" style="overflow: hidden;">
-                                <h5 class="uppercase less-mar1" style="margin-bottom: auto;"><a href="#">{{ $new->title }}</a></h5>
-                                <div class="divider-line solid margin yellow"></div>
-
-                                <p>
-                                    @if (mb_strlen($new->content) > 300)
-                                    {!! mb_substr($new->content, 0, 300) . '...'  !!}<br>
-                                    @else
-                                    {!! $new->content  !!}<br>
-                                    @endif
-                                </p>
-                                <a class="read-more yellow" href="{{ url('/news') }}">
-                                <i class="fa fa-angle-double-right"></i> もっと見る</a>
+                            <div class="col-md-8 col-sm-8 nopadding">
+                                <div class="text-box-inner" style="overflow: hidden;">
+                                    <h5 class="uppercase less-mar1" style="margin-bottom: auto;"><a href="#">{{ $new->title }}</a></h5>
+                                    <div class="divider-line solid margin yellow"></div>
+    
+                                    <p>
+                                        @if (mb_strlen($new->content) > 300)
+                                        {!! mb_substr($new->content, 0, 300) . '...'  !!}<br>
+                                        @else
+                                        {!! $new->content  !!}<br>
+                                        @endif
+                                    </p>
+                                    <a class="read-more yellow" href="{{ url('/news') }}">
+                                    <i class="fa fa-angle-double-right"></i> もっと見る</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--end item-->
                 </div>
-                <!--end item-->
             </div>
         </div>
     </section>
