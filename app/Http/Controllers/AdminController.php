@@ -33,18 +33,15 @@ class AdminController extends Controller
         return view('index', compact('projects','new'));
     }
 
-
     public function dashboard()
     {
         return view('admin.dashboard');
     }
 
-
     public function changePassword() {
 
         return view('admin.change_password');
     }
-
 
     public function updatePassword(Request $request) {
         $user = User::find(Auth::user()->id);
@@ -58,7 +55,6 @@ class AdminController extends Controller
         return redirect()->back()->with('success', 'パスワードが正常に更新されました');
     }
 
-
     public function allProject()
     {
         $limit = 10;
@@ -67,7 +63,6 @@ class AdminController extends Controller
         $ttlpage = ceil($ttl / $limit);
         return view('admin.project_all', compact('projects', 'ttl', 'ttlpage',));
     }
-
 
     public function allAdvertise()
     {
@@ -78,11 +73,9 @@ class AdminController extends Controller
         return view('admin.advertise_all', compact('stories', 'ttl', 'ttlpage'));
     }
 
-
     public function addPageAdvertise() {
         return view('admin.advertise_page_add');
     }
-
 
     public function storePageAdvertise(Request $request) {
         $pageSection = PageSection::where('name', $request->name)->first();
@@ -98,19 +91,22 @@ class AdminController extends Controller
         return view('admin.advertise_section_add', compact('pageSections'));
     }
 
-
     public function editPageAdvertise($id) {
         $pageSection = PageSection::find($id);
         return view('admin.advertise_page_edit', compact('pageSection'));
     }
 
-
     public function updatePageAdvertise(Request $request) {
-        $pageSection = PageSection::where('name', $request->name)->first();
+        $pageSection = PageSection::find($request->id);
+        if (!$pageSection) {
+            return redirect()->back()->withErrors(['notFound' => 'ページセクションが見つかりませんでした'])->withInput();
+        }
 
-        if ($pageSection) {
+        $existingPageSection = PageSection::where('name', $request->name)->where('id', '!=', $request->id)->first();
+        if ($existingPageSection) {
             return redirect()->back()->withErrors(['oldName' => 'このページ名は既に存在します'])->withInput();
         }
+        
         $updateData = [
             'name' => $request->name,
             'title' => $request->title
@@ -119,7 +115,6 @@ class AdminController extends Controller
         PageSection::where('id', $request->id)->update($updateData);
         return redirect('/admin/advertise')->with('success', 'ページが正常に更新されました!');
     }
-
 
     public function deletePageAdvertise(Request $request) {
         $pageSection = PageSection::findOrFail($request->id);
@@ -141,7 +136,6 @@ class AdminController extends Controller
         return view('admin.advertise_section_add', compact('pageSections'));
     }
 
-
     public function storeSectionAdvertise(Request $request) {
         SectionStory::create([
             'page_section_id' => $request->page,
@@ -152,13 +146,11 @@ class AdminController extends Controller
         return view('admin.advertise_story_add', compact('sectionStories'));
     }
 
-
     public function editSectionAdvertise($id) {
         $pageSections = PageSection::all();
         $sectionStory = SectionStory::find($id);
         return view('admin.advertise_section_edit', compact('pageSections', 'sectionStory'));
     }
-
 
     public function updateSectionAdvertise(Request $request) {
         $updateData = [
@@ -171,19 +163,16 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'セクションが正常に更新されました!');
     }
 
-
     public function deleteSectionAdvertise(Request $request) {
         SectionStory::where('id', $request->id)->delete();
         Story::where('section_story_id', $request->id)->delete();
         return redirect()->back()->with('success', 'セクションを正常に削除しました!');
     }
 
-
     public function addStoryAdvertise() {
         $sectionStories = SectionStory::all();
         return view('admin.advertise_story_add', compact('sectionStories'));
     }
-
 
     public function storeStoryAdvertise(Request $request) {
         if (!empty($request->image)) {
@@ -202,13 +191,11 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'ストーリーが正常に追加されました!');
     }
 
-
     public function editStoryAdvertise($id) {
         $sectionStories = SectionStory::all();
         $story = Story::find($id);
         return view('admin.advertise_story_edit', compact('sectionStories', 'story'));
     }
-
 
     public function updateStoryAdvertise(Request $request) {
         $updateData = [
@@ -227,25 +214,21 @@ class AdminController extends Controller
         return redirect('/admin/advertise')->with('success', 'ストーリーが正常に更新されました!');
     }
 
-
     public function deleteStoryAdvertise(Request $request) {
         Story::where('id', $request->id)->delete();
         return redirect()->back()->with('success', 'ストーリーを正常に削除しました!');
     }
-
 
     public function addProject()
     {
         return view('admin.project_add');
     }
 
-
     public function editProject($id)
     {
         $projects = Project::findOrFail($id);
         return view('admin.project_edit', compact('projects'));
     }
-
 
     public function saveProject(Request $request)
     {
@@ -267,7 +250,6 @@ class AdminController extends Controller
 
         return redirect('/admin/project')->with('success', 'Data added successfully!');
     }
-
 
     public function updateProject(Request $request)
     {
@@ -299,7 +281,6 @@ class AdminController extends Controller
         return redirect('/admin/project')->with('success', 'Data updated successfully!');
     }
 
-
     public function deleteProject($id)
     {
         $data = Project::findOrFail($id);
@@ -312,7 +293,6 @@ class AdminController extends Controller
         return back()->with('success', 'Data deleted successfully');
     }
 
-
     public function allNews()
     {
         $limit = 10;
@@ -322,20 +302,16 @@ class AdminController extends Controller
         return view('admin.news_all', compact('news', 'ttl', 'ttlpage',));
     }
 
-
     public function addNews()
     {
         return view('admin.news_add');
     }
-
 
     public function editNews($id)
     {
         $news = News::find($id);
         return view('admin.news_edit', compact('news'));
     }
-
-
 
     public function saveNews(Request $request)
     {
@@ -359,7 +335,6 @@ class AdminController extends Controller
 
         return redirect('/admin/news')->with('success', 'Data added successfully!');
     }
-
 
     public function updateNews(Request $request)
     {
@@ -390,8 +365,6 @@ class AdminController extends Controller
 
         return redirect('/admin/news')->with('success', 'Data updated successfully!');
     }
-
-
 
     public function deleteNews($id)
     {
