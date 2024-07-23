@@ -163,7 +163,7 @@
                                 <div class="team-holder5 text-center bmargin">
                                     <div class="image-holder">
                                         <div class="hover-box">
-                                            <p class="text-white"> {{ $story->body }}
+                                            <p class="text-white"> {!! nl2br($story->body) !!}
                                             </p>
                                         </div>
                                         <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
