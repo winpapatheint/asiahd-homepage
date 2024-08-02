@@ -16,6 +16,8 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
+use App\Traits\LinkifyTrait; // Import the trait
+use App\Helpers\ContentHelper; 
 
 /**
  * Store a newly created resource in storage.

@@ -26,5 +26,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Paginator::useBootstrap();
+        require_once base_path('app/helpers.php');
+        
     }
+    // In AppServiceProvider or a custom service provider
+
+
 }

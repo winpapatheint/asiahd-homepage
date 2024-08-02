@@ -71,14 +71,7 @@
                     <ul class="nav yellow navbar-nav">
                         <div id="navbar-collapse-grid" class="navbar-collapse collapse pull-right">
                             <ul class="nav yellow navbar-nav">
-                                <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle 
-                                    {{request()->is('admin/project') ||
-                                    request()->is('admin/project/add') ||
-                                    request()->is('admin/project/edit/*') 
-                                    ? 'active' : ''}}">
-                                    製品一覧</a>
-                                </li>
-                                <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle 
+                            <li> <a href="{{ url('/admin/news') }}" class="dropdown-toggle 
                                     {{request()->is('admin/news') ||
                                     request()->is('admin/news/add') ||
                                     request()->is('admin/news/edit/*') 
@@ -94,6 +87,15 @@
                                     ? 'active' : ''}}">
                                     広告管理</a>
                                 </li>
+                                <li> <a href="{{ url('/admin/project') }}" class="dropdown-toggle 
+                                    {{request()->is('admin/project') ||
+                                    request()->is('admin/project/add') ||
+                                    request()->is('admin/project/edit/*') 
+                                    ? 'active' : ''}}">
+                                    製品一覧</a>
+                                </li>
+                              
+                             
                                 <li> <a href="{{ url('/admin/change-password') }}" class="dropdown-toggle
                                     {{request()->is('admin/change-password') ? 'active' : ''}}">
                                     パスワード修正</a>

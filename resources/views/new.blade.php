@@ -46,7 +46,7 @@
                     <div class="col-md-8 bmargin">
                         <h5 class="uppercase less-mar1 nopadding">{{ $item->title }}</h5>
                         <div class="divider-line solid margin yellow"></div>
-                        <p>{!! nl2br(e($item->content)) !!}</p>
+                        <p>{!! nl2br(url_to_link($item->content)) !!}</p>
                         <br />
                     </div>
                     <!--end item-->

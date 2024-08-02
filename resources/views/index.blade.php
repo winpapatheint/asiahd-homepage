@@ -343,9 +343,10 @@
     
                                     <p>
                                         @if (mb_strlen($new->content) > 300)
-                                        {!! mb_substr($new->content, 0, 300) . '...'  !!}<br>
+                                        <!-- {!! mb_substr($new->content, 0, 300) . '...'  !!}<br> -->
+                                        {!! nl2br(e(mb_substr($new->content, 0, 300))) . (strlen($new->content) > 300 ? '...' : '') !!}<br>
                                         @else
-                                        {!! $new->content  !!}<br>
+                                        {!! nl2br(url_to_link($new->content)) !!}
                                         @endif
                                     </p>
                                     <a class="read-more yellow" href="{{ url('/news') }}">

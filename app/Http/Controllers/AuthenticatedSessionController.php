@@ -21,7 +21,7 @@ class AuthenticatedSessionController extends Controller
         $user = Auth::user();
 
         if (!empty($user)) {
-            return redirect('/admin/project');
+            return redirect('/admin/news');
         }
 
         return view('auth.login');
@@ -43,7 +43,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->authenticate();
         $request->session()->regenerate();
-        return redirect('/admin/project');
+        return redirect('/admin/news');
     }
 
     /**
