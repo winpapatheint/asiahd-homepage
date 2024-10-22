@@ -159,23 +159,25 @@
                                 $counter = 0;
                             @endphp
                             @foreach ($gridStories as $story)
-                            <div class="col-md-4 col-sm-6">
-                                <div class="team-holder5 text-center bmargin">
-                                    <div class="image-holder">
-                                        <div class="hover-box">
-                                            <p class="text-white"> {!! nl2br($story->body) !!}
-                                            </p>
+                                @if ($counter % 3 == 0 && $counter != 0)
+                                    </div><div class="row"> <!-- Close the current row and start a new one after every 3 items -->
+                                @endif
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="team-holder5 text-center bmargin">
+                                        <div class="image-holder">
+                                            <div class="hover-box">
+                                                <p class="text-white"> {!! nl2br($story->body) !!}</p>
+                                            </div>
+                                            <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
                                         </div>
-                                        <img src="{{ asset('images/' . $story->image) }}" alt="" class="img-responsive" />
+                                        <div class="clearfix"></div>
+                                        <br />
+                                        <h5 class="less-mar1">{{ $story->title }}</h5>
                                     </div>
-                                    <div class="clearfix"></div>
-                                    <br />
-                                    <h5 class="less-mar1">{{ $story->title }}</h5>
                                 </div>
-                            </div>
-                            <!--end item-->
+                                @php $counter++; @endphp
                             @endforeach
-                        </div>
+                        </div> <!-- End the last row -->                        
                     </div>
                 {{-- grid section end --}}
                 @endif
